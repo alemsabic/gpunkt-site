@@ -77,15 +77,17 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
-      Plugin.Citations({
-        bibliographyFile: "./content/bibliography.bib",
-        suppressBibliography: false,
-        linkCitations: false,
-        csl: "apa",
-        lang: "https://raw.githubusercontent.com/citation-style-language/locales/master/locales-de-DE.xml",
-        showTooltips: true,
-        tooltipAttribute: "data-tooltip",
-      }),
+      // Citations plugin temporarily disabled due to Cloudflare build errors
+      // Can be re-enabled later if needed for bibliography support
+      // Plugin.Citations({
+      //   bibliographyFile: "./content/bibliography.bib",
+      //   suppressBibliography: false,
+      //   linkCitations: false,
+      //   csl: "apa",
+      //   lang: "https://raw.githubusercontent.com/citation-style-language/locales/master/locales-de-DE.xml",
+      //   showTooltips: true,
+      //   tooltipAttribute: "data-tooltip",
+      // }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
