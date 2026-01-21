@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "ale.ms",
-    pageTitleSuffix: "Alem Šabić's Notizen und Quellen",
+    pageTitle: "nekontam.com",
+    pageTitleSuffix: "Bosnisch-Deutsches Wörterbuch",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "de-DE",
-    baseUrl: "https://ale.ms",
+    baseUrl: "https://nekontam.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

@@ -1,20 +1,25 @@
-# alems-site (Presentation)
+# nekontam.com - Display Repository
 
-Dies ist die **Quartz v4 Engine** für [ale.ms](https://ale.ms).
-Hier liegen Layouts, Styles (SCSS) und Konfigurationen.
+Präsentationsschicht für [nekontam.com](https://nekontam.com) - Bosnisch-Deutsches Wörterbuch.
 
-## Architektur im Überblick
+## Architektur
 
-| Bereich | Repository | Beschreibung |
-| :--- | :--- | :--- |
-| **Presentation** (Hier) | [alems-site](https://github.com/alemsabic/alems-site) | Tech Stack, Quartz Config, Design. |
-| **Content** | [alems-notizen](https://github.com/alemsabic/alems-notizen) | Markdown-Inhalte (werden hierher synchronisiert). |
-| **Factory** | [zettel-fabrik](https://github.com/alemsabic/zettel-fabrik) | *Privat*. Entwicklungsumgebung für Inhalte. |
+- **Engine:** Quartz v4.5.1
+- **Content Sync:** Auto-sync von [nekontam-woerter](https://github.com/alemsabic/nekontam-woerter)
+- **Deployment:** Cloudflare Pages
+- **Branch:** v4 (production)
 
-## Quick Start (Dev)
+## Local Development
 
 ```bash
+npm install
 npx quartz build --serve
 ```
 
-⚠️ **Wichtig:** Inhalte werden **nicht** hier bearbeitet, sondern im [Content-Repo](https://github.com/alemsabic/alems-notizen).
+Visit: http://localhost:8080
+
+## Deployment
+
+Auto-deployed to Cloudflare Pages on push to `v4` branch.
+
+Live: [nekontam.com](https://nekontam.com)

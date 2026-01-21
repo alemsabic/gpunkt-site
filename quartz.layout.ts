@@ -28,7 +28,7 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ContentHeader({
-      baseUrl: "https://github.com/alemsabic/alems-notizen/blob/main",
+      baseUrl: "https://github.com/alemsabic/nekontam-woerter/blob/main",
       editButtonText: "Verbesser die Seite auf GitHub.",
       showTags: true,
     }),
@@ -56,10 +56,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Comments({
       provider: "giscus",
       options: {
-        repo: "alemsabic/alems-site",
-        repoId: "R_kgDOQg3eGw",
+        repo: "alemsabic/nekontam-site",
+        repoId: "PLACEHOLDER_REPO_ID",
         category: "General",
-        categoryId: "DIC_kwDOQg3eG84CzVVP",
+        categoryId: "PLACEHOLDER_CATEGORY_ID",
         mapping: "pathname",
         strict: false,
         reactionsEnabled: true,
@@ -67,7 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
         lang: "de",
         lightTheme: "light",
         darkTheme: "dark",
-        themeUrl: "https://ale.ms/static/giscus",
+        themeUrl: "https://nekontam.com/static/giscus",
       },
     }),
   ],
