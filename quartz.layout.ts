@@ -57,9 +57,9 @@ export const defaultContentPageLayout: PageLayout = {
       provider: "giscus",
       options: {
         repo: "alemsabic/nekontam-site",
-        repoId: "PLACEHOLDER_REPO_ID",
+        repoId: "R_kgDOQ-MyDA",
         category: "General",
-        categoryId: "PLACEHOLDER_CATEGORY_ID",
+        categoryId: "DIC_kwDOQ-MyDM4C1O82",
         mapping: "pathname",
         strict: false,
         reactionsEnabled: true,
