@@ -18,14 +18,14 @@ main {
     "Segoe UI Emoji",
     "Segoe UI Symbol";
 
-  /* NEKONTAM Dark Mode Colors */
-  --bg: #111111; /* Dark background */
-  --bg-secondary: rgba(255, 255, 255, 0.05); /* Subtle light overlay */
-  --text: #d4c5a9; /* Sand text */
-  --text-muted: #8b9daa; /* Muted blue-gray */
-  --link: #e74c3c; /* Red Accent */
-  --link-hover: #c0392b; /* Darker Red */
-  --border: #d4c5a9; /* Sand border */
+  /* NEKONTAM Dark Mode Colors - MONOCHROME */
+  --bg: #000000; /* Pitch Black */
+  --bg-secondary: #1a1a1a; /* UI Elements (Search, Inputs) - minimal lighter */
+  --text: #eeeeee; /* Off-White */
+  --text-muted: #888888; /* Gray */
+  --link: #eeeeee; /* White Links */
+  --link-hover: #ffffff; /* Brighter White */
+  --border: #333333; /* Dark Gray Border */
 
   /* Syntax highlighting */
   --color-prettylights-syntax-comment: var(--text-muted);
@@ -60,38 +60,38 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
   /* Button styles */
-  --color-btn-text: #111111; /* Black text on red button for contrast */
-  --color-btn-bg: #e74c3c; /* Red background */
-  --color-btn-border: #e74c3c;
+  --color-btn-text: #000000; /* Black Text */
+  --color-btn-bg: #eeeeee; /* White Button */
+  --color-btn-border: #eeeeee;
   --color-btn-shadow: none;
   --color-btn-inset-shadow: none;
-  --color-btn-hover-bg: #c0392b;
-  --color-btn-hover-border: #c0392b;
-  --color-btn-active-bg: #e74c3c;
-  --color-btn-active-border: #e74c3c;
-  --color-btn-selected-bg: #e74c3c;
+  --color-btn-hover-bg: #ffffff;
+  --color-btn-hover-border: #ffffff;
+  --color-btn-active-bg: #cccccc;
+  --color-btn-active-border: #cccccc;
+  --color-btn-selected-bg: #eeeeee;
 
   /* Primary button */
-  --color-btn-primary-text: #111111;
-  --color-btn-primary-bg: #e74c3c;
-  --color-btn-primary-border: #e74c3c;
+  --color-btn-primary-text: #000000;
+  --color-btn-primary-bg: #eeeeee;
+  --color-btn-primary-border: #eeeeee;
   --color-btn-primary-shadow: none;
   --color-btn-primary-inset-shadow: none;
-  --color-btn-primary-hover-bg: #c0392b;
-  --color-btn-primary-hover-border: #c0392b;
-  --color-btn-primary-selected-bg: #c0392b;
+  --color-btn-primary-hover-bg: #ffffff;
+  --color-btn-primary-hover-border: #ffffff;
+  --color-btn-primary-selected-bg: #ffffff;
   --color-btn-primary-selected-shadow: none;
 
   /* Disabled state */
-  --color-btn-primary-disabled-text: rgba(17, 17, 17, 0.5);
-  --color-btn-primary-disabled-bg: rgba(231, 76, 60, 0.5);
+  --color-btn-primary-disabled-text: #666666;
+  --color-btn-primary-disabled-bg: #333333;
   --color-btn-primary-disabled-border: transparent;
 
   /* Action list and controls */
-  --color-action-list-item-default-hover-bg: rgba(255, 255, 255, 0.1);
-  --color-segmented-control-bg: rgba(255, 255, 255, 0.05);
+  --color-action-list-item-default-hover-bg: #1a1a1a;
+  --color-segmented-control-bg: #1a1a1a;
   --color-segmented-control-button-bg: transparent;
-  --color-segmented-control-button-selected-border: #d4c5a9;
+  --color-segmented-control-button-selected-border: #eeeeee;
 
   /* Foreground colors */
   --color-fg-default: var(--text);
@@ -105,33 +105,33 @@ main {
   --color-canvas-subtle: transparent;
 
   /* Border colors */
-  --color-border-default: rgba(212, 197, 169, 0.2); /* Sand transparent */
-  --color-border-muted: rgba(212, 197, 169, 0.1);
-  --color-neutral-muted: rgba(212, 197, 169, 0.05);
+  --color-border-default: #333333;
+  --color-border-muted: #222222;
+  --color-neutral-muted: #1a1a1a;
 
   /* Accent colors */
   --color-accent-fg: var(--link);
   --color-accent-emphasis: var(--link);
-  --color-accent-muted: rgba(231, 76, 60, 0.4);
-  --color-accent-subtle: rgba(231, 76, 60, 0.1);
+  --color-accent-muted: #333333;
+  --color-accent-subtle: #1a1a1a;
 
-  /* Success, attention, danger */
-  --color-success-fg: #e74c3c;
-  --color-attention-fg: #e74c3c;
-  --color-attention-muted: rgba(231, 76, 60, 0.4);
-  --color-attention-subtle: rgba(231, 76, 60, 0.1);
-  --color-danger-fg: #e74c3c;
-  --color-danger-muted: rgba(231, 76, 60, 0.4);
-  --color-danger-subtle: rgba(231, 76, 60, 0.1);
+  /* Success, attention, danger - Monochrome */
+  --color-success-fg: #eeeeee;
+  --color-attention-fg: #eeeeee;
+  --color-attention-muted: #333333;
+  --color-attention-subtle: #1a1a1a;
+  --color-danger-fg: #eeeeee;
+  --color-danger-muted: #333333;
+  --color-danger-subtle: #1a1a1a;
 
   /* Shadows */
   --color-primer-shadow-inset: none;
-  --color-scale-gray-1: rgba(255, 255, 255, 0.05);
-  --color-scale-blue-1: rgba(231, 76, 60, 0.1);
+  --color-scale-gray-1: #1a1a1a;
+  --color-scale-blue-1: #333333;
 
   /*! Extensions */
-  --color-social-reaction-bg-hover: rgba(255, 255, 255, 0.05);
-  --color-social-reaction-bg-reacted-hover: rgba(231, 76, 60, 0.2);
+  --color-social-reaction-bg-hover: #1a1a1a;
+  --color-social-reaction-bg-reacted-hover: #333333;
 }
 
 main .pagination-loader-container {
@@ -157,45 +157,46 @@ main pre {
 
 /* Fix text color and font-weight */
 main .color-text-primary {
-  color: #d4c5a9 !important;
+  color: #eeeeee !important;
   font-weight: 700 !important;
 }
 
 main .color-text-primary.underline {
-  color: #e74c3c !important;
+  color: #eeeeee !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
 }
 
 /* Reactions count */
 main .gsc-reactions-count {
-  color: #d4c5a9 !important;
+  color: #eeeeee !important;
   font-weight: 700 !important;
 }
 
 /* Comments count */
 main .gsc-comments-count,
 main .gsc-comments-count-separator {
-  color: #d4c5a9 !important;
+  color: #eeeeee !important;
   font-weight: 700 !important;
 }
 
 /* Input Placeholder */
 main textarea::placeholder,
 main input::placeholder {
-  color: rgba(212, 197, 169, 0.6) !important;
+  color: #666666 !important;
 }
 
-/* Input Borders */
+/* Input Borders & Backgrounds */
 main textarea,
 main input {
-  border: 1px solid rgba(212, 197, 169, 0.3) !important;
-  background-color: transparent !important;
-  color: #d4c5a9 !important;
+  border: 1px solid #333333 !important; /* Subtle border */
+  background-color: #1a1a1a !important; /* Minimal lighter background (UI color) */
+  color: #eeeeee !important;
 }
 
 main textarea:focus,
 main input:focus {
-  border: 2px solid #e74c3c !important;
+  border: 1px solid #eeeeee !important; /* White border on focus */
+  background-color: #1a1a1a !important;
   box-shadow: none !important;
 }

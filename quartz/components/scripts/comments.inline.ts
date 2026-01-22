@@ -39,7 +39,7 @@ const getThemeUrl = (theme: string) => {
   if (!giscusContainer) {
     return `https://giscus.app/themes/${theme}.css`
   }
-  return `${giscusContainer.dataset.themeUrl ?? "https://giscus.app/themes"}/${theme}.css?v=brutalist`
+  return `${giscusContainer.dataset.themeUrl ?? "https://giscus.app/themes"}/${theme}.css?v=brutalist2`
 }
 
 type GiscusElement = Omit<HTMLElement, "dataset"> & {

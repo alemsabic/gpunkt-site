@@ -40,15 +40,15 @@ const config: QuartzConfig = {
           textHighlight: "#4DB5B533",
         },
         darkMode: {
-          light: "#000", // background-color - very dark brown/black
-          lightgray: "rgba(212, 197, 169, 0.2)", // subtle beige tint
-          gray: "#eee", // muted brown-gray
-          darkgray: "#eee", // lighter beige for secondary text
-          dark: "#eee", // primary text - beige/sand
-          secondary: "#eee", // link-color - red accent (from INTERACTION)
-          tertiary: "#eee", // link-color (hover) - darker red
-          highlight: "rgba(231, 76, 60, 0.15)", // red highlight
-          textHighlight: "#E74C3C33",
+          light: "#000000", // Pitch Black
+          lightgray: "#1a1a1a", // UI Background (Search, Inputs) - minimal lighter
+          gray: "#888888", // Muted text
+          darkgray: "#bbbbbb", // Secondary text
+          dark: "#eeeeee", // Primary text
+          secondary: "#eeeeee", // Links (Monochrome)
+          tertiary: "#ffffff", // Hover
+          highlight: "rgba(255, 255, 255, 0.1)", // Selection
+          textHighlight: "#ffffff22",
         },
       },
     },

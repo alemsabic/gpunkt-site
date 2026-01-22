@@ -20,9 +20,9 @@ main {
 
   /* NEKONTAM Light Mode Colors */
   --bg: #f9f66f; /* Yellow */
-  --bg-secondary: rgba(0, 0, 0, 0.05); /* Subtle dark overlay */
+  --bg-secondary: rgba(0, 0, 0, 0.05); /* Minimal darker/transparent overlay */
   --text: #111111; /* Black */
-  --text-muted: #111111; /* Black (high contrast) */
+  --text-muted: #111111; /* Black */
   --link: #111111; /* Black */
   --link-hover: #111111; /* Black */
   --border: #111111; /* Black */
@@ -60,8 +60,8 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
   /* Button styles */
-  --color-btn-text: #f9f66f; /* Yellow text on black button */
-  --color-btn-bg: #111111; /* Black background */
+  --color-btn-text: #f9f66f; /* Yellow text */
+  --color-btn-bg: #111111; /* Black button */
   --color-btn-border: #111111;
   --color-btn-shadow: none;
   --color-btn-inset-shadow: none;
@@ -71,7 +71,7 @@ main {
   --color-btn-active-border: #111111;
   --color-btn-selected-bg: #111111;
 
-  /* Primary button (same as regular for brutalist look) */
+  /* Primary button */
   --color-btn-primary-text: #f9f66f;
   --color-btn-primary-bg: #111111;
   --color-btn-primary-border: #111111;
@@ -158,7 +158,7 @@ main pre {
 /* Fix text color and font-weight */
 main .color-text-primary {
   color: #111111 !important;
-  font-weight: 700 !important; /* Bold like the rest of the site */
+  font-weight: 700 !important;
 }
 
 main .color-text-primary.underline {
@@ -186,16 +186,16 @@ main input::placeholder {
   color: rgba(17, 17, 17, 0.6) !important;
 }
 
-/* Input Borders */
+/* Input Borders & Backgrounds */
 main textarea,
 main input {
-  border: 1px solid #111111 !important;
-  background-color: transparent !important;
+  border: 1px solid rgba(17, 17, 17, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.05) !important; /* Minimal darker than yellow */
   color: #111111 !important;
 }
 
 main textarea:focus,
 main input:focus {
-  border: 2px solid #111111 !important;
+  border: 1px solid #111111 !important;
   box-shadow: none !important;
 }
