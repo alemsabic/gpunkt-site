@@ -4,21 +4,33 @@
  */
 
 main {
-  /* Custom PATHOLOGIE typography */
-  font-family: "Geist Mono", monospace;
+  /* System Sans Serif Stack */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
 
-  /* PATHOLOGIE Light Mode Colors */
-  --bg: #e0cca6; /* light */
-  --bg-secondary: rgba(0, 0, 0, 0.05); /* lightgray subtle */
-  --text: #4e4e4e; /* darkgray */
-  --text-muted: #4e4e4e; /* gray */
-  --link: #8b4840; /* secondary */
-  --link-hover: #9c5e56; /* tertiary */
+  /* NEKONTAM Light Mode Colors */
+  --bg: #f9f66f; /* Yellow */
+  --bg-secondary: rgba(0, 0, 0, 0.05); /* Subtle dark overlay */
+  --text: #111111; /* Black */
+  --text-muted: #111111; /* Black (high contrast) */
+  --link: #111111; /* Black */
+  --link-hover: #111111; /* Black */
+  --border: #111111; /* Black */
 
-  /* Syntax highlighting - using PATHOLOGIE colors */
-  --color-prettylights-syntax-comment: var(--text-muted);
+  /* Syntax highlighting */
+  --color-prettylights-syntax-comment: rgba(17, 17, 17, 0.6);
   --color-prettylights-syntax-constant: var(--link);
-  --color-prettylights-syntax-entity: var(--link-hover);
+  --color-prettylights-syntax-entity: var(--link);
   --color-prettylights-syntax-storage-modifier-import: var(--text);
   --color-prettylights-syntax-entity-tag: var(--link);
   --color-prettylights-syntax-keyword: var(--link);
@@ -42,44 +54,44 @@ main {
   --color-prettylights-syntax-markup-changed-bg: var(--bg-secondary);
   --color-prettylights-syntax-markup-ignored-text: var(--text-muted);
   --color-prettylights-syntax-markup-ignored-bg: var(--link);
-  --color-prettylights-syntax-meta-diff-range: var(--link-hover);
+  --color-prettylights-syntax-meta-diff-range: var(--link);
   --color-prettylights-syntax-brackethighlighter-angle: var(--text-muted);
   --color-prettylights-syntax-sublimelinter-gutter-mark: var(--text-muted);
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
-  /* Button styles - using PATHOLOGIE colors */
-  --color-btn-text: var(--text);
-  --color-btn-bg: var(--bg);
-  --color-btn-border: rgba(0, 0, 0, 0.2); /* lightgray */
-  --color-btn-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-  --color-btn-hover-bg: var(--bg-secondary);
-  --color-btn-hover-border: var(--text-muted);
-  --color-btn-active-bg: var(--bg-secondary);
-  --color-btn-active-border: var(--text-muted);
-  --color-btn-selected-bg: var(--bg-secondary);
+  /* Button styles */
+  --color-btn-text: #f9f66f; /* Yellow text on black button */
+  --color-btn-bg: #111111; /* Black background */
+  --color-btn-border: #111111;
+  --color-btn-shadow: none;
+  --color-btn-inset-shadow: none;
+  --color-btn-hover-bg: rgba(17, 17, 17, 0.8);
+  --color-btn-hover-border: #111111;
+  --color-btn-active-bg: #111111;
+  --color-btn-active-border: #111111;
+  --color-btn-selected-bg: #111111;
 
-  /* Primary button - using secondary/tertiary colors */
-  --color-btn-primary-text: #e0cca6; /* light background color for text */
-  --color-btn-primary-bg: var(--link); /* secondary */
-  --color-btn-primary-border: var(--link);
-  --color-btn-primary-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  --color-btn-primary-hover-bg: var(--link-hover); /* tertiary */
-  --color-btn-primary-hover-border: var(--link-hover);
-  --color-btn-primary-selected-bg: var(--link-hover);
-  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(139, 72, 64, 0.2);
+  /* Primary button (same as regular for brutalist look) */
+  --color-btn-primary-text: #f9f66f;
+  --color-btn-primary-bg: #111111;
+  --color-btn-primary-border: #111111;
+  --color-btn-primary-shadow: none;
+  --color-btn-primary-inset-shadow: none;
+  --color-btn-primary-hover-bg: rgba(17, 17, 17, 0.8);
+  --color-btn-primary-hover-border: #111111;
+  --color-btn-primary-selected-bg: #111111;
+  --color-btn-primary-selected-shadow: none;
 
   /* Disabled state */
-  --color-btn-primary-disabled-text: var(--text-muted);
-  --color-btn-primary-disabled-bg: var(--bg-secondary);
-  --color-btn-primary-disabled-border: var(--bg-secondary);
+  --color-btn-primary-disabled-text: rgba(249, 246, 111, 0.5);
+  --color-btn-primary-disabled-bg: rgba(17, 17, 17, 0.5);
+  --color-btn-primary-disabled-border: transparent;
 
   /* Action list and controls */
-  --color-action-list-item-default-hover-bg: rgba(143, 159, 169, 0.15);
-  --color-segmented-control-bg: var(--bg-secondary);
-  --color-segmented-control-button-bg: var(--bg);
-  --color-segmented-control-button-selected-border: var(--text-muted);
+  --color-action-list-item-default-hover-bg: rgba(0, 0, 0, 0.05);
+  --color-segmented-control-bg: rgba(0, 0, 0, 0.05);
+  --color-segmented-control-button-bg: transparent;
+  --color-segmented-control-button-selected-border: #111111;
 
   /* Foreground colors */
   --color-fg-default: var(--text);
@@ -89,37 +101,37 @@ main {
   /* Canvas colors */
   --color-canvas-default: var(--bg);
   --color-canvas-overlay: var(--bg);
-  --color-canvas-inset: var(--bg-secondary);
-  --color-canvas-subtle: var(--bg-secondary);
+  --color-canvas-inset: transparent;
+  --color-canvas-subtle: transparent;
 
   /* Border colors */
-  --color-border-default: rgba(0, 0, 0, 0.2); /* lightgray */
-  --color-border-muted: rgba(0, 0, 0, 0.2);
-  --color-neutral-muted: rgba(0, 0, 0, 0.1);
+  --color-border-default: rgba(17, 17, 17, 0.2);
+  --color-border-muted: rgba(17, 17, 17, 0.1);
+  --color-neutral-muted: rgba(17, 17, 17, 0.05);
 
-  /* Accent colors - using secondary */
+  /* Accent colors */
   --color-accent-fg: var(--link);
   --color-accent-emphasis: var(--link);
-  --color-accent-muted: rgba(139, 72, 64, 0.4);
-  --color-accent-subtle: rgba(139, 72, 64, 0.1);
+  --color-accent-muted: rgba(17, 17, 17, 0.4);
+  --color-accent-subtle: rgba(17, 17, 17, 0.1);
 
   /* Success, attention, danger */
-  --color-success-fg: var(--link-hover);
-  --color-attention-fg: var(--link);
-  --color-attention-muted: rgba(139, 72, 64, 0.4);
-  --color-attention-subtle: rgba(139, 72, 64, 0.1);
-  --color-danger-fg: var(--link);
-  --color-danger-muted: rgba(139, 72, 64, 0.4);
-  --color-danger-subtle: rgba(139, 72, 64, 0.1);
+  --color-success-fg: #111111;
+  --color-attention-fg: #111111;
+  --color-attention-muted: rgba(17, 17, 17, 0.4);
+  --color-attention-subtle: rgba(17, 17, 17, 0.1);
+  --color-danger-fg: #111111;
+  --color-danger-muted: rgba(17, 17, 17, 0.4);
+  --color-danger-subtle: rgba(17, 17, 17, 0.1);
 
   /* Shadows */
-  --color-primer-shadow-inset: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-  --color-scale-gray-1: var(--bg-secondary);
-  --color-scale-blue-1: rgba(139, 72, 64, 0.2);
+  --color-primer-shadow-inset: none;
+  --color-scale-gray-1: rgba(0, 0, 0, 0.05);
+  --color-scale-blue-1: rgba(0, 0, 0, 0.05);
 
-  /*! Extensions from @primer/css/alerts/flash.scss */
-  --color-social-reaction-bg-hover: var(--bg-secondary);
-  --color-social-reaction-bg-reacted-hover: rgba(139, 72, 64, 0.2);
+  /*! Extensions */
+  --color-social-reaction-bg-hover: rgba(0, 0, 0, 0.05);
+  --color-social-reaction-bg-reacted-hover: rgba(0, 0, 0, 0.1);
 }
 
 main .pagination-loader-container {
@@ -130,38 +142,60 @@ main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
 
-/* Custom PATHOLOGIE Typography Overrides */
-main code, main pre {
-  font-family: "Geist Mono", monospace;
+/* System Typography Overrides */
+main code,
+main pre {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace;
 }
 
-/* Fix text color and font-weight for comments and reactions */
+/* Fix text color and font-weight */
 main .color-text-primary {
-  color: #4e4e4e !important; /* darkgray */
-  font-weight: normal !important;
+  color: #111111 !important;
+  font-weight: 700 !important; /* Bold like the rest of the site */
 }
 
 main .color-text-primary.underline {
-  color: #4e4e4e !important;
-  font-weight: normal !important;
+  color: #111111 !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
 }
 
-/* Fix reactions count styling */
+/* Reactions count */
 main .gsc-reactions-count {
-  color: #4e4e4e !important;
-  font-weight: normal !important;
+  color: #111111 !important;
+  font-weight: 700 !important;
 }
 
-/* Fix comments count styling */
+/* Comments count */
 main .gsc-comments-count,
 main .gsc-comments-count-separator {
-  color: #4e4e4e !important;
-  font-weight: normal !important;
+  color: #111111 !important;
+  font-weight: 700 !important;
 }
 
-/* Fix placeholder text color for better readability */
+/* Input Placeholder */
 main textarea::placeholder,
 main input::placeholder {
-  color: #2b2b2b !important; /* darker text for light mode */
-  opacity: 0.7 !important;
+  color: rgba(17, 17, 17, 0.6) !important;
+}
+
+/* Input Borders */
+main textarea,
+main input {
+  border: 1px solid #111111 !important;
+  background-color: transparent !important;
+  color: #111111 !important;
+}
+
+main textarea:focus,
+main input:focus {
+  border: 2px solid #111111 !important;
+  box-shadow: none !important;
 }

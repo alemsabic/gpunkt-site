@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "nekontam.com",
+    pageTitle: "ne kontam",
     pageTitleSuffix: "Bosnisch-Deutsches Wörterbuch",
     enableSPA: true,
     enablePopovers: true,
@@ -20,35 +20,35 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Jost",
-        body: "JetBrains Mono",
-        code: "Inconsolata",
+        header: "system-ui",
+        body: "system-ui",
+        code: "ui-monospace",
       },
       colors: {
         lightMode: {
-          light: "#e0cca6", // background-color
-          lightgray: "rgb(0 0 0 / 20%)",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#8b4840", // link-color
-          tertiary: "#9c5e56", // link-color (hover)
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#8fa59933",
+          light: "#f9f66f", // background-color - bright yellow from screenshot
+          lightgray: "rgba(0, 0, 0, 0.15)", // subtle navy tint
+          gray: "#8B9DAA", // muted blue-gray
+          darkgray: "#111", // medium navy
+          dark: "#111", // primary text - dark navy
+          secondary: "#111", // link-color - teal/cyan accent
+          tertiary: "#111", // link-color (hover) - darker teal
+          highlight: "rgba(77, 181, 181, 0.2)", // teal highlight
+          textHighlight: "#4DB5B533",
         },
         darkMode: {
-          light: "#0a0200", //background-color
-          lightgray: "rgb(255 255 255 / 20%)",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#8b4840", // link-color
-          tertiary: "#9c5e56", // link-color (hover)
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#8fa59933",
+          light: "#000", // background-color - very dark brown/black
+          lightgray: "rgba(212, 197, 169, 0.2)", // subtle beige tint
+          gray: "#eee", // muted brown-gray
+          darkgray: "#eee", // lighter beige for secondary text
+          dark: "#eee", // primary text - beige/sand
+          secondary: "#eee", // link-color - red accent (from INTERACTION)
+          tertiary: "#eee", // link-color (hover) - darker red
+          highlight: "rgba(231, 76, 60, 0.15)", // red highlight
+          textHighlight: "#E74C3C33",
         },
       },
     },

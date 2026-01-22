@@ -58,7 +58,7 @@
 @media (min-width: 800px) {
   .page-title {
     font-size: 3.5rem !important; // Desktop
-    line-height: 1 !important; // Same level as other elements
+    line-height: .8 !important; // Same level as other elements
   }
 }
 
@@ -92,9 +92,7 @@
 
 // Headers font-weight and color
 h1 {
-  font-weight: 700 !important;
-  color: var(--bodyText) !important;
-  font-family: var(--titleFont) !important; // Use Jost for H1 only (same as .page-title)
+  font-weight: 900 !important;
 }
 
 // Desktop: H1 in articles larger font size
@@ -110,7 +108,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   color: var(--bodyText) !important;
   font-family: var(--bodyFont) !important; // Use body font (JetBrains Mono) for H2-H6
 }
@@ -123,7 +121,7 @@ h6 {
 
 // Page title link font weight to match headings
 .page-title a {
-  font-weight: 700 !important;
+  font-weight: 900 !important;
 }
 
 // Additional margin for h2 and h3 within content
@@ -146,20 +144,11 @@ a {
   font-weight: 400 !important;
 }
 
-// Strong elements to font-weight 700 (bold)
-strong {
-  font-weight: 700 !important;
-}
 
 // Font smoothing for dark theme
 [saved-theme="dark"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-// Dark theme: custom body background color
-[saved-theme="dark"] body {
-  background-color: #09002b !important;
 }
 
 // Noise texture overlay - light theme
@@ -187,7 +176,7 @@ body::before {
 
 // Light Theme: Letterpress text (entire viewport)
 [saved-theme="light"] body {
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+  text-shadow: none !important;
 }
 
 // Light theme body background - lined paper effect (COMMENTED OUT - uncomment to restore)
@@ -320,7 +309,7 @@ button.mobile-explorer h2,
 button.desktop-explorer h2 {
   font-weight: 700 !important;
   font-family: var(--bodyFont) !important;
-  text-shadow: 0 1px 1px #ffffff80 !important; // Letterpress effect for explorer headers
+  text-shadow: none !important;
 }
 
 button.toc-header h3 {
@@ -350,7 +339,7 @@ h2#des-zettels-rückseite {
   }
 }
 
-// ScrollBar
+// ScrollBar - updated colors for new design
 ::-webkit-scrollbar {
   width: 9px;
   height: 8px;
@@ -362,16 +351,29 @@ h2#des-zettels-rückseite {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: #d65d0e;
+  background-color: var(--secondary); // Use theme accent color
+}
+
+// Dark theme scrollbar
+[saved-theme="dark"] ::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 // Override strong color - bold weight is sufficient emphasis (no color change needed)
@@ -396,12 +398,9 @@ a.internal {
 // CONTENT TYPE STYLING - DICTIONARY ENTRIES
 // ============================================
 
-// Dictionary Entry: Old dictionary aesthetic (Baskerville/Garamond serif style)
+// Dictionary Entry: Old dictionary aesthetic with Cardo font
 // Everything inline, dense block layout like printed dictionaries - no paragraph breaks
 article.dictionary-entry {
-  font-family:
-    "Baskerville", "Baskerville Old Face", "Garamond", "Hoefler Text", "Palatino Linotype",
-    "Book Antiqua", "Times New Roman", serif !important;
   line-height: 1.12 !important;
   text-align: justify !important;
   font-size: 1.1rem !important; // Mobile
@@ -415,15 +414,14 @@ article.dictionary-entry {
 
   // Override any default article styling
   * {
-    font-family: inherit !important;
     line-height: inherit !important;
   }
 
-  // Headword (main entry word) - bold uppercase with increased letter spacing
+  // Headword (main entry word) - Inherit font, bold uppercase
   .headword {
     font-size: 1.35em;
     font-weight: 900;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em; // Etwas mehr Spacing für Uppercase
     text-transform: uppercase;
     @media (min-width: 800px) {
       margin-left: -15px;
@@ -445,9 +443,6 @@ article.dictionary-entry {
 
 // Two-column dictionary layout (desktop only, same font-size as mobile)
 article.dictionary-entry-columns {
-  font-family:
-    "Baskerville", "Baskerville Old Face", "Garamond", "Hoefler Text", "Palatino Linotype",
-    "Book Antiqua", "Times New Roman", serif !important;
   line-height: 1.12 !important;
   text-align: justify !important;
   font-size: 1.1rem !important; // Same size on mobile AND desktop
@@ -461,15 +456,14 @@ article.dictionary-entry-columns {
 
   // Override any default article styling
   * {
-    font-family: inherit !important;
     line-height: inherit !important;
   }
 
-  // Headword (main entry word) - bold uppercase with increased letter spacing
+  // Headword (main entry word) - Inherit font, bold uppercase
   .headword {
     font-size: 1.35em;
     font-weight: 900;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em; // Etwas mehr Spacing für Uppercase
     text-transform: uppercase;
     @media (min-width: 800px) {
       margin-left: -15px;
@@ -504,7 +498,6 @@ article.dictionary-entry-columns blockquote {
   max-width: 90% !important;
   border: none !important;
   background-color: transparent !important;
-  font-family: "Baskerville", "Baskerville Old Face", "Garamond", "Hoefler Text", serif !important;
   text-align: left !important;
   font-style: italic !important;
   color: inherit !important;
@@ -576,9 +569,9 @@ article.dictionary-entry-columns .footnotes {
     padding-left: 1rem !important; // Reduced padding for compact layout
     margin: 0 !important;
 
-    // Footnote markers color
+    // Footnote markers color - use theme accent
     ::marker {
-      color: darkgoldenrod !important;
+      color: var(--secondary) !important;
     }
   }
 
@@ -592,12 +585,12 @@ article.dictionary-entry-columns .footnotes {
   }
 }
 
-// Superscript footnote links in dictionary entries
+// Superscript footnote links in dictionary entries - use theme accent
 article.dictionary-entry sup a,
 article.dictionary-entry-columns sup a {
   font-size: 0.75rem !important;
   text-decoration: none !important;
-  color: darkgoldenrod !important;
+  color: var(--secondary) !important;
 }
 
 // Highlight footnote when clicked (using :target pseudo-class AND .footnote-highlighted class for SPA)
@@ -629,10 +622,10 @@ article.dictionary-entry-columns .data-footnote-backref {
   border-top: none !important;
   position: relative;
 
-  // Remove "References" heading using ::before and
+  // Remove "References" heading using ::before and replace with colored line
   &::before {
     content: "";
-    background-color: #b8860b;
+    background-color: var(--secondary); // Use theme accent color
     width: 40%;
     height: 1px;
     position: absolute;
@@ -667,7 +660,7 @@ article.zettelkasten .footnotes {
   text-align: left !important;
   position: relative;
 
-  // Shorter border-top (1/5 width) using ::before
+  // Shorter border-top (1/5 width) using ::before with theme accent color
   &::before {
     content: "";
     position: absolute;
@@ -675,16 +668,16 @@ article.zettelkasten .footnotes {
     left: 0;
     width: 20%;
     height: 1px;
-    background-color: #b8860b;
+    background-color: var(--secondary);
   }
 
   ol {
     padding-left: 1.75rem !important;
     margin: 0 !important;
 
-    // Footnote markers color
+    // Footnote markers color - use theme accent
     ::marker {
-      color: darkgoldenrod !important;
+      color: var(--secondary) !important;
     }
   }
 
@@ -700,11 +693,11 @@ article.zettelkasten .footnotes {
   }
 }
 
-// Superscript footnote links in zettelkasten
+// Superscript footnote links in zettelkasten - use theme accent
 article.zettelkasten sup a {
   font-size: 0.75rem !important;
   text-decoration: none !important;
-  color: darkgoldenrod !important;
+  color: var(--secondary) !important;
 }
 
 // Highlight footnote when clicked (using :target pseudo-class AND .footnote-highlighted class for SPA)
