@@ -4,7 +4,7 @@ import { classNames } from "../util/lang"
 interface EditOnGitHubOptions {
   /**
    * Base URL for the GitHub repository
-   * Example: "https://github.com/alemsabic/nekontam-zk/blob/main"
+   * Example: "https://github.com/alemsabic/gpunkt-woerter/blob/main"
    */
   baseUrl: string
   /**

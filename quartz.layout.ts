@@ -28,7 +28,7 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ContentHeader({
-      baseUrl: "https://github.com/alemsabic/nekontam-woerter/blob/main",
+      baseUrl: "https://github.com/alemsabic/gpunkt-woerter/blob/main",
       editButtonText: "Verbesser die Seite auf GitHub.",
       showTags: true,
     }),
@@ -56,7 +56,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Comments({
       provider: "giscus",
       options: {
-        repo: "alemsabic/nekontam-site",
+        repo: "alemsabic/gpunkt-site",
         repoId: "R_kgDOQ-MyDA",
         category: "General",
         categoryId: "DIC_kwDOQ-MyDM4C1O82",
@@ -67,7 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
         lang: "de",
         lightTheme: "light",
         darkTheme: "dark",
-        themeUrl: "https://nekontam.com/static/giscus",
+        themeUrl: "https://gpunkt.org/static/giscus",
       },
     }),
   ],
