@@ -53,12 +53,26 @@
 .page-title {
   font-size: 1.95rem !important; // Mobile
   font-family: var(--titleFont) !important; // Use Jost for page title
+
+  // G-Punkt styling - circle before title
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    margin-right: 0.2em;
+    vertical-align: middle;
+    position: relative;
+  }
 }
 
 @media (min-width: 800px) {
   .page-title {
     font-size: 3.5rem !important; // Desktop
-    line-height: .8 !important; // Same level as other elements
+    line-height: 0.8 !important; // Same level as other elements
+    margin-left: -40px;
   }
 }
 
@@ -145,7 +159,6 @@ a {
   font-weight: 400 !important;
 }
 
-
 // Font smoothing for dark theme
 [saved-theme="dark"] {
   -webkit-font-smoothing: antialiased;
@@ -174,8 +187,6 @@ body::before {
 // ============================================
 // GLOBAL LIGHT THEME - BOOK AESTHETIC
 // ============================================
-
-
 
 // Light theme body background - lined paper effect (COMMENTED OUT - uncomment to restore)
 // [saved-theme="light"] body {

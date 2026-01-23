@@ -4,7 +4,7 @@ import { classNames } from "../util/lang"
 const Tagline: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
     <div class={classNames(displayClass, "tagline", "desktop-only")}>
-      Reizwörter - der Duden für die dunklen Ecken der Sprache.
+      Reizwörter - die dunklen Ecken der Sprache.
     </div>
   )
 }
@@ -12,7 +12,7 @@ const Tagline: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
 Tagline.css = `
 .tagline {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 2.5rem;
   line-height: 1.1rem;
 }

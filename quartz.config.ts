@@ -42,8 +42,8 @@ const config: QuartzConfig = {
         darkMode: {
           light: "#000000", // Pitch Black
           lightgray: "#1a1a1a", // UI Background (Search, Inputs) - minimal lighter
-          gray: "#888888", // Muted text
-          darkgray: "#bbbbbb", // Secondary text
+          gray: "#eeeeee", // Muted text
+          darkgray: "#eeeeee", // Secondary text
           dark: "#eeeeee", // Primary text
           secondary: "#eeeeee", // Links (Monochrome)
           tertiary: "#ffffff", // Hover
