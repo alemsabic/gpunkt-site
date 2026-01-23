@@ -1,11 +1,11 @@
-# Agent Guidelines for ale.ms (Quartz v4.5.1)
+# Agent Guidelines for gpunkt.org (Quartz v4.5.1)
 
 ## Project Overview
 
-**ale.ms** is a static site generator built on Quartz v4.5.1. This repository handles **PRESENTATION ONLY** (Quartz configuration, styling, UI components).
+**gpunkt.org** is a static site generator built on Quartz v4.5.1. This repository handles **PRESENTATION ONLY** (Quartz configuration, styling, UI components).
 
-- **Live Site**: https://ale.ms
-- **Content Repository**: https://github.com/alemsabic/alems-notizen
+- **Live Site**: https://gpunkt.org
+- **Content Repository**: https://github.com/alemsabic/gpunkt-woerter
 - **⚠️ CRITICAL**: Never edit files in `content/` directly - they are auto-synced via GitHub Actions and will be overwritten!
 - **⛔️ GIT SAFETY**: NEVER use `git add .` or `git add -A`. ALWAYS add specific files: `git add quartz/styles/custom.scss quartz.config.ts`.
 - **IGNORE CONTENT**: Do NOT commit changes to `content/` folder. Only commit changes to `quartz/`, `package.json`, etc.

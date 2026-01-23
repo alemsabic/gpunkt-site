@@ -1,11 +1,11 @@
-# nekontam.com - Display Repository
+# gpunkt.org - Display Repository
 
-Präsentationsschicht für [nekontam.com](https://nekontam.com) - Bosnisch-Deutsches Wörterbuch.
+Präsentationsschicht für [gpunkt.org](https://gpunkt.org) - Bosnisch-Deutsches Wörterbuch.
 
 ## Architektur
 
 - **Engine:** Quartz v4.5.1
-- **Content Sync:** Auto-sync von [nekontam-woerter](https://github.com/alemsabic/nekontam-woerter)
+- **Content Sync:** Auto-sync von [gpunkt-woerter](https://github.com/alemsabic/gpunkt-woerter)
 - **Deployment:** Cloudflare Pages
 - **Branch:** v4 (production)
 
@@ -22,4 +22,4 @@ Visit: http://localhost:8080
 
 Auto-deployed to Cloudflare Pages on push to `v4` branch.
 
-Live: [nekontam.com](https://nekontam.com)
+Live: [gpunkt.org](https://gpunkt.org)
