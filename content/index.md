@@ -1,9 +1,9 @@
 ---
-title: "nekontam.com"
+title: "gpunkt.org"
 ---
 
 # Bosnisch-Deutsches Wörterbuch
 
-Willkommen auf nekontam.com.
+Willkommen auf gpunkt.org.
 
 Diese Seite ist im Aufbau.
