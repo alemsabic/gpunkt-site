@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "ne kontam",
-    pageTitleSuffix: "Bosnisch-Deutsches Wörterbuch",
+    pageTitle: "gpunkt",
+    pageTitleSuffix: "Sprache ohne Filter. Wenn Wörter aufregen.",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
