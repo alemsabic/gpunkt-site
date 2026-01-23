@@ -100,6 +100,7 @@ h1 {
   .page article > h1 {
     font-size: 3rem;
     line-height: 0.9;
+    margin-left: -25px;
   }
 }
 
@@ -174,10 +175,7 @@ body::before {
 // GLOBAL LIGHT THEME - BOOK AESTHETIC
 // ============================================
 
-// Light Theme: Letterpress text (entire viewport)
-[saved-theme="light"] body {
-  text-shadow: none !important;
-}
+
 
 // Light theme body background - lined paper effect (COMMENTED OUT - uncomment to restore)
 // [saved-theme="light"] body {

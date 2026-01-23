@@ -7,6 +7,8 @@
 - **Live Site**: https://ale.ms
 - **Content Repository**: https://github.com/alemsabic/alems-notizen
 - **⚠️ CRITICAL**: Never edit files in `content/` directly - they are auto-synced via GitHub Actions and will be overwritten!
+- **⛔️ GIT SAFETY**: NEVER use `git add .` or `git add -A`. ALWAYS add specific files: `git add quartz/styles/custom.scss quartz.config.ts`.
+- **IGNORE CONTENT**: Do NOT commit changes to `content/` folder. Only commit changes to `quartz/`, `package.json`, etc.
 
 ## Build, Test & Lint Commands
 
