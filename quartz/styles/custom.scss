@@ -55,14 +55,14 @@
   font-family: var(--titleFont) !important; // Use Jost for page title
 
   // G-Punkt styling - circle before title
-  &::before {
+  &::after {
     content: "";
     display: inline-block;
     width: 0.4em;
     height: 0.4em;
-    background-color: var(--secondary);
+    background-color: var(--darkgray);
     border-radius: 50%;
-    margin-right: 0.2em;
+    margin-left: 0.2em;
     vertical-align: middle;
     position: relative;
   }
@@ -72,7 +72,6 @@
   .page-title {
     font-size: 3.5rem !important; // Desktop
     line-height: 0.8 !important; // Same level as other elements
-    margin-left: -40px;
   }
 }
 
@@ -413,7 +412,7 @@ article.dictionary-entry {
   line-height: 1.12 !important;
   text-align: justify !important;
   font-size: 1.1rem !important; // Mobile
-  letter-spacing: 0.01em !important;
+  // letter-spacing: 0.01em !important;
 
   // Remove ALL paragraph spacing - everything flows inline
   p {
@@ -455,7 +454,7 @@ article.dictionary-entry-columns {
   line-height: 1.12 !important;
   text-align: justify !important;
   font-size: 1.1rem !important; // Same size on mobile AND desktop
-  letter-spacing: 0.01em !important;
+  // letter-spacing: 0.01em !important;
 
   // Remove ALL paragraph spacing - everything flows inline
   p {
