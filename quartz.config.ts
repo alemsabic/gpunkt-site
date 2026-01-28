@@ -20,12 +20,24 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
+      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "system-ui",
-        body: "system-ui",
-        code: "ui-monospace",
+        header: {
+          name: "Archivo",
+          weights: [400, 600, 700, 900],
+          includeItalic: false,
+        },
+        body: {
+          name: "Inter",
+          weights: [400, 500, 600, 700, 900],
+          includeItalic: true,
+        },
+        code: {
+          name: "JetBrains Mono",
+          weights: [400, 500],
+          includeItalic: true,
+        },
       },
       colors: {
         lightMode: {
