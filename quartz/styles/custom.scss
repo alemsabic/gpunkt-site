@@ -117,16 +117,6 @@ h1 {
   }
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 900 !important;
-  color: var(--bodyText) !important;
-  font-family: var(--bodyFont) !important; // Use body font (JetBrains Mono) for H2-H6
-}
-
 // Page title and breadcrumb links same color as body text
 .page-title a,
 .breadcrumb-container a {
@@ -141,6 +131,11 @@ h6 {
 // Additional margin for h2 and h3 within content
 article h2 {
   margin-top: 3.9rem !important;
+}
+
+// Exception: h2 following h1 should have no margin
+article h1 + h2 {
+  margin-top: 0 !important;
 }
 
 article h3 {
@@ -210,7 +205,7 @@ hr {
 // Mobile sticky header with transparent background
 @media (max-width: 800px) {
   .page #quartz-body .sidebar.left:has(.explorer) {
-    opacity: 80%;
+    opacity: 90%;
   }
 
   // Light mode: remove background completely
@@ -409,9 +404,11 @@ a.internal {
 // Dictionary Entry: Old dictionary aesthetic with Cardo font
 // Everything inline, dense block layout like printed dictionaries - no paragraph breaks
 article.dictionary-entry {
-  line-height: 1.12 !important;
-  text-align: justify !important;
-  font-size: 1.1rem !important; // Mobile
+  line-height: 1.12;
+  font-size: 1.1rem; // Mobile
+  @media (min-width: 800px) {
+    font-size: 1.2rem;
+  }
   // letter-spacing: 0.01em !important;
 
   // Remove ALL paragraph spacing - everything flows inline
@@ -451,10 +448,11 @@ article.dictionary-entry {
 
 // Two-column dictionary layout (desktop only, same font-size as mobile)
 article.dictionary-entry-columns {
-  line-height: 1.12 !important;
-  text-align: justify !important;
-  font-size: 1.1rem !important; // Same size on mobile AND desktop
-  // letter-spacing: 0.01em !important;
+  line-height: 1.12;
+  font-size: 1.1rem;
+  @media (min-width: 800px) {
+    font-size: 1.2rem;
+  }
 
   // Remove ALL paragraph spacing - everything flows inline
   p {
