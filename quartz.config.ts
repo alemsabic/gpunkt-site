@@ -41,8 +41,8 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f9f66f", // background-color - bright yellow from screenshot
-          lightgray: "rgba(0, 0, 0, 0.15)", // subtle navy tint
+          light: "#ff5722", // background-color - bright yellow from screenshot
+          lightgray: "rgba(0, 0, 0, 0.15)", // // UI Background (Search, Inputs) - minimal darker
           gray: "#8B9DAA", // muted blue-gray
           darkgray: "#111", // medium navy
           dark: "#111", // primary text - dark navy
@@ -52,8 +52,8 @@ const config: QuartzConfig = {
           textHighlight: "#4DB5B533",
         },
         darkMode: {
-          light: "#000000", // Pitch Black
-          lightgray: "#1a1a1a", // UI Background (Search, Inputs) - minimal lighter
+          light: "#051507", // Pitch Black
+          lightgray: "rgba(255, 255, 255, 0.15)", // UI Background (Search, Inputs) - minimal lighter
           gray: "#eeeeee", // Muted text
           darkgray: "#eeeeee", // Secondary text
           dark: "#eeeeee", // Primary text

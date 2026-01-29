@@ -19,7 +19,7 @@ main {
     "Segoe UI Symbol";
 
   /* NEKONTAM Dark Mode Colors - MONOCHROME */
-  --bg: #000000; /* Pitch Black */
+  --bg: #051507; /* Pitch Black */
   --bg-secondary: #1a1a1a; /* UI Elements (Search, Inputs) - minimal lighter */
   --text: #eeeeee; /* Off-White */
   --text-muted: #888888; /* Gray */
@@ -60,7 +60,7 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
   /* Button styles */
-  --color-btn-text: #000000; /* Black Text */
+  --color-btn-text: #051507; /* Black Text */
   --color-btn-bg: #eeeeee; /* White Button */
   --color-btn-border: #eeeeee;
   --color-btn-shadow: none;
@@ -72,7 +72,7 @@ main {
   --color-btn-selected-bg: #eeeeee;
 
   /* Primary button */
-  --color-btn-primary-text: #000000;
+  --color-btn-primary-text: #051507;
   --color-btn-primary-bg: #eeeeee;
   --color-btn-primary-border: #eeeeee;
   --color-btn-primary-shadow: none;
