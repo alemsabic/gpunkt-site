@@ -41,26 +41,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#ff5722", // background-color - bright yellow from screenshot
-          lightgray: "rgba(0, 0, 0, 0.15)", // // UI Background (Search, Inputs) - minimal darker
+          light: "#f9f66f", // background-color - bright yellow (original light theme)
+          lightgray: "rgba(0, 0, 0, 0.15)", // UI Background
           gray: "#8B9DAA", // muted blue-gray
           darkgray: "#111", // medium navy
           dark: "#111", // primary text - dark navy
-          secondary: "#111", // link-color - teal/cyan accent
-          tertiary: "#111", // link-color (hover) - darker teal
+          secondary: "#111", // link-color
+          tertiary: "#111", // link-color (hover)
           highlight: "rgba(77, 181, 181, 0.2)", // teal highlight
           textHighlight: "#4DB5B533",
         },
         darkMode: {
-          light: "#051507", // Pitch Black
-          lightgray: "rgba(255, 255, 255, 0.15)", // UI Background (Search, Inputs) - minimal lighter
-          gray: "#eeeeee", // Muted text
-          darkgray: "#eeeeee", // Secondary text
-          dark: "#eeeeee", // Primary text
-          secondary: "#eeeeee", // Links (Monochrome)
-          tertiary: "#ffffff", // Hover
-          highlight: "rgba(255, 255, 255, 0.1)", // Selection
-          textHighlight: "#ffffff22",
+          light: "#ff5722", // background-color - bright red (former light theme)
+          lightgray: "rgba(0, 0, 0, 0.15)", // UI Background - minimal darker
+          gray: "#8B9DAA", // muted blue-gray
+          darkgray: "#111", // medium navy
+          dark: "#111", // primary text - dark navy
+          secondary: "#111", // link-color
+          tertiary: "#111", // link-color (hover)
+          highlight: "rgba(77, 181, 181, 0.2)", // teal highlight
+          textHighlight: "#4DB5B533",
         },
       },
     },

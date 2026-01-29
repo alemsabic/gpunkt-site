@@ -19,7 +19,7 @@ main {
     "Segoe UI Symbol";
 
   /* NEKONTAM Light Mode Colors */
-  --bg: #ff5722; /* Yellow */
+  --bg: #f9f66f; /* Yellow */
   --bg-secondary: rgba(0, 0, 0, 0.05); /* Minimal darker/transparent overlay */
   --text: #111111; /* Black */
   --text-muted: #111111; /* Black */
@@ -60,7 +60,7 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
   /* Button styles */
-  --color-btn-text: #ff5722; /* Yellow text */
+  --color-btn-text: #f9f66f; /* Yellow text */
   --color-btn-bg: #111111; /* Black button */
   --color-btn-border: #111111;
   --color-btn-shadow: none;
@@ -72,7 +72,7 @@ main {
   --color-btn-selected-bg: #111111;
 
   /* Primary button */
-  --color-btn-primary-text: #ff5722;
+  --color-btn-primary-text: #f9f66f;
   --color-btn-primary-bg: #111111;
   --color-btn-primary-border: #111111;
   --color-btn-primary-shadow: none;
@@ -83,7 +83,7 @@ main {
   --color-btn-primary-selected-shadow: none;
 
   /* Disabled state */
-  --color-btn-primary-disabled-text: rgba(255, 87, 34, 0.5);
+  --color-btn-primary-disabled-text: rgba(249, 246, 111, 0.5);
   --color-btn-primary-disabled-bg: rgba(17, 17, 17, 0.5);
   --color-btn-primary-disabled-border: transparent;
 
