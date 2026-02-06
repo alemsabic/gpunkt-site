@@ -35,6 +35,7 @@ Recherchiere in folgenden Quellen (Priorität von oben nach unten):
 - [ ] Welche Definition(en) werden gegeben?
 - [ ] Gibt es Markierungen? (z.B. "abwertend", "diskriminierend", "veraltet")
 - [ ] Gibt es Verwendungshinweise oder Warnungen?
+- [ ] **WICHTIG:** Direktlinks zu den Quellen (keine Google-Suchen!)
 
 ---
 
@@ -57,6 +58,12 @@ Recherchiere die **Herkunft** des Wortes:
 - Kluge: Etymologisches Wörterbuch der deutschen Sprache
 - Duden Herkunftswörterbuch
 
+**WICHTIG - Historischer Bedeutungswandel:**
+- [ ] Gab es frühere, andere Bedeutungen desselben Wortes?
+- [ ] Wann und wie hat sich die Bedeutung gewandelt?
+- [ ] War der Begriff einst neutral/positiv und wurde später negativ?
+- **Beispiel:** "Sozialtourismus" war in den 70ern positiv (Reisen für Arme), wurde ab den 90ern pejorativ (Migration als Missbrauch)
+
 ---
 
 ### 3. WISSENSCHAFTLICHE DEFINITIONEN
@@ -76,6 +83,8 @@ Recherchiere **akademische Definitionen** aus:
 - [ ] Wie definieren Wissenschaftler*innen den Begriff?
 - [ ] Gibt es Konsens oder verschiedene Perspektiven?
 - [ ] Welche Definition ist am präzisesten/einflussreichsten?
+- [ ] **Citation-Count:** Wie oft wurde die Quelle zitiert? (Google Scholar)
+- [ ] **Direktlink:** DOI oder direkter Link zur Quelle (keine Google-Suchen!)
 
 ---
 
@@ -133,6 +142,12 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 
 ### Herkunft
 [Beschreibung der Wortherkunft]
+
+### Historischer Bedeutungswandel (falls relevant)
+- **Frühere Bedeutung(en):** [Was bedeutete der Begriff ursprünglich?]
+- **Zeitpunkt des Wandels:** [Wann änderte sich die Bedeutung?]
+- **Richtung:** [neutral → pejorativ? positiv → negativ?]
+- **Beispiel:** "Sozialtourismus" war in den 70ern positiv (geförderte Reisen für Arme), wurde ab den 90ern Kampfbegriff gegen Migration
 
 ### Bei zusammengesetzten Begriffen:
 
