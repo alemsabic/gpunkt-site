@@ -14,6 +14,33 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 
 ---
 
+## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+
+**Lieber leer lassen als erfinden!**
+
+Du wirst nach Quellen, Zitaten, Links, Namen, Daten gefragt. Befolge STRIKT:
+
+✅ **NUR verwenden, wenn:**
+- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
+- [ ] Das Zitat WORT-FÜR-WORT im Original steht
+- [ ] Namen, Daten, Funktionen aus verifizierbarer Quelle stammen
+- [ ] Die URL funktioniert (nicht konstruiert!)
+
+❌ **NIEMALS:**
+- Plausibel klingende Zitate erfinden
+- Namen/Daten/Funktionen erraten ("könnte Friedrich gewesen sein")
+- Links konstruieren oder aus Erinnerung rekonstruieren
+- Zeitungsartikel-Überschriften erfinden, die "so klingen könnten"
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine verifizierbaren Quellen gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+**Warum:** Falsche Zuschreibung = Rufschädigung + rechtliche Konsequenzen. Lieber eine Lücke als eine Lüge.
+
+---
+
 ## DIE 5 SCHRITTE DER GESCHICHTE
 
 ### **1. URSPRUNG** (falls relevant)
@@ -40,6 +67,8 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 
 ### **2. ERSTE PRÄGUNG / INSTRUMENTALISIERUNG**
 
+**⚠️ REMINDER:** Dieser Abschnitt ist KRITISCH für Rufschädigung. NUR verifizierte Zuschreibungen!
+
 **Frage:** Wer hat den Begriff **politisch geprägt oder instrumentalisiert**?
 
 **Recherchiere:**
@@ -54,6 +83,12 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 - **Zeitungsarchive** (FAZ, SZ, ZEIT, Spiegel)
 - **Parteiprogramme / Reden**
 - **Bücher** (Google Books)
+
+**TRIPLE-VERIFICATION:**
+- [ ] Original-Quelle geöffnet (Link funktioniert)
+- [ ] Zitat Wort-für-Wort im Original gefunden
+- [ ] Name, Funktion, Datum aus verlässlicher Quelle
+→ Bei JEGLICHEM Zweifel: Quelle NICHT verwenden!
 
 **Beispiel "Sozialtourismus":**
 - Wer: Hans-Peter Friedrich (CSU, Bundesinnenminister)
@@ -110,16 +145,26 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 - **Gegenreaktion:**
   - Gab es Kritik? Von wem?
   - Wurde der Begriff zum "Unwort des Jahres" gewählt?
+  - **NEU:** Wurde der Begriff mehrfach als "Unwort" ausgezeichnet oder in verschiedenen Jahren/Kontexten kritisiert?
+
+- **Gegen-Biographie (NEU - WICHTIG!):**
+  - Gibt es prominente **Faktenchecks** gegen den Begriff?
+  - Gibt es **wissenschaftliche Studien**, die den Begriff widerlegen?
+  - Gibt es **Kampagnen** oder **NGOs**, die sich explizit gegen den Begriff richten?
+  - **Beispiel:** Studien, die belegen, dass "Sozialtourismus" empirisch kaum existiert
 
 **Quellen:**
 - Zeitungsarchive (FAZ, SZ, ZEIT, Spiegel, Taz)
 - Google Trends (trends.google.com) - Suchhäufigkeit
 - Unwort des Jahres (unwortdesjahres.net)
+- **Faktenchecks:** Correctiv, ARD Faktenfinder, dpa
+- **Wissenschaft:** Google Scholar (Studien, die den Begriff untersuchen/widerlegen)
 
 **Beispiel "Sozialtourismus":**
 - Übernahme: Horst Seehofer (CSU), Alexander Dobrindt (CSU)
 - Medien: Bild-Zeitung, Focus
-- Gegenreaktion: "Unwort des Jahres 2013"
+- Gegenreaktion: "Unwort des Jahres 2013" UND 2022 (Platz 2 - Reaktivierung!)
+- Gegen-Biographie: Studien zeigen, dass "Sozialtourismus" empirisch nicht nachweisbar ist
 
 ---
 
@@ -142,8 +187,20 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 - Status: Nach 2013 seltener genutzt, aber 2022 von Friedrich Merz wieder aufgegriffen (Ukraine-Geflüchtete)
 - Aktuell: "Unwort des Jahres" wirkt als Stigma, Begriff wird vorsichtiger verwendet
 
+**WIRKSAMKEITS-PRÜFUNG (neu):**
+- [ ] Wird der Begriff noch ernst genommen oder bereits als "rechtes Klischee" markiert?
+- [ ] Hat er an diskursiver Kraft gewonnen oder verloren?
+- [ ] Ist er "abgenutzt" (zur Karikatur seiner selbst geworden)?
+- [ ] Welche Reaktionen löst er in der bürgerlichen Mitte aus? (Zustimmung? Distanzierung?)
+
+**Beispiel "Sozialtourismus":**
+- Trotz 2x Unwort-Status funktioniert er NOCH (siehe Merz 2022)
+- Aber: Stigmatisierung wirkt - in Qualitätsmedien wird er meist nur zitiert, nicht genutzt
+- Tendenziell: Wanderung von CDU/CSU zu AfD (dort ohne Schamgrenze verwendet)
+
 **WICHTIG:**
 - [ ] Aktuelle Entwicklungen chronologisch ordnen
+- [ ] Wirksamkeits-Einschätzung begründen (nicht spekulieren!)
 
 ---
 
@@ -243,6 +300,21 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 - **Jahr:** [falls relevant]
 - **Begründung:** "[Zitat aus Jury-Begründung]"
 - **Link:** [unwortdesjahres.net]
+- **Mehrfache Auszeichnung:** [Wurde der Begriff in verschiedenen Jahren erneut kritisiert/ausgezeichnet?]
+
+### Gegen-Biographie (NEU!)
+
+**Faktenchecks:**
+- [Correctiv, ARD Faktenfinder, dpa - Was wurde widerlegt?]
+- [Links]
+
+**Wissenschaftliche Studien:**
+- [Gibt es Studien, die den Begriff empirisch widerlegen?]
+- [Autor*in, Jahr, Titel, Link]
+
+**Kampagnen/NGOs:**
+- [Gibt es organisierte Gegenbewegungen?]
+- [Beispiel: "Pro Asyl", Wohlfahrtsverbände]
 
 **Quellen:**
 - [Links]
@@ -263,6 +335,12 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 
 **Aktuelle Kontroversen:**
 [Gibt es aktuell Debatten um den Begriff?]
+
+**Wirksamkeits-Prüfung:**
+- **Diskursive Kraft:** [Hat der Begriff an Wirkung gewonnen/verloren?]
+- **Abnutzung:** [Ist er zur Karikatur geworden oder noch wirkmächtig?]
+- **Reaktion in der Mitte:** [Wie reagiert die bürgerliche Mitte? Zustimmung? Distanzierung?]
+- **Migration:** [Wandert der Begriff zu extremeren Akteuren?]
 
 **Quellen:**
 - [Aktuelle Medienberichte, Bundestag-Protokolle]

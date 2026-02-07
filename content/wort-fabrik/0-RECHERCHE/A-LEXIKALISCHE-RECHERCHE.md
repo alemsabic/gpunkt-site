@@ -14,6 +14,32 @@ Du recherchierst die **lexikalische Grundlage** für einen Wörterbucheintrag. D
 
 ---
 
+## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+
+**Lieber leer lassen als erfinden!**
+
+Du wirst nach Quellen, Zitaten, DOIs, Links gefragt. Befolge STRIKT:
+
+✅ **NUR verwenden, wenn:**
+- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
+- [ ] Das Zitat WORT-FÜR-WORT im Original steht
+- [ ] Die DOI/URL funktioniert (nicht konstruiert!)
+
+❌ **NIEMALS:**
+- Plausibel klingende Zitate erfinden
+- DOIs konstruieren ("könnte so sein")
+- Links erraten oder aus Erinnerung rekonstruieren
+- "Wahrscheinlich hat [Autor] das gesagt"
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine wissenschaftliche Quelle gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+**Warum:** Falsche Zitate = Rufschädigung. Lieber eine Lücke als eine Lüge.
+
+---
+
 ## RECHERCHE-BEREICHE
 
 ### 1. WÖRTERBÜCHER
@@ -68,6 +94,8 @@ Recherchiere die **Herkunft** des Wortes:
 
 ### 3. WISSENSCHAFTLICHE DEFINITIONEN
 
+**⚠️ REMINDER:** NUR Quellen verwenden, die du TATSÄCHLICH öffnen und verifizieren konntest. Bei Unsicherheit: Feld leer lassen!
+
 Recherchiere **akademische Definitionen** aus:
 
 **A. Google Scholar** (scholar.google.com)
@@ -85,6 +113,13 @@ Recherchiere **akademische Definitionen** aus:
 - [ ] Welche Definition ist am präzisesten/einflussreichsten?
 - [ ] **Citation-Count:** Wie oft wurde die Quelle zitiert? (Google Scholar)
 - [ ] **Direktlink:** DOI oder direkter Link zur Quelle (keine Google-Suchen!)
+
+**WICHTIG:** Wenn du keine verifizierbaren wissenschaftlichen Quellen findest, schreibe:
+```markdown
+## 3. WISSENSCHAFTLICHE DEFINITIONEN
+
+**Keine verifizierbaren wissenschaftlichen Quellen gefunden.**
+```
 
 ---
 

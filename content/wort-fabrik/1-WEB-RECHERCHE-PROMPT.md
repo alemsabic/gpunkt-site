@@ -73,11 +73,26 @@ Du bist ein akribischer Rechercheur. Du arbeitest in **zwei Phasen**:
 
 **Ziel:** Qualität. JETZT wählst du die **3-5 stärksten Zitate** aus Phase 1.
 
-**Auswahlkriterien:**
+**PFLICHT: Chronologische Spreizung**
+
+Wir suchen nicht nur die "lautesten" (aktuellsten) Zitate, sondern die **historischen Ankerpunkte** der Begriffsgeschichte.
+
+**Zeitliche Stratifizierung (PFLICHT):**
+- [ ] Mindestens **1 Zitat aus der Etablierungsphase** (erste prominente Verwendung, Prägung)
+- [ ] Mindestens **1 Zitat aus einer Zwischenphase** (zeigt Evolution, Verbreitung, Radikalisierung)
+- [ ] Mindestens **1 Zitat aus der Gegenwart** (letzte 24 Monate - zeigt aktuellen Status)
+
+**Beispiel "Sozialtourismus":**
+- Etablierung: 2013 (Friedrich, de Maizière)
+- Zwischenphase: 2014-2021 (Verbreitung, Unwort-Stigma)
+- Reaktivierung: 2022 (Merz)
+- Gegenwart: 2025/2026 (Merz als Kanzler)
+
+**Weitere Auswahlkriterien:**
 - **Prominenz:** Minister > Hinterbänkler, Parteispitze > Lokalpolitik
 - **Klarheit:** Eindeutige Verwendung (nicht vage, nicht mehrdeutig)
 - **Verifizierbarkeit:** Primärquelle (Pressemitteilung, Original-Video) > Zeitungsbericht
-- **Waffeneinsatz sichtbar:** Debatte beendet, Macht ausgeübt, Kritik delegitimiert
+- **Historische Relevanz:** Wendepunkt, Skandal, Unwort-Auszeichnung
 
 **Für die 3-5 Besten:**
 - JETZT: Triple-Verification durchführen (siehe unten)
@@ -103,6 +118,29 @@ Du bist ein akribischer Rechercheur. Du arbeitest in **zwei Phasen**:
 - **BEDINGUNG:** Zitat MUSS in **»Anführungszeichen«** stehen (wörtliche Rede)
 - **Bevorzugt:** Video/Audio mit Zeitstempel (verifizierbar)
 - **Akzeptabel:** Schriftliches Interview mit direktem Zitat
+
+---
+
+### 🗄️ ARCHIV-STRATEGIE (für alte Quellen)
+
+**Problem:** Pressemitteilungen verschwinden oft (Websites werden aufgeräumt, Partei-Seiten umgebaut).
+
+**Lösung: Wayback-First Policy**
+
+Wenn Primärquelle (z.B. CDU.de/2013) **offline** ist:
+1. **Suche bei web.archive.org** (Wayback Machine)
+   - Eingabe: URL + ungefähres Datum
+   - Beispiel: `https://web.archive.org/web/20130301*/https://www.csu-landesgruppe.de/...`
+2. **Falls kein Archiv:** Suche in DIP/Bundestag-Dokumentation
+   - Parlamentarier-Statements sind oft in DIP dokumentiert
+3. **Falls DIP leer:** Qualitätsmedien-Zitat als Fallback
+   - FAZ, SZ, Spiegel mit **wörtlicher Rede** und Quellenverweis
+
+**Hierarchie:**
+- 🥇 Original-Link (live)
+- 🥈 Wayback-Link (Archiv)
+- 🥉 DIP-Dokumentation
+- 🏅 Qualitätsmedien (mit Quellenverweis)
 
 ---
 
@@ -163,13 +201,40 @@ Liefere für jeden Treffer **exakt dieses Format:**
 
 **Link:** [Vollständige URL]
 
-**Der subtextuelle Kontext:** [2-3 Sätze: Wie wurde der Begriff als Waffe eingesetzt? Debatte beendet? Macht ausgeübt? Kritik delegitimiert? Menschen entmenschlicht?]
+**Der situative Kontext:** [NUR Fakten: Wer hat auf wen/was reagiert? Welcher unmittelbare Anlass? Welches Ereignis? KEINE linguistische Analyse, KEINE Mechanismus-Beschreibung!]
+
+**VERBOTEN in diesem Feld:**
+- ❌ "suggeriert kriminelle Infrastruktur" (das ist Mechanismus-Analyse!)
+- ❌ "etabliert binäre Logik" (das ist Mechanismus-Analyse!)
+- ❌ "delegitimiert Schutzbedürftigkeit" (das ist Interpretation!)
+- ❌ "nutzt Metapher/Inversion/Frame X" (kommt in Schritt 3!)
+
+**ERLAUBT:**
+- ✅ "Statement nach EU-Innenministertreffen zur Freizügigkeit"
+- ✅ "Reaktion auf Unwort-Auszeichnung 2013"
+- ✅ "Wahlkampf-Rede vor Europawahl 2014, Kontext: Armutsmigration aus Bulgarien/Rumänien"
 
 **Zitat:** »[Vollständiger Satz - behutsam geglättet mit [...] wenn nötig]«
+
+**Kuratierungs-Logik:** [Warum wurde DIESES Zitat gewählt? Was macht es historisch/diskursiv bedeutsam?]
+
+**Beispiele:**
+- "Erste staatsoffizielle Verwendung durch Bundesinnenminister"
+- "Markiert Übergang von CSU-Wahlkampf zu CDU-Regierungsrhetorik"
+- "Zeigt AfD-Aneignung und Verteidigung des Begriffs trotz Unwort-Status"
+- "Höhepunkt der Kontroverse - Skandal, öffentliche Empörung, Rücknahme"
 
 **Citekey:** `nachname_jahr`
 
 **Verification-Status:** [Anführungszeichen vorhanden? / Video-Zeitstempel? / Primärquelle?]
+
+**Archiv-Status:** [Primärquelle online? / Falls tot: Wayback-Link? / Falls kein Archiv: DIP-Dokumentation?]
+
+**Archiv-Hierarchie (PFLICHT bei toten Links):**
+1. ✅ Original-Link (wenn verfügbar)
+2. ✅ Wayback-Link (web.archive.org - IMMER suchen bei toten Links!)
+3. ✅ DIP/Bundestag-Dokumentation (wenn Politiker im Parlament)
+4. ✅ Qualitätsmedien-Zitat (FAZ, SZ, Spiegel - mit Quellenverweis)
 
 ---
 
@@ -312,7 +377,7 @@ Dein Output muss erfüllen:
 
 ✅ **3-5 Zitate** (Qualität > Quantität)
 ✅ **Wörtliche Rede** (Anführungszeichen/Video/Primärquelle)
-✅ **Subtextueller Kontext** (Waffeneinsatz dokumentiert)
+✅ **Situativer Kontext** (NUR Fakten: Wer? Wo? Anlass? - KEINE Mechanismus-Analyse!)
 ✅ **KEINE Mechanismus-Analyse** (kommt in Schritt 3!)
 ✅ **Chronologisch sortiert** (früheste → neueste)
 ✅ **BibTeX vollständig** (author, year, url, note)
@@ -358,6 +423,32 @@ Dein Output muss erfüllen:
 
 ---
 
+## VERWENDUNG IM WORKFLOW
+
+**Input für diese Recherche:**
+- Begriff (z.B. "Sozialtourismus", "Remigration")
+
+**Output dieser Recherche:**
+- `Recherche/[Begriff]/WEB-Recherche.md`
+
+**Wird verwendet in:**
+- **Phase 1b** - Belege-Recherche (Web-Quellen)
+- Parallel zu: Phase 1a (DIP/Bundestag)
+- Zusammenführung: `Recherche/[Begriff]/BELEGE-Final.md` (Top 5-8 Zitate)
+
+**Ordner-Struktur:**
+```
+Recherche/[Begriff]/
+├── A-Lexikalisch.md    (Phase 0A)
+├── B-Historisch.md     (Phase 0B)
+├── C-Diskurs.md        (Phase 0C)
+├── WEB-Recherche.md    (Phase 1b - dieser Prompt)
+├── DIP-*.md            (Phase 1a - Bundestag)
+└── BELEGE-Final.md     (Zusammenführung)
+```
+
+---
+
 ## STARTBEFEHL
 
 **Starte jetzt die Web-Recherche für "[BEGRIFF HIER EINSETZEN]".**
@@ -373,7 +464,7 @@ Dein Output muss erfüllen:
 
 ### Phase 2: WÄHLE DIE BESTEN
 - Aus Phase 1: Wähle die **3-5 stärksten** Zitate
-- JETZT: Subtextueller Kontext (Waffeneinsatz zeigen)
+- JETZT: Situativer Kontext (NUR Fakten: Wer? Wo? Anlass? - KEINE Mechanismus-Analyse!)
 - JETZT: BibTeX-Einträge (author = Sprecher, nicht Journalist)
 - JETZT: Triple-Verification (3 Prüfungen pro Zitat)
 - **NICHT:** Mechanismus-Analyse (kommt in Schritt 3!)

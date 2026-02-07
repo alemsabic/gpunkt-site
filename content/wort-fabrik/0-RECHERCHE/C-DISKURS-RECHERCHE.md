@@ -14,6 +14,33 @@ Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche lie
 
 ---
 
+## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+
+**Lieber leer lassen als erfinden!**
+
+Du wirst nach Quellen, Zitaten, Links, Studien gefragt. Befolge STRIKT:
+
+✅ **NUR verwenden, wenn:**
+- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
+- [ ] Das Zitat WORT-FÜR-WORT im Original steht
+- [ ] Die URL funktioniert (nicht konstruiert!)
+- [ ] Wissenschaftliche Quellen mit DOI/Link verifizierbar sind
+
+❌ **NIEMALS:**
+- Plausibel klingende Zitate erfinden
+- Studien erfinden ("Es gibt bestimmt eine Studie, die...")
+- Links konstruieren oder aus Erinnerung rekonstruieren
+- Narrative/Frames ohne Beleg behaupten
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine verifizierbaren Quellen gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+**Warum:** Falsche Zitate = Rufschädigung. Lieber eine Lücke als eine Lüge.
+
+---
+
 ## RECHERCHE-BEREICHE
 
 ### 1. DISKURS-ANALYSE: Wie wird der Begriff verwendet?
@@ -79,6 +106,33 @@ Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche lie
 ### Frames
 - **Bedrohung:** [Wie wird Angst erzeugt?]
 - **Ungerechtigkeit:** [Wie wird Wut mobilisiert?]
+```
+
+---
+
+#### C. Diskurs-Topologie: Gegenspieler-Begriffe
+
+**Ziel:** Ein Reizwort existiert nie allein - es gibt oft einen **Gegenbegriff**, den die andere Seite nutzt.
+
+**Recherchiere:**
+- Welchen Begriff nutzen **Kritiker des Reizworts**, um dasselbe Phänomen anders zu rahmen?
+- Gibt es einen **neutralen Fachbegriff**, der das Phänomen sachlich beschreibt?
+- Wie wird der Gegenbegriff verwendet? (Beispiele)
+
+**Beispiel "Sozialtourismus":**
+- Gegenbegriff (kritisch): "Freizügigkeit", "Fluchtmigration", "Armutsmigration"
+- Neutraler Fachbegriff: "EU-Binnenmigration", "grenzüberschreitender Sozialleistungsbezug"
+
+**Format:**
+```markdown
+### C. Gegenspieler-Begriffe
+
+**Kritischer Gegenbegriff:** [z.B. "Freizügigkeit"]
+- **Wer nutzt ihn?** [Parteien, NGOs, Medien]
+- **Wie wirkt er?** [Positiv, neutral, legitimierend]
+
+**Neutraler Fachbegriff:** [z.B. "EU-Binnenmigration"]
+- **Verwendungskontext:** [Wissenschaft, Verwaltung]
 ```
 
 ---
@@ -150,6 +204,8 @@ Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche lie
 
 ### 3. ABGRENZUNGS-RECHERCHE: Wann ist der Begriff legitim/neutral?
 
+**⚠️ REMINDER:** NUR verifizierbare wissenschaftliche Quellen verwenden! Bei Unsicherheit: leer lassen.
+
 **Ziel:** Kontexte identifizieren, wo unsere Analyse **NICHT zutrifft**.
 
 #### A. Wissenschaftliche Verwendung
@@ -162,6 +218,8 @@ Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche lie
 **Quellen:**
 - Google Scholar
 - Fachzeitschriften (Soziologie, Politikwissenschaft, etc.)
+
+**WICHTIG:** Nur echte, verifizierte Fachquellen. Keine erfundenen Beispiele!
 
 **Format:**
 ```markdown
@@ -276,6 +334,21 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 - **Bedrohung:** [Wie wird Angst erzeugt?]
 - **Ungerechtigkeit:** [Wie wird Wut mobilisiert?]
 - **[Weitere Frames]:** [...]
+
+#### Visuelle Marker (falls vorhanden)
+- **[Bildtyp/Meme]:** [Beschreibung, was gezeigt wird]
+- **Funktion:** [Wie verstärkt das Bild den Begriff?]
+
+---
+
+### C. Gegenspieler-Begriffe
+
+**Kritischer Gegenbegriff:** [z.B. "Freizügigkeit"]
+- **Wer nutzt ihn?** [Parteien, NGOs, Medien]
+- **Wie wirkt er?** [Positiv, neutral, legitimierend]
+
+**Neutraler Fachbegriff:** [z.B. "EU-Binnenmigration"]
+- **Verwendungskontext:** [Wissenschaft, Verwaltung]
 
 ---
 

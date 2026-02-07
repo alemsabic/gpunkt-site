@@ -37,9 +37,20 @@
 │  └────────┬───────────┘         └──────────┬──────────┘         │
 │           │                                │                    │
 │           ▼                                ▼                    │
-│  DIP-Begriff-DATUM.md          WEB-Begriff.md                   │
-│  (Bundestag-Zitate)            (Web-Zitate)                     │
+│  Recherche/[Begriff]/          Recherche/[Begriff]/             │
+│  DIP-*.md                      WEB-Recherche.md                 │
 │  + BibTeX                      + BibTeX                         │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│           PHASE 1.5: ZITAT-KRITERIEN (VOR SICHTUNG!)            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  → Lies 1.5-ZITAT-KRITERIEN.md                                  │
+│  → Verstehe die 6 Auswahlkriterien                              │
+│  → Prominenz, Primär/Sekundär, Affirmativ/Kritisch, Zeit        │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
                               │
@@ -49,7 +60,8 @@
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  → Öffne DIP-Begriff.md + WEB-Begriff.md                        │
-│  → Wähle die BESTEN 4-6 Zitate (Triple-Verification!)           │
+│  → Wähle die BESTEN 4-6 Zitate (nach 1.5-Kriterien!)            │
+│  → Triple-Verification durchführen                              │
 │  → Kopiere BibTeX-Einträge → imports/to_zotero.bib              │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -224,16 +236,36 @@ sed "s/\[BEGRIFF HIER EINSETZEN\]/Begriff/g" \
 
 **Tool:** `bundestag_recherche.py`
 
-**Command:**
+**Syntax:**
 ```bash
-python3 wort-fabrik/bundestag_recherche.py "Begriff" "2013-01-01"
+python3 bundestag_recherche.py "Begriff" "Start-Datum" "End-Datum" "Max-Protokolle"
 ```
 
-**Parameter:**
-- `"Begriff"` - Suchbegriff (z.B. "Sozialtourismus")
-- `"2013-01-01"` - Start-Datum (optional)
+**Parameter (Positionsparameter, keine Flags!):**
+1. `"Begriff"` - Suchbegriff (z.B. "Sozialtourismus")
+2. `"Start-Datum"` - Start-Datum (z.B. "2013-01-01")
+3. `"End-Datum"` - End-Datum (z.B. "2015-12-31") - optional
+4. `"Max-Protokolle"` - Maximale Anzahl Protokolle (z.B. 200) - optional
 
-**Output:** `Recherche/DIP-Begriff-DATUM.md`
+**⚠️ WICHTIG:** Das Script kann **NICHT nach Sprecher/Partei filtern**! Es findet ALLE Verwendungen im Zeitraum. Filterung nach Personen muss **manuell** bei der Sichtung passieren.
+
+**Beispiele:**
+```bash
+# Suche "Sozialtourismus" von 2013 bis 2015 (ALLE Sprecher)
+python3 bundestag_recherche.py "Sozialtourismus" "2013-01-01" "2015-12-31"
+
+# Suche ab 2024 (ohne End-Datum)
+python3 bundestag_recherche.py "Sozialtourismus" "2024-01-01"
+
+# Mit max. 100 Protokollen
+python3 bundestag_recherche.py "Sozialtourismus" "2013-01-01" "2015-12-31" 100
+```
+
+**Output:** `Recherche/[Begriff]/DIP-*.md` (pro Suche eine Datei)
+
+**Beispiele:**
+- `Recherche/Sozialtourismus/DIP-Seehofer-2013-2015.md`
+- `Recherche/Sozialtourismus/DIP-AfD-2017-2026.md`
 
 **Enthält:**
 - Bundestag-Zitate (aus Plenarprotokollen)
@@ -253,13 +285,13 @@ python3 wort-fabrik/bundestag_recherche.py "Begriff" "2013-01-01"
 ```bash
 # 1. Prompt vorbereiten (Begriff einsetzen)
 sed "s/\[BEGRIFF HIER EINSETZEN\]/Begriff/g" wort-fabrik/1-WEB-RECHERCHE-PROMPT.md | \
-  gemini --model gemini-2.5-pro > wort-fabrik/Recherche/WEB-Begriff.md
+  gemini --model gemini-2.5-pro > wort-fabrik/Recherche/Begriff/WEB-Recherche.md
 ```
 
 **Input:**
 - `1-WEB-RECHERCHE-PROMPT.md` (mit `[BEGRIFF HIER EINSETZEN]`)
 
-**Output:** `Recherche/WEB-Begriff.md`
+**Output:** `Recherche/[Begriff]/WEB-Recherche.md`
 
 **Enthält:**
 - Web-Zitate (Pressemitteilungen, Interviews, Talkshows)
@@ -271,25 +303,54 @@ sed "s/\[BEGRIFF HIER EINSETZEN\]/Begriff/g" wort-fabrik/1-WEB-RECHERCHE-PROMPT.
 
 ---
 
+### PHASE 1.5: ZITAT-KRITERIEN (VOR SICHTUNG!)
+
+**Ziel:** Klare Auswahlkriterien verstehen, bevor du Zitate sichtest
+
+**⚠️ KRITISCH:** Ohne Kriterien wählt man nach "Bauchgefühl" oder "Brisanz" - das führt zu schlechten Zitaten!
+
+**Schritte:**
+
+1. **Lies die Kriterien-Datei:**
+   ```bash
+   open wort-fabrik/1.5-ZITAT-KRITERIEN.md
+   ```
+
+2. **Verstehe die 6 Kriterien:**
+   - **Prominenz** (Minister > Abgeordnete)
+   - **Art der Verwendung** (Affirmativ vs. Kritisch - BALANCE!)
+   - **Klarheit** (Begriff im Zentrum, nicht beiläufig)
+   - **Primär- vs. Sekundärzitat** (Direktes Zitat > "X sagte...")
+   - **Zeitliche Spreizung** (Etablierung → Höhepunkt → Gegenwart)
+   - **Verifizierbarkeit** (PDF funktioniert, Kontext stimmt)
+
+3. **Merke:** Mindestens 1-2 **affirmative** Zitate (sonst fehlt Etablierungsgeschichte!)
+
+**Output:** Klares Verständnis, wonach du suchst
+
+**Siehe:** `1.5-ZITAT-KRITERIEN.md` (ausführlich)
+
+---
+
 ### PHASE 2: MANUELLE SICHTUNG (KRITISCH!)
 
-**Ziel:** Wähle die BESTEN 4-6 Zitate aus DIP + Web
+**Ziel:** Wähle die BESTEN 4-6 Zitate aus DIP + Web (nach Phase 1.5 Kriterien!)
 
 **⚠️ TRIPLE-VERIFICATION PFLICHT!**
 
 **Schritte:**
 
-1. **Öffne beide Recherche-Dateien:**
+1. **Öffne alle Recherche-Dateien:**
    ```bash
-   open wort-fabrik/Recherche/DIP-Begriff-*.md
-   open wort-fabrik/Recherche/WEB-Begriff.md
+   open wort-fabrik/Recherche/Begriff/DIP-*.md
+   open wort-fabrik/Recherche/Begriff/WEB-Recherche.md
    ```
 
-2. **Wähle die besten 4-6 Zitate:**
-   - ✅ Prominenz (Minister > Hinterbänkler)
-   - ✅ Klarheit (eindeutige Verwendung)
-   - ✅ Verifizierbarkeit (Primärquelle, Anführungszeichen, Protokoll)
-   - ✅ Waffeneinsatz sichtbar (Debatte beendet? Macht ausgeübt?)
+2. **Wähle die besten 4-6 Zitate (nach 1.5-Kriterien!):**
+   - ✅ Prominenz (siehe 1.5-ZITAT-KRITERIEN.md)
+   - ✅ Primärzitate bevorzugen (nicht "X sagte...")
+   - ✅ Balance: Min. 1-2 affirmativ + Rest kritisch
+   - ✅ Zeitliche Spreizung (2013 → 2026)
 
 3. **Triple-Verification durchführen:**
    - [ ] **Prüfung 1:** Link öffnen → Zitat im Original finden (Wort-für-Wort)
@@ -381,7 +442,7 @@ sed "s/\[BEGRIFF HIER EINSETZEN\]/Begriff/g" wort-fabrik/1-WEB-RECHERCHE-PROMPT.
      gemini --model gemini-2.5-pro > wort-fabrik/Recherche/MECHANISMUS-Begriff.md
    ```
 
-**Output:** `Recherche/MECHANISMUS-Begriff.md`
+**Output:** `Recherche/[Begriff]/MECHANISMUS-[Begriff].md`
 
 **Enthält:**
 - Mechanismus-Analyse für JEDES Zitat (●◐○)
@@ -399,11 +460,11 @@ sed "s/\[BEGRIFF HIER EINSETZEN\]/Begriff/g" wort-fabrik/1-WEB-RECHERCHE-PROMPT.
 **Tool:** `3-DRAFT-PROMPT.md` + Gemini
 
 **Input:**
-- `A-Lexikalisch.md` (Definition, Etymologie, Konstruktion)
-- `B-Historisch.md` (Geschichte)
-- `C-Diskurs.md` (Anwendung, Abgrenzung)
-- `DIP-Begriff.md` + `WEB-Begriff.md` (Zitate - ausgewählte)
-- `MECHANISMUS-Begriff.md` (Mechanismen-Analyse)
+- `Recherche/[Begriff]/A-Lexikalisch.md` (Definition, Etymologie, Konstruktion)
+- `Recherche/[Begriff]/B-Historisch.md` (Geschichte)
+- `Recherche/[Begriff]/C-Diskurs.md` (Anwendung, Abgrenzung)
+- `Recherche/[Begriff]/DIP-*.md` + `WEB-Recherche.md` (Zitate - ausgewählte)
+- `Recherche/[Begriff]/MECHANISMUS-[Begriff].md` (Mechanismen-Analyse)
 
 **Command:**
 ```bash
@@ -631,13 +692,13 @@ WÖRTER/
 
     # === ORDNER ===
     Recherche/                        # Research Outputs
-      Begriff/                        # Pro Begriff ein Ordner
-        A-Lexikalisch.md              # Definition, Etymologie
-        B-Historisch.md               # Geschichte (5 Schritte)
-        C-Diskurs.md                  # Anwendung, Abgrenzung
-        DIP-Begriff-DATUM.md          # Bundestag-Zitate
-        WEB-Begriff.md                # Web-Zitate
-        MECHANISMUS-Begriff.md        # Mechanismus-Analyse
+      [Begriff]/                      # Pro Begriff ein Ordner (z.B. Sozialtourismus/)
+        A-Lexikalisch.md              # Phase 0A: Definition, Etymologie
+        B-Historisch.md               # Phase 0B: Geschichte (5 Schritte)
+        C-Diskurs.md                  # Phase 0C: Anwendung, Abgrenzung
+        WEB-Recherche.md              # Phase 1b: Web-Zitate
+        DIP-*.md                      # Phase 1a: Bundestag-Zitate (mehrere Dateien)
+        MECHANISMUS-[Begriff].md      # Phase 4: Mechanismus-Analyse
 
     Drafts/                           # First Drafts
       Draft-Begriff.md                # Gemini First Draft
