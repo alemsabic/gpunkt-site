@@ -13,9 +13,9 @@ Workflow:
 5. Zotero exportiert saubere 'bibliography.bib'.
 
 Usage:
-    python verify_citations.py              # Nur prüfen
-    python verify_citations.py --fix        # Stubs in to_zotero.bib schreiben
-    python verify_citations.py --verbose    # Details anzeigen
+    python 5-VERIFY.py              # Nur prüfen
+    python 5-VERIFY.py --fix        # Stubs in to_zotero.bib schreiben
+    python 5-VERIFY.py --verbose    # Details anzeigen
 
 WICHTIG: Dieses Skript ist für politische Primärquellen optimiert.
          Alle generierten Stubs MÜSSEN triple-verified werden!
@@ -172,7 +172,7 @@ def main():
         stubs = [generate_bibtex_stub(k) for k in sorted(missing)]
         write_to_zotero_import(stubs)
     else:
-        print(f"💡 Tipp: Nutze 'python3 wort-fabrik/verify_citations.py --fix' zum Generieren der Import-Datei.")
+        print(f"💡 Tipp: Nutze 'python3 wort-fabrik/5-VERIFY.py --fix' zum Generieren der Import-Datei.")
         return 1
 
 if __name__ == "__main__":

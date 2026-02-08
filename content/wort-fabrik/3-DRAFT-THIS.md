@@ -581,29 +581,109 @@ Du analysierst, **welche manipulativen Mechanismen** in einem Begriff am Werk si
 
 ---
 
+## TERMINOLOGIE
+
+- **Reizwort:** Begriff, der polarisiert, provoziert, ausgrenzt oder emotional aktiviert (Oberbegriff)
+- **Kampfbegriff:** Reizwort mit *strategischer* Funktion im politischen Diskurs — systematisch eingesetzt, um Deutungshoheit zu erlangen (z.B. "Remigration", "Umvolkung")
+
+---
+
 ## DIE 14 MECHANISMEN (3 Cluster)
 
 Diese Cluster bilden eine **Eskalationsleiter** (A→B→C): Wer markiert ist (A), dessen Realität wird vernebelt (B), bis Gewalt logisch erscheint (C).
 
+→ **Wenn ein Mechanismus gefunden: alle anderen im selben Cluster prüfen!**
+
 ### Cluster A: Identitäts-Konstruktion (Wer ist der Feind?)
-1. **Ethnisierung** - Problem → ethnische/kulturelle Zugehörigkeit
-2. **Kriminalisierung** - Legal → Verbrechen
-3. **Sexualisierung** - Person → Sexualakt (Degradierung)
-4. **Infantilisierung** - Erwachsen → Kind (unreif)
-5. **Pathologisierung** - Meinung/Identität → Krankheit ("Wahn")
+
+1. **Ethnisierung** — Problem → ethnische/kulturelle Zugehörigkeit als Ursache
+   - *Kein Treffer wenn:* strukturelle Ursachen benannt werden; individuelle Abweichungen ausdrücklich erlaubt
+   - *Abgrenzung:* Ethnisierung = Prozess des Zuschreibens; Rassismus = Ideologie dahinter
+
+2. **Kriminalisierung** — Legales → Verbrechen/Betrug
+   - *Kein Treffer wenn:* tatsächliche Straftaten beschrieben werden; Kritik ohne Kriminalitätsvorwurf ("unfair", nicht "kriminell")
+
+3. **Sexualisierung** — Person → sexueller Akt (Degradierung/Bedrohung)
+   - *Kein Treffer wenn:* Sexualität neutral/positiv besprochen; keine Hierarchisierung durch sexuelle Metaphern
+
+4. **Infantilisierung** — Erwachsene → Kind (unreif, erziehungsbedürftig)
+   - *Kein Treffer wenn:* tatsächlich Kinder beschrieben; Kritik ohne "unreif"-Zuschreibung
+   - *Abgrenzung:* Form der Entmenschlichung, spezifisch durch Rückführung auf kindliche Unreife
+
+5. **Pathologisierung** — Meinung/Identität → Krankheit ("Wahn", "wahnsinnig")
+   - *Kein Treffer wenn:* tatsächliche psychische Erkrankungen; "verrückte Idee" = originell (metaphorisch ohne pathologisierenden Unterton)
+   - *Abgrenzung:* macht aus Rationalen Irrationale; stärker als Infantilisierung
 
 ### Cluster B: Realitäts-Verzerrung (Wie wird Wahrheit manipuliert?)
-6. **Euphemismus** - Schlimmes klingt harmlos
-7. **Inversion** - Täter ↔ Opfer
-8. **Naturalisierung** - Politik → Naturgesetz ("alternativlos")
-9. **Entpolitisierung** - Konflikt → Sachzwang
-10. **Ontologisierung** - Handlung/Zustand → unveränderliches Wesen ("ein Illegaler")
+
+6. **Euphemismus** — Schlimmes klingt harmlos/bürokratisch
+   - *Kein Treffer wenn:* Sachverhalte klar benannt; "verstorben" statt "gestorben" = gesellschaftlich akzeptiert, nicht manipulativ
+   - *Abgrenzung:* Gegenteil von Dysphemismus (Abwertung)
+
+7. **Inversion** — Täter ↔ Opfer (Mächtige inszenieren sich als Opfer)
+   - *Kein Treffer wenn:* tatsächlich Machtlose sich wehren; Kritik als Kritik, nicht als Zensur
+   - *Abgrenzung:* spezifische Form der Projektion
+
+8. **Naturalisierung** — Politik → Naturgesetz/Biologie ("alternativlos")
+   - *Kein Treffer wenn:* tatsächliche Naturgesetze; politische Optionen offengelegt
+   - *Abgrenzung:* Unterform der Entpolitisierung, spezifisch durch Rekurs auf Natur/Biologie
+
+9. **Entpolitisierung** — Politischer Konflikt → Sachzwang/Technokratie
+   - *Kein Treffer wenn:* Interessenkonflikte offengelegt; technische Aspekte neutral ohne politische Verschleierung
+   - *Abgrenzung:* breiter als Naturalisierung (Technokratie, nicht nur Natur)
+
+10. **Ontologisierung** — Handlung/Zustand → unveränderliches Wesen ("ein Illegaler")
+    - *Kein Treffer wenn:* Zustände als Zustände beschrieben ("ist arbeitslos" statt "ist ein Arbeitsloser")
+    - *Abgrenzung:* breiter als Ethnisierung — betrifft alle Kategorien, nicht nur ethnische
 
 ### Cluster C: Eskalation & Dehumanisierung (Wie wird Gewalt vorbereitet?)
-11. **Quantifizierung** - Menschen → Masse/Zahlen ("Flut")
-12. **Militarisierung** - Zivil → Krieg ("Terroristen")
-13. **Temporalisierung** - Gegenwart → Apokalypse ("Volkstod")
-14. **Entmenschlichung** - Mensch → Objekt/Tier/Fehler
+
+11. **Quantifizierung** — Menschen → Masse/Zahlen/Wassermetapher ("Flut")
+    - *Kein Treffer wenn:* neutrale statistische Angaben; Individuen sichtbar bleiben; keine Metaphorisierung zu Flüssigkeit/Masse
+    - *Abgrenzung:* Form der Entmenschlichung, spezifisch durch Massenmetapher
+
+12. **Militarisierung** — Zivil → Krieg/Feind ("Terroristen", "Invasion")
+    - *Kein Treffer wenn:* tatsächliche militärische Konflikte; Metaphern ohne Kriegsbezug
+    - *Abgrenzung:* stärker als Kriminalisierung — Terrorismus ist Krieg gegen den Staat
+
+13. **Temporalisierung** — Gegenwart → Apokalypse/Untergang ("Volkstod")
+    - *Kein Treffer wenn:* realistische Zeitpläne; Handlungsoptionen offengehalten; keine apokalyptische Rhetorik
+    - *Abgrenzung:* unterscheidet sich von Prognosen durch fatalistischen/apokalyptischen Charakter
+
+14. **Entmenschlichung** — Mensch → Objekt/Tier/Typus/Fehler
+    - *Kein Treffer wenn:* Menschen mit Namen/Gesichtern/Geschichten; Individualität gewahrt
+    - *Abgrenzung:* Oberbegriff für Tiermetaphern, Objektifizierung, Typisierung; Quantifizierung ist eine Form davon
+
+---
+
+## ESSENTIALISIERUNG ALS QUERSCHNITTSPRINZIP
+
+Mehrere Mechanismen nutzen Essentialisierung (unveränderliche, quasi-natürliche Eigenschaften zuschreiben):
+- **Ethnisierung** = Essentialisierung über Herkunft ("Die sind halt so")
+- **Ontologisierung** = Essentialisierung durch Zustand→Sein-Verwandlung ("ist ein Illegaler")
+- **Entmenschlichung** = Essentialisierung bis zur Sub-Humanität
+- **Pathologisierung** = Essentialisierung als Krankheit
+
+Überlappungen sind kein Fehler — Sprache arbeitet mit mehreren Werkzeugen gleichzeitig. Die ●/◐-Graduierung zeigt, welcher Mechanismus *zentral* ist.
+
+---
+
+## IRONIE, SATIRE UND DOGWHISTLING
+
+**Kontext entscheidet.** Dieselben Worte können in verschiedenen Kontexten gegensätzlich funktionieren.
+
+**Echte Satire:**
+- Richtet sich gegen Mächtige (punch up)
+- Macht Mechanismen durch Übertreibung sichtbar
+- Ziel: Kritik, nicht Hass-Mobilisierung
+
+**Dogwhistling / vorgetäuschte Satire:**
+- Richtet sich gegen Marginalisierte (punch down)
+- Nutzt "War doch nur ein Witz!" als Schutzschild
+- Ziel: Normalisierung von Ausgrenzung/Gewalt
+
+**Prüffrage:** Wer spricht? Zu wem? Mit welchem Ziel?
+→ Im Zweifel in der **Abgrenzungs-Sektion** des Eintrags markieren: "Nicht gemeint, wenn als Satire eindeutig erkennbar"
 
 ---
 
@@ -634,10 +714,13 @@ Diese Cluster bilden eine **Eskalationsleiter** (A→B→C): Wer markiert ist (A
 
 → **Wenn ein Mechanismus gefunden: alle anderen im selben Cluster prüfen!**
 
-### Schritt 3: Gewichten
-Für jeden gefundenen Mechanismus: ● oder ◐?
+### Schritt 3: Gegenprobe
+Für jeden Kandidaten: "Kein Treffer, wenn..." (siehe oben) — verhindert Überinterpretation.
 
-### Schritt 4: Begründung schreiben
+### Schritt 4: Gewichten
+Für jeden verbleibenden Mechanismus: ● oder ◐?
+
+### Schritt 5: Begründung schreiben
 Für jeden Mechanismus eine **präzise Begründung** (1-2 Sätze):
 - **WIE** wirkt der Mechanismus?
 - **WARUM** funktioniert er als Waffe?
@@ -646,6 +729,18 @@ Für jeden Mechanismus eine **präzise Begründung** (1-2 Sätze):
 **Gut:** "● Inversion — Kehrt die Realität um. Menschen, die aus Not kommen, werden als 'Touristen' dargestellt. Die Umkehrung delegitimiert den Anspruch auf Solidarität."
 
 **Schlecht:** "● Inversion — Ist vorhanden." (zeigt nicht WIE)
+
+---
+
+## REFERENZ-ANALYSE: "Sozialtourismus"
+
+*   ● **Inversion (dominant):** Kehrt die Realität um — Armutsmigration (Not) wird als "Tourismus" (Vergnügen) geframed. Ohne diese Umkehrung kollabiert der Begriff.
+*   ● **Euphemismus:** "Tourismus" klingt leicht und positiv, verschleiert die harte Realität von Armutsmigration und lässt Abwehrmaßnahmen als harmlose "Ordnungspolitik" erscheinen.
+*   ● **Kriminalisierung:** Delegitimiert geltendes Recht. Legale EU-Freizügigkeit wird als "Missbrauch" geframed, obwohl rechtmäßig.
+*   ◐ **Ethnisierung:** Der Begriff nennt keine Gruppe, zielt diskursiv aber fast ausschließlich auf Roma/Osteuropäer. Nicht im Wort codiert, aber diskursiv vorhanden.
+*   ◐ **Quantifizierung:** Oft im Kontext von "Massenmigration" genutzt — suggeriert eine Flut, die das System überlastet.
+
+**Fazit:** Inversions-Euphemismus mit Kriminalisierung. Tarnt Überlebenskampf als Urlaubsreise und delegitimiert so den Anspruch auf Solidarität.
 
 ---
 
