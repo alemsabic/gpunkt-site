@@ -14,30 +14,30 @@ Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche 
 
 ---
 
-## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+## ⚠️ KRITISCHE WARNUNG: NUR FAKTEN — KEINE VERBATIM-ZITATE
+
+**Diese Recherche liefert narrative Fakten für die Geschichte-Sektion. Verbatim-Zitate kommen AUSSCHLIESSLICH aus DIP (Bundestag-Protokolle, separat verifiziert). Hier KEIN einziges Wörtliches Zitat!**
 
 **Lieber leer lassen als erfinden!**
 
-Du wirst nach Quellen, Zitaten, Links, Namen, Daten gefragt. Befolge STRIKT:
-
-✅ **NUR verwenden, wenn:**
-- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
-- [ ] Das Zitat WORT-FÜR-WORT im Original steht
-- [ ] Namen, Daten, Funktionen aus verifizierbarer Quelle stammen
-- [ ] Die URL funktioniert (nicht konstruiert!)
+✅ **NUR verwenden:**
+- Namen (verifizierbar durch bekannte Quellen)
+- Daten/Jahre (verifizierbar)
+- Ereignisse/Kontext (historisch belegbar)
+- Funktionen/Rollen (öffentlich bekannt)
 
 ❌ **NIEMALS:**
-- Plausibel klingende Zitate erfinden
+- Verbatim-Zitate (auch keine "typischen" oder "sinngemäßen"!)
 - Namen/Daten/Funktionen erraten ("könnte Friedrich gewesen sein")
 - Links konstruieren oder aus Erinnerung rekonstruieren
-- Zeitungsartikel-Überschriften erfinden, die "so klingen könnten"
+- Zeitungsartikel-Überschriften erfinden
 
 **Bei Unsicherheit:**
-→ Schreibe: "Keine verifizierbaren Quellen gefunden"
+→ Schreibe: "Keine verifizierbaren Informationen gefunden"
 → Lasse das Feld LEER
 → Erfinde NICHTS
 
-**Warum:** Falsche Zuschreibung = Rufschädigung + rechtliche Konsequenzen. Lieber eine Lücke als eine Lüge.
+**Warum:** Falsche Zuschreibung = Rufschädigung + rechtliche Konsequenzen. Verbatim-Zitate kommen später aus DIP. Lieber eine Lücke als eine Lüge.
 
 ---
 
@@ -84,11 +84,12 @@ Du wirst nach Quellen, Zitaten, Links, Namen, Daten gefragt. Befolge STRIKT:
 - **Parteiprogramme / Reden**
 - **Bücher** (Google Books)
 
-**TRIPLE-VERIFICATION:**
-- [ ] Original-Quelle geöffnet (Link funktioniert)
-- [ ] Zitat Wort-für-Wort im Original gefunden
-- [ ] Name, Funktion, Datum aus verlässlicher Quelle
-→ Bei JEGLICHEM Zweifel: Quelle NICHT verwenden!
+**FAKTEN-CHECK (für jede Zuschreibung):**
+- [ ] Name korrekt geschrieben?
+- [ ] Funktion/Partei zur genannten Zeit korrekt?
+- [ ] Datum/Jahr plausibel und belegbar?
+- [ ] Anlass (Rede, Interview, etc.) nachvollziehbar?
+→ Bei JEGLICHEM Zweifel: Information WEGLASSEN!
 
 **Beispiel "Sozialtourismus":**
 - Wer: Hans-Peter Friedrich (CSU, Bundesinnenminister)
@@ -248,11 +249,8 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 - **Anlass:** [Rede, Interview, Buch, Parteitag, etc.]
 - **Medium:** [z.B. "Spiegel-Interview", "Bundestagsrede"]
 
-**Zitat (falls verfügbar):**
-"[Originalzitat mit Begriff]"
-
-**Quelle:**
-- [Link zur Quelle]
+**Wo nachschlagen:**
+- [z.B. "Spiegel-Archiv", "Bundestag DIP", "Google Books"] (kein funktionierender Link nötig)
 
 ---
 
@@ -277,11 +275,11 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 ### Übernahme durch andere Akteure
 
 **Politiker/Parteien:**
-- [Name, Partei, Datum] - [Kurze Beschreibung/Zitat]
+- [Name, Partei, Jahr] - [Kurze Beschreibung: Kontext der Verwendung]
 - [Weitere Akteure]
 
 **Medien:**
-- [Medium, Datum] - [Wie wurde berichtet?]
+- [Medium, Jahr] - [Wie wurde berichtet? Affirmativ, neutral, kritisch?]
 - [Weitere Medien]
 
 **Bewegungen/Organisationen:**
@@ -298,8 +296,7 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 
 **Unwort des Jahres:**
 - **Jahr:** [falls relevant]
-- **Begründung:** "[Zitat aus Jury-Begründung]"
-- **Link:** [unwortdesjahres.net]
+- **Begründung:** [Zusammenfassung der Jury-Begründung — kein Verbatim-Zitat]
 - **Mehrfache Auszeichnung:** [Wurde der Begriff in verschiedenen Jahren erneut kritisiert/ausgezeichnet?]
 
 ### Gegen-Biographie (NEU!)

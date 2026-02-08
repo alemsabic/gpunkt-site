@@ -1,0 +1,1019 @@
+# KOMPLETT-WORKFLOW: Wörterbuch-Eintrag
+
+**Begriff:** [HIER EINSETZEN]
+
+---
+
+Arbeite alle 5 Phasen sequenziell durch. Liefere jeden Output vollständig bevor du zur nächsten Phase gehst. Phase D nutzt deine Outputs aus A, B, C als Kontext. Phase E transformiert alle vorherigen Outputs in den fertigen Eintrag — keine ← Material-Slots, stattdessen nutze direkt deine eigenen Outputs.
+
+---
+
+# PHASE A: LEXIKALISCHE RECHERCHE
+
+## AUFTRAG
+
+Du recherchierst die **lexikalische Grundlage** für einen Wörterbucheintrag. Diese Recherche liefert Material für zwei Sektionen:
+1. **Definition** - Was bedeutet das Wort laut Wörterbüchern und Wissenschaft?
+2. **Konstruktion** - Wie ist das Wort gebaut? (bei zusammengesetzten Begriffen)
+
+---
+
+## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+
+**Lieber leer lassen als erfinden!**
+
+Du wirst nach Quellen, Zitaten, DOIs, Links gefragt. Befolge STRIKT:
+
+✅ **NUR verwenden, wenn:**
+- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
+- [ ] Das Zitat WORT-FÜR-WORT im Original steht
+- [ ] Die DOI/URL funktioniert (nicht konstruiert!)
+
+❌ **NIEMALS:**
+- Plausibel klingende Zitate erfinden
+- DOIs konstruieren ("könnte so sein")
+- Links erraten oder aus Erinnerung rekonstruieren
+- "Wahrscheinlich hat [Autor] das gesagt"
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine wissenschaftliche Quelle gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+**Warum:** Falsche Zitate = Rufschädigung. Lieber eine Lücke als eine Lüge.
+
+---
+
+## RECHERCHE-BEREICHE
+
+### 1. WÖRTERBÜCHER
+
+Recherchiere in folgenden Quellen (Priorität von oben nach unten):
+
+**A. Standardwörterbücher:**
+- **Duden** (duden.de)
+- **DWDS** (Digitales Wörterbuch der deutschen Sprache, dwds.de)
+- **Wahrig**
+- **Grimm** (falls historische Bedeutung relevant)
+
+**B. Spezialwörterbücher:**
+- **Unwort des Jahres** (unwortdesjahres.net) - wenn der Begriff ausgezeichnet wurde
+- **Politische Lexika** (z.B. bpb.de, Bundeszentrale für politische Bildung)
+
+**Was recherchieren:**
+- [ ] Ist der Begriff im Wörterbuch verzeichnet?
+- [ ] Welche Definition(en) werden gegeben?
+- [ ] Gibt es Markierungen? (z.B. "abwertend", "diskriminierend", "veraltet")
+- [ ] Gibt es Verwendungshinweise oder Warnungen?
+- [ ] **WICHTIG:** Direktlinks zu den Quellen (keine Google-Suchen!)
+
+---
+
+### 2. ETYMOLOGIE (Wortherkunft)
+
+Recherchiere die **Herkunft** des Wortes:
+
+**Für einfache Wörter:**
+- Aus welcher Sprache stammt es? (Latein, Griechisch, Germanisch, etc.)
+- Was bedeuteten die Wurzeln ursprünglich?
+- Wann trat es ins Deutsche ein?
+
+**Für zusammengesetzte Wörter (z.B. "Sozialtourismus"):**
+- **Bestandteil 1:** Bedeutung, Herkunft
+- **Bestandteil 2:** Bedeutung, Herkunft
+- **Semantische Formel:** Wie entsteht die Gesamtbedeutung?
+
+**Quellen:**
+- DWDS Etymologie-Wörterbuch
+- Kluge: Etymologisches Wörterbuch der deutschen Sprache
+- Duden Herkunftswörterbuch
+
+**WICHTIG - Historischer Bedeutungswandel:**
+- [ ] Gab es frühere, andere Bedeutungen desselben Wortes?
+- [ ] Wann und wie hat sich die Bedeutung gewandelt?
+- [ ] War der Begriff einst neutral/positiv und wurde später negativ?
+
+---
+
+### 3. WISSENSCHAFTLICHE DEFINITIONEN
+
+**⚠️ REMINDER:** NUR Quellen verwenden, die du TATSÄCHLICH öffnen und verifizieren konntest. Bei Unsicherheit: Feld leer lassen!
+
+Recherchiere **akademische Definitionen** aus:
+
+**A. Google Scholar** (scholar.google.com)
+- Suche: "[Begriff]" + "Definition"
+- Suche: "[Begriff]" + "Diskursanalyse" oder "Framing"
+- Filtere nach Zitierungen (höchste = relevanteste)
+
+**B. Fachzeitschriften:**
+- Linguistik, Soziologie, Politikwissenschaft
+- Achte auf Definitionen von Expert*innen
+
+**Was extrahieren:**
+- [ ] Wie definieren Wissenschaftler*innen den Begriff?
+- [ ] Gibt es Konsens oder verschiedene Perspektiven?
+- [ ] Welche Definition ist am präzisesten/einflussreichsten?
+- [ ] **Citation-Count:** Wie oft wurde die Quelle zitiert?
+- [ ] **Direktlink:** DOI oder direkter Link zur Quelle
+
+---
+
+### 4. SEMANTISCHE ANALYSE (nur bei zusammengesetzten Begriffen)
+
+Analysiere die **Wortkonstruktion**:
+
+**Format:** "Bestandteil 1" (Bedeutung) + "Bestandteil 2" (Bedeutung) = Wirkung
+
+**Fragen:**
+- Welche Bedeutung hat jeder Bestandteil?
+- Wie entsteht die **manipulative Wirkung** durch die Kombination?
+- Welcher Mechanismus steckt in der Konstruktion? (Euphemismus, Inversion, etc.)
+
+---
+
+## OUTPUT-FORMAT (Phase A)
+
+```markdown
+# LEXIKALISCHE RECHERCHE: [Begriff]
+
+## 1. WÖRTERBUCH-DEFINITIONEN
+
+### Duden
+- **Definition:** [...]
+- **Markierung:** [z.B. "abwertend"]
+- **Link:** [URL]
+
+### DWDS
+- **Definition:** [...]
+- **Link:** [URL]
+
+### Weitere Quellen
+[Falls relevant]
+
+---
+
+## 2. ETYMOLOGIE
+
+### Herkunft
+[Beschreibung]
+
+### Historischer Bedeutungswandel (falls relevant)
+- **Frühere Bedeutung:** [...]
+- **Zeitpunkt des Wandels:** [...]
+- **Richtung:** [neutral → pejorativ?]
+
+### Bei zusammengesetzten Begriffen:
+**Bestandteil 1:** [Name] — Bedeutung: [...] — Herkunft: [...]
+**Bestandteil 2:** [Name] — Bedeutung: [...] — Herkunft: [...]
+
+---
+
+## 3. WISSENSCHAFTLICHE DEFINITIONEN
+
+[Oder: "Keine verifizierbaren wissenschaftlichen Quellen gefunden."]
+
+---
+
+## 4. SEMANTISCHE ANALYSE
+
+**Formel:** "[Bestandteil 1]" (Bedeutung) + "[Bestandteil 2]" (Bedeutung) = [Wirkung]
+**Mechanismus in der Konstruktion:** [Euphemismus, Inversion, etc.]
+
+---
+
+## 5. ZUSAMMENFASSUNG FÜR DRAFT
+
+### Beste Definition (für Definition-Sektion)
+[Die präziseste Definition]
+
+### Konstruktion (für Konstruktion-Sektion)
+[Die semantische Formel, falls zusammengesetzter Begriff]
+```
+
+---
+
+# PHASE B: HISTORISCHE RECHERCHE
+
+## AUFTRAG
+
+Du recherchierst die **historische Biographie** eines Begriffs. Diese Recherche liefert Material für die **Geschichte-Sektion** des Eintrags.
+
+**Die Geschichte beantwortet:** Wie wurde aus einem neutralen Begriff (oder aus dem Nichts) ein Reizwort/Kampfbegriff?
+
+---
+
+## ⚠️ KRITISCHE WARNUNG: NUR FAKTEN — KEINE VERBATIM-ZITATE
+
+**Diese Recherche liefert narrative Fakten für die Geschichte-Sektion. Verbatim-Zitate kommen AUSSCHLIESSLICH aus DIP (Bundestag-Protokolle, separat verifiziert). Hier KEIN einziges wörtliches Zitat!**
+
+**Lieber leer lassen als erfinden!**
+
+✅ **NUR verwenden:**
+- Namen (verifizierbar durch bekannte Quellen)
+- Daten/Jahre (verifizierbar)
+- Ereignisse/Kontext (historisch belegbar)
+- Funktionen/Rollen (öffentlich bekannt)
+
+❌ **NIEMALS:**
+- Verbatim-Zitate (auch keine "typischen" oder "sinngemäßen"!)
+- Namen/Daten/Funktionen erraten ("könnte Friedrich gewesen sein")
+- Links konstruieren oder aus Erinnerung rekonstruieren
+- Zeitungsartikel-Überschriften erfinden
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine verifizierbaren Informationen gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+**Warum:** Falsche Zuschreibung = Rufschädigung + rechtliche Konsequenzen. Verbatim-Zitate kommen später aus DIP. Lieber eine Lücke als eine Lüge.
+
+---
+
+## DIE 5 SCHRITTE DER GESCHICHTE
+
+### **1. URSPRUNG** (falls relevant)
+
+**Frage:** Hatte der Begriff eine neutrale oder akademische Herkunft?
+
+**Recherchiere:**
+- Wann tauchte der Begriff **erstmals** auf? (Jahr, Kontext)
+- In welchem Bereich? (Wissenschaft, Verwaltung, Umgangssprache)
+- War die ursprüngliche Bedeutung neutral/positiv?
+
+**Quellen:**
+- **Google Books** (books.google.com) - Suche nach frühesten Verwendungen
+- **Google Ngram Viewer** (books.google.com/ngrams) - Häufigkeit über Zeit
+- **Zeitungsarchive** (z.B. ZEIT-Archiv, FAZ-Archiv)
+- **Wissenschaftliche Datenbanken** (Google Scholar)
+
+**Nur relevant, wenn:** Die Umdeutung selbst Teil der Manipulation ist (neutraler Begriff wird zum Kampfbegriff).
+
+---
+
+### **2. ERSTE PRÄGUNG / INSTRUMENTALISIERUNG**
+
+**⚠️ REMINDER:** Dieser Abschnitt ist KRITISCH für Rufschädigung. NUR verifizierte Zuschreibungen!
+
+**Frage:** Wer hat den Begriff **politisch geprägt oder instrumentalisiert**?
+
+**Recherchiere:**
+- **Wer?** Name(n) der Person(en) oder Institution(en)
+- **Wann?** Jahr (möglichst genau: Monat/Tag)
+- **Wo?** Anlass (Rede, Buch, Interview, Parteitag, etc.)
+- **Funktion?** Rolle/Position der Person
+- **Kontext?** Welches Ereignis?
+
+**FAKTEN-CHECK (für jede Zuschreibung):**
+- [ ] Name korrekt geschrieben?
+- [ ] Funktion/Partei zur genannten Zeit korrekt?
+- [ ] Datum/Jahr plausibel und belegbar?
+- [ ] Anlass (Rede, Interview, etc.) nachvollziehbar?
+→ Bei JEGLICHEM Zweifel: Information WEGLASSEN!
+
+**WICHTIG:**
+- [ ] Name **fett** markieren (für Scanbarkeit)
+- [ ] Jahr **fett** markieren
+- [ ] Funktion/Partei **fett** markieren
+
+---
+
+### **3. KONTEXT: Warum entstand er?**
+
+**Frage:** In welchem **politischen oder sozialen Zusammenhang** entstand der Begriff?
+
+**Recherchiere:**
+- Welches **Ereignis** stand im Hintergrund?
+  - Politische Krise (z.B. Finanzkrise 2008, Flüchtlingskrise 2015)
+  - Gesetzgebung (z.B. EU-Osterweiterung 2007)
+  - Wahlen / Wahlkampf
+  - Gesellschaftliche Debatte
+
+- Welche **Funktion** sollte der Begriff erfüllen?
+  - Mobilisierung? (Wähler aktivieren)
+  - Delegitimierung? (Gegner diskreditieren)
+  - Framing? (Debatte verschieben)
+
+**WICHTIG:**
+- [ ] Ereignis/Kontext **fett** markieren
+
+---
+
+### **4. VERBREITUNG: Wie wurde er Mainstream?**
+
+**Frage:** Wer hat den Begriff **popularisiert**? Wie verbreitete er sich?
+
+**Recherchiere:**
+- **Übernahme durch andere Akteure:**
+  - Welche Parteien/Politiker haben ihn übernommen?
+  - Welche Medien haben ihn verwendet?
+  - Gab es Bewegungen/Organisationen, die ihn nutzten?
+
+- **Mediale Verbreitung:**
+  - Wann tauchte er in Mainstream-Medien auf?
+  - Gab es einen "Kipppunkt" (z.B. nach einer Rede)?
+
+- **Gegenreaktion:**
+  - Gab es Kritik? Von wem?
+  - Wurde der Begriff zum "Unwort des Jahres" gewählt?
+  - Wurde der Begriff mehrfach als "Unwort" ausgezeichnet oder in verschiedenen Jahren kritisiert?
+
+- **Gegen-Biographie:**
+  - Gibt es prominente **Faktenchecks** gegen den Begriff?
+  - Gibt es **wissenschaftliche Studien**, die den Begriff widerlegen?
+  - Gibt es **Kampagnen** oder **NGOs**, die sich explizit gegen den Begriff richten?
+
+---
+
+### **5. GEGENWART: Wo steht er heute?**
+
+**Frage:** Wie wird der Begriff **aktuell** verwendet?
+
+**Recherchiere:**
+- Ist er Mainstream geworden? Oder Nische?
+- Welche Parteien/Akteure nutzen ihn heute?
+- Hat er sich verändert? (Bedeutungsverschiebung?)
+- Gibt es aktuelle Kontroversen?
+
+**WIRKSAMKEITS-PRÜFUNG:**
+- [ ] Wird der Begriff noch ernst genommen oder bereits als "rechtes Klischee" markiert?
+- [ ] Hat er an diskursiver Kraft gewonnen oder verloren?
+- [ ] Ist er "abgenutzt" (zur Karikatur seiner selbst geworden)?
+- [ ] Welche Reaktionen löst er in der bürgerlichen Mitte aus? (Zustimmung? Distanzierung?)
+
+---
+
+## OUTPUT-FORMAT (Phase B)
+
+```markdown
+# HISTORISCHE RECHERCHE: [Begriff]
+
+## 1. URSPRUNG (falls relevant)
+- **Wann:** [Jahr]
+- **Bereich:** [Wissenschaft, Verwaltung, etc.]
+- **Bedeutung:** [neutral/positiv?]
+
+## 2. ERSTE PRÄGUNG
+- **Name:** [fett]
+- **Funktion/Partei:** [fett]
+- **Jahr:** [fett]
+- **Anlass:** [Rede, Interview, etc.]
+- **Wo nachschlagen:** [z.B. "Spiegel-Archiv", "Bundestag DIP"]
+
+## 3. KONTEXT
+- **Ereignis:** [fett]
+- **Funktion des Begriffs:** [Mobilisierung, Delegitimierung, Framing?]
+
+## 4. VERBREITUNG
+**Politiker/Parteien:** [Name, Partei, Jahr] - [Kurze Beschreibung: Kontext der Verwendung]
+**Medien:** [Medium, Jahr] - [Affirmativ, neutral, kritisch?]
+**Unwort des Jahres:** [Jahr] — [Zusammenfassung der Jury-Begründung — kein Verbatim-Zitat]
+**Gegen-Biographie:** [Faktenchecks, Studien, NGOs]
+
+## 5. GEGENWART
+- **Status:** [Mainstream? Nische? Stigmatisiert?]
+- **Wirksamkeit:** [Gewonnen/verloren? Abgenutzt?]
+
+## 6. CHRONOLOGIE
+**[JJJJ]** - [Ereignis]
+**[JJJJ]** - [Ereignis]
+...
+
+## 7. ZUSAMMENFASSUNG FÜR DRAFT (Geschichte-Sektion)
+[3-5 narrative Sätze mit **Fettdruck** für Anker-Daten]
+```
+
+---
+
+# PHASE C: DISKURS-RECHERCHE
+
+## AUFTRAG
+
+Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche liefert Material für zwei Sektionen:
+1. **Anwendung** - Warum ist der Begriff attraktiv für den Sprecher? (Advocatus Diaboli)
+2. **Abgrenzung** - Wann trifft unsere Analyse NICHT zu? (Kontext-Abhängigkeit)
+
+---
+
+## ⚠️ KRITISCHE WARNUNG: NUR FAKTEN — KEINE VERBATIM-ZITATE
+
+**Diese Recherche liefert diskursives Verstehen für Anwendung und Abgrenzung. Verbatim-Zitate kommen AUSSCHLIESSLICH aus DIP (Bundestag-Protokolle, separat verifiziert). Hier KEIN einziges wörtliches Zitat!**
+
+**Lieber leer lassen als erfinden!**
+
+✅ **NUR verwenden:**
+- Narrative Fakten (wer nutzt den Begriff, in welchem Kontext)
+- Frames und Diskursmuster (analytisch beschreibbar)
+- Gegenbegriffe und Fachbegriffe (bekannt und belegbar)
+- Funktionen und Wirkungsweisen (analytisch, nicht zitierend)
+
+❌ **NIEMALS:**
+- Verbatim-Zitate (auch keine "typischen" oder "sinngemäßen"!)
+- Studien erfinden ("Es gibt bestimmt eine Studie, die...")
+- Links konstruieren oder aus Erinnerung rekonstruieren
+- Narrative/Frames ohne Grundlage behaupten
+
+**Bei Unsicherheit:**
+→ Schreibe: "Keine verifizierbaren Informationen gefunden"
+→ Lasse das Feld LEER
+→ Erfinde NICHTS
+
+---
+
+## RECHERCHE-BEREICHE
+
+### 1. DISKURS-ANALYSE: Wie wird der Begriff verwendet?
+
+#### A. Wer nutzt den Begriff?
+
+**Recherchiere:**
+- **Parteien:** Welche Parteien verwenden ihn? (AfD, CDU/CSU, FDP, Linke, Grüne, SPD?)
+- **Medien:** Welche Medien verwenden ihn? (Bild, Welt, FAZ, SZ, taz, Spiegel?)
+- **Bewegungen:** Gibt es außerparlamentarische Akteure?
+- **Wissenschaft:** Wird er in der Wissenschaft genutzt? (neutral oder kritisch?)
+
+---
+
+#### B. Welche Narrative begleiten den Begriff?
+
+**Recherchiere:**
+- In welchen **Erzählungen** taucht der Begriff auf?
+- Welche **Frames** werden aktiviert?
+  - Bedrohung? (Angst)
+  - Ungerechtigkeit? (Wut)
+  - Verfall? (Nostalgie)
+
+---
+
+#### C. Diskurs-Topologie: Gegenspieler-Begriffe
+
+**Recherchiere:**
+- Welchen Begriff nutzen **Kritiker des Reizworts**, um dasselbe Phänomen anders zu rahmen?
+- Gibt es einen **neutralen Fachbegriff**, der das Phänomen sachlich beschreibt?
+
+---
+
+### 2. FUNKTIONS-ANALYSE: Warum ist der Begriff attraktiv?
+
+#### A. Welche subjektive Berechtigung sieht der Sprecher?
+
+**Fragen:**
+- Was ist die **legitime Sorge** hinter dem Begriff?
+- Welche **Erklärung** bietet der Begriff für ein komplexes Problem? (vereinfachte Kausalität)
+- Welche **Funktion** erfüllt der Begriff für den Sprecher?
+  - Identitätsstiftung? ("Wir" vs. "Die")
+  - Schuldabwehr? ("Nicht wir sind das Problem, sondern die")
+  - Handlungsfähigkeit? (komplexe Probleme scheinbar lösbar machen)
+
+#### B. Verführungskraft: Warum "funktioniert" der Begriff?
+
+**Recherchiere:**
+- **Einfachheit:** Reduziert der Begriff Komplexität auf eine Formel?
+- **Emotionale Aktivierung:** Erzeugt er Angst, Wut, Empörung?
+- **Moralische Legitimierung:** Erlaubt er, Ausgrenzung als "Gerechtigkeit" zu sehen?
+
+---
+
+### 3. ABGRENZUNGS-RECHERCHE: Wann ist der Begriff legitim/neutral?
+
+**Ziel:** Kontexte identifizieren, wo unsere Analyse **NICHT zutrifft**.
+
+#### A. Wissenschaftliche Verwendung
+- Wird der Begriff in **Fachwissenschaft** neutral verwendet?
+
+#### B. Historische oder analytische Zitate
+- Wird der Begriff in **historischer Analyse** verwendet (über den Begriff gesprochen, nicht mit ihm)?
+
+#### C. Satire oder Parodie
+**Kriterien für echte Satire:**
+- Richtet sich gegen Mächtige (punch up)
+- Macht Mechanismen durch Übertreibung transparent
+- Ziel ist Kritik, nicht Mobilisierung
+
+#### D. Andere legitime Kontexte?
+
+---
+
+## OUTPUT-FORMAT (Phase C)
+
+```markdown
+# DISKURS-RECHERCHE: [Begriff]
+
+## 1. DISKURS-ANALYSE
+
+### A. Wer nutzt den Begriff?
+- **[Partei]:** [Kontext]
+- **[Medium]:** [Affirmativ, neutral, kritisch?]
+
+### B. Narrative & Frames
+1. **"[Narrativ]"** — [Beschreibung]
+- **Bedrohung:** [Wie wird Angst erzeugt?]
+- **Ungerechtigkeit:** [Wie wird Wut mobilisiert?]
+
+### C. Gegenspieler-Begriffe
+- **Kritischer Gegenbegriff:** [z.B. "Freizügigkeit"]
+- **Neutraler Fachbegriff:** [z.B. "EU-Binnenmigration"]
+
+---
+
+## 2. FUNKTIONS-ANALYSE (Advocatus Diaboli)
+
+**Legitime Sorge:** [Was ist die nachvollziehbare Sorge?]
+**Erklärungsfunktion:** [Vereinfachte Kausalität]
+**Psychosoziale Funktion:**
+- Identitätsstiftung: [...]
+- Schuldabwehr: [...]
+- Handlungsfähigkeit: [...]
+
+**Verführungskraft:**
+- Einfachheit: [...]
+- Emotionale Aktivierung: [...]
+- Moralische Legitimierung: [...]
+
+---
+
+## 3. ABGRENZUNGS-RECHERCHE
+
+### Wissenschaftliche Verwendung
+**Fachbereich:** [...] — **Neutrale Bedeutung:** [...]
+
+### Weitere legitime Kontexte
+[Falls vorhanden]
+
+---
+
+## 4. ZUSAMMENFASSUNG FÜR DRAFT
+
+### Anwendung-Sektion (2-3 Sätze, Advocatus Diaboli)
+[Aus Sicht des Sprechers...]
+
+### Abgrenzung-Sektion
+[Nicht gemeint, wenn...]
+```
+
+---
+
+# PHASE D: MECHANISMUS-ANALYSE
+
+**Nutze deine Outputs aus Phase A, B, C als Kontext für diese Analyse.**
+
+## AUFTRAG
+
+Du analysierst, **welche manipulativen Mechanismen** in einem Begriff am Werk sind. Diese Analyse liefert Material direkt für die **Analyse-Sektion** des Eintrags (●◐-Mechanismen mit Begründung).
+
+**Kein Zitat nötig.** Du analysierst das Wort selbst — seine Konstruktion, Semantik, diskursive Funktion.
+
+---
+
+## ⚠️ WARNUNG: ANALYSE, KEINE RECHERCHE
+
+**Du findest hier KEINE neuen Zitate oder Quellen.** Du analysierst nur den Begriff und seinen Kontext.
+
+**Lieber 3 präzise Mechanismen als 6 vage!**
+
+---
+
+## DIE 14 MECHANISMEN (3 Cluster)
+
+Diese Cluster bilden eine **Eskalationsleiter** (A→B→C): Wer markiert ist (A), dessen Realität wird vernebelt (B), bis Gewalt logisch erscheint (C).
+
+### Cluster A: Identitäts-Konstruktion (Wer ist der Feind?)
+1. **Ethnisierung** - Problem → ethnische/kulturelle Zugehörigkeit
+2. **Kriminalisierung** - Legal → Verbrechen
+3. **Sexualisierung** - Person → Sexualakt (Degradierung)
+4. **Infantilisierung** - Erwachsen → Kind (unreif)
+5. **Pathologisierung** - Meinung/Identität → Krankheit ("Wahn")
+
+### Cluster B: Realitäts-Verzerrung (Wie wird Wahrheit manipuliert?)
+6. **Euphemismus** - Schlimmes klingt harmlos
+7. **Inversion** - Täter ↔ Opfer
+8. **Naturalisierung** - Politik → Naturgesetz ("alternativlos")
+9. **Entpolitisierung** - Konflikt → Sachzwang
+10. **Ontologisierung** - Handlung/Zustand → unveränderliches Wesen ("ein Illegaler")
+
+### Cluster C: Eskalation & Dehumanisierung (Wie wird Gewalt vorbereitet?)
+11. **Quantifizierung** - Menschen → Masse/Zahlen ("Flut")
+12. **Militarisierung** - Zivil → Krieg ("Terroristen")
+13. **Temporalisierung** - Gegenwart → Apokalypse ("Volkstod")
+14. **Entmenschlichung** - Mensch → Objekt/Tier/Fehler
+
+---
+
+## GEWICHTUNGS-LOGIK (● vs. ◐)
+
+- **● dominant:** Ohne diesen Mechanismus funktioniert der Begriff nicht
+- **◐ teilweise:** Schwingt mit, kontext-abhängig, nicht zentral
+
+**Faustregel:** "Wenn ich diesen Mechanismus wegnehme, funktioniert der Begriff noch?"
+- Nein → **●** (dominant)
+- Ja, aber geschwächt → **◐** (teilweise)
+
+**Ziel:** 2-3 dominante (●), 1-2 teilweise (◐). Nie mehr als 5 gesamt.
+
+---
+
+## ANALYSE-PROZESS
+
+### Schritt 1: Wortanalyse
+- Was bedeuten die Wortbestandteile einzeln?
+- Welche Bedeutungsverschiebung entsteht durch die Kombination?
+- Welches Cluster passt am stärksten? (A, B oder C)
+
+### Schritt 2: Cluster prüfen
+- Cluster A: Wird eine Gruppe markiert, kriminalisiert, degradiert?
+- Cluster B: Wird etwas vernebelt, umgekehrt, naturalisiert?
+- Cluster C: Werden Menschen zur Masse? Kriegsvokabular? Apokalypse?
+
+→ **Wenn ein Mechanismus gefunden: alle anderen im selben Cluster prüfen!**
+
+### Schritt 3: Gewichten
+Für jeden gefundenen Mechanismus: ● oder ◐?
+
+### Schritt 4: Begründung schreiben
+Für jeden Mechanismus eine **präzise Begründung** (1-2 Sätze):
+- **WIE** wirkt der Mechanismus?
+- **WARUM** funktioniert er als Waffe?
+- **WELCHE** Realität wird verzerrt/verschleiert?
+
+**Gut:** "● Inversion — Kehrt die Realität um. Menschen, die aus Not kommen, werden als 'Touristen' dargestellt. Die Umkehrung delegitimiert den Anspruch auf Solidarität."
+
+**Schlecht:** "● Inversion — Ist vorhanden." (zeigt nicht WIE)
+
+---
+
+## OUTPUT-FORMAT (Phase D)
+
+```markdown
+## Analyse-Material für: [Begriff]
+
+*   ● **[Mechanismus] (dominant):** [Begründung: WIE wirkt er? WARUM als Waffe? WELCHE Realität verzerrt?]
+*   ● **[Mechanismus 2]:** [Begründung]
+*   ◐ **[Mechanismus 3]:** [Begründung: WARUM nur teilweise?]
+*   ◐ **[Mechanismus 4]:** [Begründung]
+
+**Fazit (1-2 Sätze):**
+[Was macht diesen Begriff zur Waffe? Welche Funktion erfüllt er im Diskurs?]
+```
+
+---
+
+# PHASE E: SCHREIBEN + EDITIEREN
+
+**Nutze AUSSCHLIESSLICH deine Outputs aus Phase A, B, C, D als Material.**
+**KEINE eigenen Informationen ergänzen. Transformation, nicht Generation.**
+
+---
+
+## ⚠️ TRANSFORMATION-REGEL (ABSOLUT)
+
+**Du ERFINDEST NICHTS. Du GENERIERST NICHTS aus eigenem Wissen.**
+
+- **Material aus A/B/C/D vorhanden →** transformieren
+- **Material fehlt →** Sektion weglassen oder `[FEHLENDES MATERIAL]` markieren
+- **Niemals →** aus eigenem Wissen ergänzen, auch wenn "offensichtlich"
+
+**Warum:** Die Qualität basiert auf den verifizierten Recherchen aus A-D. KI-Wissen ist nicht verifiziert.
+
+---
+
+## FORMAT-REFERENZ: VORLAGE v5.0 (VOLLSTÄNDIG)
+
+Dies ist das exakte Format, das du produzieren musst. Jede Regel gilt absolut.
+
+---
+
+### PHILOSOPHIE: Die Pflicht des Lexikographen
+
+Ein Wörterbuch ist niemals neutral. Jede Definition ist ein politischer Akt. Jede Etymologie eine Entlarvung oder Rechtfertigung. Wenn wir "Remigration" definieren, kontrollieren wir, wie es verstanden wird. Wenn wir "Sozialtourismus" zu seinen Urhebern zurückverfolgen, entlarven wir seine Absicht.
+
+**Unser Standard ist nicht Kürze. Unser Standard ist Präzision, die dem Verstehen dient.**
+
+#### Die vier Tests (PFLICHT — jeder Eintrag muss sie bestehen)
+
+1. **Clarity Test:** Kann jemand ohne Vorwissen den Begriff nach einmaligem Lesen vollständig verstehen?
+2. **Architecture Test:** Hat jede Sektion eine innere Logik?
+3. **Read-Aloud Test:** Fließt der Text beim Vorlesen?
+4. **Johnson Test:** Ist dies so klar und vollständig wie möglich, mit keinem Wort mehr als nötig?
+
+Wenn ein Test fehlschlägt → iterieren.
+
+---
+
+### TEMPLATE v5.0 (Goldstandard-Beispiel)
+
+```markdown
+---
+title: Sozialtourismus
+language: de
+cssclasses: dictionary-entry
+tags:
+  - Reizwort
+  - Inversion
+  - Kriminalisierung
+---
+
+# So|zial|tou|ris|mus
+
+Politisches Reizwort zur Diffamierung von Migration als Sozialbetrug. Suggeriert, Menschen fliehen zum Vergnügen und besuchen Sozialsysteme wie Urlaubsziele. Verschleiert Fluchtgründe (Armut, Krieg, Diskriminierung) und stellt sie als freiwillige Konsumentscheidung dar. Kriminalisiert rechtmäßige EU-Freizügigkeit als systematischen Missbrauch.
+
+## Geschichte
+
+Geprägt **2013** von **CSU/CDU-Politikern** (Hans-Peter Friedrich, Horst Seehofer, Alexander Dobrindt) im Kontext der **EU-Osterweiterung** und verstärkter Migration aus Osteuropa, insbesondere Roma-Gemeinden. Der Begriff zielte darauf, Freizügigkeitsrechte als "Missbrauch" zu delegitimieren. Erneut aufgegriffen **2022** von **Friedrich Merz** im Kontext ukrainischer Geflüchteter. Zum **"Unwort des Jahres 2013"** gewählt.
+
+## Konstruktion
+
+"Sozial-" (Sozialsystem als Ziel) + "Tourismus" (Vergnügungsreise) = existenzielle Not wird zu freiwilligem Konsum, Flucht zu Freizeitvergnügen.
+
+## Analyse
+
+*   ● **Inversion (dominant):** Kehrt die Realität um. Migranten, die aus Not kommen, werden als "Touristen" dargestellt – als würden sie zum Vergnügen reisen.
+*   ● **Euphemismus:** Verschleierung durch Verharmlosung. Das Wort "Tourismus" klingt positiv und leicht, verdeckt aber die harte Realität von Armutsmigration und lässt harte Abwehrmaßnahmen als "Ordnungspolitik" erscheinen.
+*   ● **Kriminalisierung:** Macht aus Rechtsausübung (EU-Freizügigkeit) einen Betrug. Legale Migration wird als "Missbrauch" geframed.
+*   ◐ **Ethnisierung:** Richtet sich primär gegen Osteuropäer und Roma, nicht gegen "westliche" EU-Bürger.
+*   ◐ **Quantifizierung:** Oft im Kontext von "Massenmigration" genutzt. Suggeriert eine Flut, die das System "überlastet".
+
+## Anwendung
+
+Aus Sicht des Sprechers bietet der Begriff eine rationale Erklärung für wahrgenommene Ungerechtigkeit: Warum sollten "die" bekommen, wofür "wir" arbeiten? Er ermöglicht es, Hilfsbereitschaft als "Naivität" darzustellen und Ausgrenzung als Verteidigung des Eigenen zu rationalisieren.
+
+## Belege
+
+● **Hans-Peter Friedrich** (CSU, Bundesinnenminister) im Spiegel-Interview März 2013 [@friedrich_2013]: »Wer aber nur kommt, um Sozialleistungen zu kassieren, der missbraucht das Freizügigkeitsrecht. Diesen ==Sozialtourismus== müssen wir unterbinden.«
+
+● **Horst Seehofer** (CSU, Parteivorsitzender) bei der Kreuth-Klausur Januar 2013 [@seehofer_2013]: »Wir werden uns gegen Zuwanderung in die deutschen Sozialsysteme wehren – bis zur letzten Patrone.«
+
+## Abgrenzung
+
+Nicht gemeint, wenn ==Sozialtourismus== in der Tourismuswissenschaft genutzt wird, um Reisen mit sozialen Zielen zu beschreiben (z.B. Bildungsreisen, Austauschprogramme). Die Analyse bezieht sich auf die politische Verwendung im Migrations-Diskurs.
+```
+
+---
+
+### REGELN PRO SEKTION
+
+#### Frontmatter
+- **"Reizwort"** — Oberbegriff, PFLICHT
+- **Oder spezifischer:** "Rechtsextremer Kampfbegriff", "Diskriminierendes Reizwort", "Politisches Reizwort"
+- **1-2 dominante Mechanismen** als weitere Tags
+
+#### Headword
+- Trennstriche `|` nach **Silben** (nicht Morphemen!)
+- ✅ `# So|zial|tou|ris|mus` ❌ `# Sozial|tourismus`
+- Funktion: visuelles Stolpern, Sichtbarmachung der Konstruktion
+
+#### Definition (3-5 Sätze)
+Beantwortet 5 Fragen:
+1. **Was ist es?** — "Rechtsextremer Kampfbegriff für X" (präzise!)
+2. **Wie funktioniert es?** — Mechanismus in einem Satz
+3. **Was bewirkt es?** — "suggeriert X", "verschleiert Y", "kriminalisiert Z"
+4. **Warum wird es benutzt?** — politischer Zweck
+5. **Wo steht es?** — Kontext (nur wenn essentiell)
+
+**Do:** Verben der Manipulation: "tarnt", "verschleiert", "suggeriert", "kriminalisiert", "entmenschlicht"
+**Don't:** "zynisch", "perfide", "extrem", "massiv", "problematisch", Akademisches Geschwurbel
+
+#### Geschichte (3-5 Sätze, narrativ)
+- **Keine Datenliste** — erzähle die Geschichte
+- **Fettdruck** für: Jahre, Namen, Parteien, Schlüssel-Kontexte, Status
+- Bei Vulgärsprache: optional
+
+#### Konstruktion (1-2 Sätze)
+- **Nur bei zusammengesetzten Begriffen**
+- Format: `"Teil1" (Bedeutung) + "Teil2" (Bedeutung) = Wirkung`
+- Kürze ist hier Prinzip
+
+#### Analyse (3-5 Mechanismen)
+- `●` dominant: ohne diesen Mechanismus funktioniert der Begriff nicht
+- `◐` teilweise: schwingt mit, kontext-abhängig
+- Begründung zeigt WIE (nicht nur DASS) — 1-2 Sätze pro Mechanismus
+- Von stark (●) zu teilweise (◐) geordnet
+
+#### Anwendung (2-3 Sätze)
+- Advocatus Diaboli: "Aus Sicht des Sprechers..."
+- Zeigt warum der Begriff verfängt — ohne ihn zu rechtfertigen
+- Optional, aber empfohlen bei politischen Begriffen
+
+#### Belege
+- **NICHT AUSFÜLLEN** — Placeholder setzen, fertig
+- Belege kommen nach DIP-Verifikation (manuell, separat)
+
+#### Abgrenzung
+- Format: "Nicht gemeint, wenn [Bedingung]. [Erklärung]."
+- Optional, empfohlen wenn legitime Verwendungen existieren
+
+---
+
+### HÄUFIGE FEHLER (VERMEIDEN)
+
+❌ Trennstriche fehlen in H1
+❌ Konstruktion fehlt bei zusammengesetzten Begriffen
+❌ Geschichte als Datenliste statt Narrativ
+❌ Geschichte ohne Fettdruck für Anker-Daten
+❌ Analyse: Begründungen zu knapp (zeigt DASS, nicht WIE)
+❌ Moral in Definition ("zynisch", "perfide")
+❌ Superlative ("unglaublich", "extrem")
+❌ Prosa fließt nicht
+
+---
+
+### CHECKLISTE (für 3-Phasen-Editor in Schritt 9)
+
+**STRUKTUR ✓**
+- [ ] Frontmatter (title, language, cssclasses, tags)
+- [ ] Headword (H1) mit Trennstrichen `|`
+- [ ] **Definition** (3-5 Sätze: Was? Wie? Wirkung? Funktion?)
+- [ ] **Geschichte** (H2, bei politischen Begriffen — narrativ!)
+- [ ] **Konstruktion** (H2, bei zusammengesetzten Begriffen — Formel!)
+- [ ] **Analyse** (H2, PFLICHT — 3-5 Mechanismen, graduiert)
+- [ ] **Anwendung** (H2, optional — Advocatus Diaboli)
+- [ ] **Belege** (H2 — Placeholder gesetzt)
+- [ ] **Abgrenzung** (H2, optional — Kontext-Abhängigkeit zeigen)
+
+**INHALT ✓**
+- [ ] Definition präzise & vollständig (5 Fragen beantwortet?)
+- [ ] Trennstriche nach Silben (nicht Morphemen!)
+- [ ] **Geschichte erzählt die Biographie** des Begriffs
+- [ ] **Geschichte: Fettdruck** für Anker-Daten (Jahr, Name, Kontext)
+- [ ] Konstruktion erklärt Wortbestandteile (Formel: A + B = C)
+- [ ] Analyse: 3-5 relevante Mechanismen
+- [ ] Analyse: Begründung zeigt WIE (nicht nur DASS)
+- [ ] Graduierung: `●` (dominant), `◐` (teilweise)
+- [ ] Anwendung zeigt Sprecher-Perspektive (Advocatus Diaboli)
+
+**STIL ✓**
+- [ ] Fließende Prosa (Read-Aloud Test bestanden?)
+- [ ] Verben der Manipulation ("tarnt", "verschleiert", "kriminalisiert")
+- [ ] Keine Moral ("zynisch", "perfide" → raus!)
+- [ ] Keine Superlative ("extrem", "massiv")
+
+**TESTS ✓**
+- [ ] **Clarity Test:** Verständlich für jemanden ohne Vorwissen?
+- [ ] **Architecture Test:** Jede Sektion hat innere Logik?
+- [ ] **Read-Aloud Test:** Fließt es beim Vorlesen?
+- [ ] **Johnson Test:** So klar wie möglich, kein Wort mehr als nötig?
+
+---
+
+## SCHRITT 1: FRONTMATTER & HEADWORD
+
+Aus deinem **Phase D Output** (dominante Mechanismen):
+
+```yaml
+---
+title: [Begriff]
+language: de
+cssclasses: dictionary-entry
+tags:
+  - Reizwort
+  - [Mechanismus 1 — dominant aus D]
+  - [Mechanismus 2 — dominant aus D, falls vorhanden]
+---
+```
+
+Headword mit Silbentrennstrichen `|` (nach Silben, NICHT Morphemen):
+- ✅ `# So|zial|tou|ris|mus`
+- ❌ `# Sozial|tourismus`
+
+---
+
+## SCHRITT 2: DEFINITION
+
+Aus deinem **Phase A Output** (Wörterbuch-Definitionen + semantische Analyse):
+
+Transformiere zu **3-5 Sätzen**. Beantworte diese 5 Fragen — NUR aus dem Material:
+
+1. **Was ist es?** → Klassifizierung ("Kampfbegriff für X", "Politisches Reizwort für Y")
+2. **Wie funktioniert es?** → Mechanismus in einem Satz
+3. **Was bewirkt es?** → Wirkung ("suggeriert X", "verschleiert Y", "kriminalisiert Z")
+4. **Warum wird es benutzt?** → Funktion/politischer Zweck
+5. **Wo steht es?** → Kontext (nur wenn essentiell)
+
+**Stil:** Verben der Manipulation (tarnt, verschleiert, kriminalisiert). KEIN Moral-Vokabular (zynisch, perfide).
+
+---
+
+## SCHRITT 3: GESCHICHTE
+
+Aus deinem **Phase B Output** (Abschnitt "7. Zusammenfassung für Draft"):
+
+Transformiere zu narrativer Geschichte (**3-5 Sätze**). KEINE Datenliste — erzähle die Geschichte.
+
+**Fettdruck für Anker-Daten:**
+- **Jahre**, **Namen**, **Parteien/Institutionen**, **Schlüssel-Kontexte**, **Status** (Unwort etc.)
+
+**Beispiel-Stil:**
+> Geprägt **2013** von **CSU/CDU-Politikern** im Kontext der **EU-Osterweiterung**. Der Begriff zielte darauf, Freizügigkeitsrechte als „Missbrauch" zu delegitimieren. Erneut aufgegriffen **2022** von **Friedrich Merz**. Zum **„Unwort des Jahres 2013"** gewählt.
+
+*Bei Vulgärsprache ohne dokumentierbare Geschichte: Sektion weglassen.*
+
+---
+
+## SCHRITT 4: KONSTRUKTION
+
+Aus deinem **Phase A Output** (Semantische Analyse / Wortbestandteile):
+
+Transformiere zu **1-2 Sätzen**:
+
+`"Teil1" (Bedeutung) + "Teil2" (Bedeutung) = Wirkung.`
+
+*Nur bei zusammengesetzten Begriffen. Bei einfachen Wörtern: Sektion weglassen.*
+
+---
+
+## SCHRITT 5: ANALYSE
+
+Aus deinem **Phase D Output** (vollständig):
+
+Übernehme direkt. Minimales Editieren (Stil, Kürze). KEIN Hinzufügen neuer Mechanismen.
+
+---
+
+## SCHRITT 6: ANWENDUNG
+
+Aus deinem **Phase C Output** (Zusammenfassung Anwendung-Sektion):
+
+Transformiere zu **2-3 Sätzen**: "Aus Sicht des Sprechers..." — zeigt, warum der Begriff verfängt, ohne ihn zu rechtfertigen.
+
+*Optional. Falls kein Material → Sektion weglassen.*
+
+---
+
+## SCHRITT 7: BELEGE (PLACEHOLDER — NICHT AUSFÜLLEN)
+
+```markdown
+## Belege
+
+● [BELEG 1: AUSSTEHEND]
+
+● [BELEG 2: AUSSTEHEND]
+
+● [BELEG 3: AUSSTEHEND]
+```
+
+**Nicht ergänzen. Nicht raten. Placeholder bleibt bis zur DIP-Verifikation.**
+
+---
+
+## SCHRITT 8: ABGRENZUNG
+
+Aus deinem **Phase C Output** (Zusammenfassung Abgrenzung-Sektion):
+
+Übernehme die „Nicht gemeint, wenn..."-Formulierungen direkt. Minimal editieren.
+
+*Optional. Falls kein Material → Sektion weglassen.*
+
+---
+
+## SCHRITT 9: 3-PHASEN-EDITOR
+
+Führe jetzt den vollständigen 3-Phasen-Editor durch. **Keine weiteren Informationen hinzufügen — nur verfeinern, was da ist.**
+
+### PHASE 1: ANALYSE (Diagnostiziere — ändere nichts)
+
+Prüfe schonungslos:
+- **Definition:** Alle 5 Fragen beantwortet? Präzise Verben?
+- **Geschichte:** Narrativ (nicht Liste)? Fettdruck gesetzt?
+- **Konstruktion:** Formel klar und direkt?
+- **Analyse:** Begründungen zeigen WIE (nicht nur DASS)?
+- **Anwendung:** Advocatus Diaboli klar, keine Rechtfertigung?
+- **Abgrenzung:** Draft-fertig formuliert?
+- **Gesamt:** Fließt es beim Vorlesen (Read-Aloud Test)? Kein Wort zu viel (Johnson Test)?
+
+Liefere: Strukturierten Analyse-Report mit Editierplan.
+
+### PHASE 2: EDITIEREN
+
+Basierend auf Phase 1:
+- Strukturelle Schnitte (was gehört nicht rein?)
+- Logik-Reparaturen (Übergänge, Progression)
+- Sprachlicher Schliff: Passiv → Aktiv, Substantivierungen → Verben, Füllwörter raus
+
+Zeige Thinking für größere Änderungen:
+```
+[THINKING: Warum ändere ich X?]
+```
+
+### PHASE 3: QUALITY CHECK
+
+Score 1-10 für jede Dimension:
+1. Gedankliche Logik
+2. Strukturelle Klarheit
+3. Effizienz und Schnitt
+4. Sprachliche Präzision
+5. Konkretheit
+
+**Durchschnitt < 9.0 → zweite Iteration sofort.**
+
+---
+
+## FINALER OUTPUT
+
+1. Phase A Output
+2. Phase B Output
+3. Phase C Output
+4. Phase D Output
+5. Analyse-Report (Editor Phase 1)
+6. Editierter Eintrag (Editor Phase 2)
+7. Quality Score + finaler Eintrag (Editor Phase 3)
+
+**Der finale Eintrag ist publikationsreif — bis auf die Belege-Placeholders.**

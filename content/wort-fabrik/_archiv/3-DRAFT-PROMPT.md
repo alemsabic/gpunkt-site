@@ -25,12 +25,12 @@ Du bekommst vollständiges Recherche-Material für einen Wörterbuch-Eintrag:
 - Abgrenzungs-Kontexte (wissenschaftlich, satirisch, etc.)
 → **Material für:** Anwendung, Abgrenzung
 
-**MECHANISMUS-ANALYSE**
+**D. MECHANISMUS-ANALYSE**
 - 14 Mechanismen analysiert (● dominant, ◐ teilweise)
 → **Material für:** Analyse
 
-**BELEGE (DIP + WEB)**
-- Originalzitate mit Metadaten
+**BELEGE (DIP — verifiziert)**
+- Originalzitate aus Bundestag-Protokollen mit Metadaten
 → **Material für:** Belege
 
 ---
@@ -118,13 +118,13 @@ Du bekommst **fünf Recherche-Dokumente** als Input:
 - Nutze die **Abgrenzungen** (draft-fertig formuliert: "Nicht gemeint, wenn...")
 - Falls keine legitimen Kontexte → Abgrenzung weglassen
 
-**MECHANISMUS-Begriff.md:**
-- Nutze die **Gesamtanalyse** (dominante Mechanismen mit ●)
+**D-Mechanismus.md:**
+- Nutze die **Mechanismus-Analyse** (dominante ● und teilweise ◐)
 - Nutze die **Begründungen** (zeigen WIE, nicht nur DASS)
 - Wähle 3-5 relevante Mechanismen
 
-**DIP-Begriff.md + WEB-Begriff.md:**
-- Nutze die **ausgewählten Zitate** (wurden bereits manuell gesichtet!)
+**DIP-Belege (verifiziert, manuell gesichtet):**
+- Nutze die **ausgewählten Zitate** (Triple-verifiziert!)
 - Chronologisch ordnen (früheste zuerst)
 - Format: `● Name (Partei, Funktion) Kontext Datum [@citekey]: »Zitat mit ==Begriff==.«`
 

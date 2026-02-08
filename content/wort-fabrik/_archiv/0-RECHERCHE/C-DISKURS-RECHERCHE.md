@@ -14,30 +14,30 @@ Du recherchierst die **diskursive Funktion** eines Begriffs. Diese Recherche lie
 
 ---
 
-## ⚠️ KRITISCHE WARNUNG: KEINE HALLUZINATIONEN
+## ⚠️ KRITISCHE WARNUNG: NUR FAKTEN — KEINE VERBATIM-ZITATE
+
+**Diese Recherche liefert diskursives Verstehen für Anwendung und Abgrenzung. Verbatim-Zitate kommen AUSSCHLIESSLICH aus DIP (Bundestag-Protokolle, separat verifiziert). Hier KEIN einziges wörtliches Zitat!**
 
 **Lieber leer lassen als erfinden!**
 
-Du wirst nach Quellen, Zitaten, Links, Studien gefragt. Befolge STRIKT:
-
-✅ **NUR verwenden, wenn:**
-- [ ] Du den Original-Link TATSÄCHLICH öffnen konntest
-- [ ] Das Zitat WORT-FÜR-WORT im Original steht
-- [ ] Die URL funktioniert (nicht konstruiert!)
-- [ ] Wissenschaftliche Quellen mit DOI/Link verifizierbar sind
+✅ **NUR verwenden:**
+- Narrative Fakten (wer nutzt den Begriff, in welchem Kontext)
+- Frames und Diskursmuster (analytisch beschreibbar)
+- Gegenbegriffe und Fachbegriffe (bekannt und belegbar)
+- Funktionen und Wirkungsweisen (analytisch, nicht zitierend)
 
 ❌ **NIEMALS:**
-- Plausibel klingende Zitate erfinden
+- Verbatim-Zitate (auch keine "typischen" oder "sinngemäßen"!)
 - Studien erfinden ("Es gibt bestimmt eine Studie, die...")
 - Links konstruieren oder aus Erinnerung rekonstruieren
-- Narrative/Frames ohne Beleg behaupten
+- Narrative/Frames ohne Grundlage behaupten
 
 **Bei Unsicherheit:**
-→ Schreibe: "Keine verifizierbaren Quellen gefunden"
+→ Schreibe: "Keine verifizierbaren Informationen gefunden"
 → Lasse das Feld LEER
 → Erfinde NICHTS
 
-**Warum:** Falsche Zitate = Rufschädigung. Lieber eine Lücke als eine Lüge.
+**Warum:** Falsche Zitate = Rufschädigung. Verbatim-Zitate kommen später aus DIP. Lieber eine Lücke als eine Lüge.
 
 ---
 
@@ -98,7 +98,7 @@ Du wirst nach Quellen, Zitaten, Links, Studien gefragt. Befolge STRIKT:
 ### Narrative
 1. **"[Narrativ-Name]"**
    - Beschreibung: [...]
-   - Beispiel: [Zitat oder Kontext]
+   - Beispiel: [Kurze Beschreibung des Kontexts — kein Verbatim-Zitat]
 
 2. **"[Narrativ-Name]"**
    - ...
@@ -227,7 +227,6 @@ Du wirst nach Quellen, Zitaten, Links, Studien gefragt. Befolge STRIKT:
 
 **Fachbereich:** [z.B. Migrationsforschung]
 **Bedeutung:** [Neutrale Definition]
-**Beispiel:** "[Zitat aus wissenschaftlicher Quelle]"
 **Abgrenzung:** "Nicht gemeint, wenn [Begriff] in [Fachbereich] genutzt wird, um [neutrale Bedeutung] zu beschreiben."
 ```
 
@@ -388,8 +387,7 @@ Erstelle ein Markdown-Dokument mit folgender Struktur:
 
 **Fachbereich:** [z.B. Migrationsforschung]
 **Neutrale Bedeutung:** [Definition]
-**Beispiel:** "[Zitat aus wissenschaftlicher Quelle]"
-**Quelle:** [Link]
+**Fachbereich:** [Wo wird der Begriff wissenschaftlich neutral genutzt?]
 
 **Abgrenzung (Draft-formuliert):**
 "Nicht gemeint, wenn ==[Begriff]== in [Fachbereich] genutzt wird, um [neutrale Bedeutung] zu beschreiben."
@@ -453,7 +451,7 @@ Nicht gemeint, wenn der Begriff in satirischem oder parodistischem Kontext verwe
 ✅ **Diskurs-Analyse:**
 - [ ] Mindestens 3 Akteure identifiziert (Parteien, Medien, etc.)
 - [ ] Narrative und Frames beschrieben
-- [ ] Beispiele/Zitate vorhanden
+- [ ] Beispiele/Kontexte vorhanden (KEINE Verbatim-Zitate!)
 
 ✅ **Funktions-Analyse:**
 - [ ] Advocatus Diaboli: Sprecher-Perspektive nachvollziehbar dargestellt
