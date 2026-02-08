@@ -233,7 +233,7 @@ Lieber ein gehaltvolles Zitat eines regulären Abgeordneten als ein banales Zita
 
 - `WORKFLOW.md` - Phase 2: Manuelle Sichtung
 - `CLAUDE.md` - Triple-Verification Rules
-- `VORLAGE.md` - Wie Zitate im finalen Eintrag aussehen
+- `3-DRAFT-THIS.md` - Wie Zitate im finalen Eintrag aussehen
 
 ---
 

@@ -4,6 +4,14 @@
 
 ---
 
+## KONTEXT-MATERIAL (Bundestag-Recherche)
+
+*[HIER DEN OUTPUT VON 1.6-DIP-SICHTUNG-PROMPT.MD EINFÜGEN]*
+
+*Dieses Material dient als faktische Grundlage für Phasen B und C — die KI leitet das Narrativ daraus ab. Belege-Sektion NICHT ausfüllen.*
+
+---
+
 Arbeite alle 5 Phasen sequenziell durch. Liefere jeden Output vollständig bevor du zur nächsten Phase gehst. Phase D nutzt deine Outputs aus A, B, C als Kontext. Phase E transformiert alle vorherigen Outputs in den fertigen Eintrag — keine ← Material-Slots, stattdessen nutze direkt deine eigenen Outputs.
 
 ---
