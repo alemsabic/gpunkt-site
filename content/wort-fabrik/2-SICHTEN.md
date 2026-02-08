@@ -8,15 +8,107 @@
 
 ---
 
-## AUSWAHLKRITERIEN (Priorität von oben nach unten)
+## DIE 8 AUSWAHLKRITERIEN
 
-1. **Zitat-Qualität** vor Prominenz — argumentativ > banal, auch wenn Hinterbänkler
-2. **Primärzitat** bevorzugen — Sprecher nutzt Begriff selbst (nicht: "X sagte...")
-3. **Balance** — min. 2-3 affirmative Verwendungen, Rest kritisch/metasprachlich
-4. **Zeitliche Spreizung** — chronologisch verteilt über alle verfügbaren Jahre
-5. **Klarheit** — Begriff im Zentrum, Kontext erkennbar, nicht beiläufig
+**Grundsatz: Zitat-Qualität > Prominenz** — lieber ein gehaltvolles Zitat eines Hinterbänklers als ein banales Zitat eines Ministers.
 
-**Faustregel:** Lieber 10 als 6 — beim Schreiben kürzen wir, nicht beim Sichten.
+---
+
+### 1. Zitat-Qualität / Aussagekraft (Gewicht: Sehr hoch)
+
+**Gut (verwenden):**
+- Argumentativ: Erklärt warum der Begriff problematisch/richtig ist
+- Konkret: Nennt Fakten, Zahlen, spezifische Beispiele
+- Positionierung: Klare politische Einordnung erkennbar
+
+**Schlecht (streichen):**
+- Banal: "Das Thema wird diskutiert" / "Wir sollten darüber reden"
+- Leer: Keine Argumentation, nur Behauptung
+- Wiederholung: Sagt nur, was schon alle gesagt haben
+
+✅ Gut: »Der Begriff ist zynisch, weil er verschleiert, dass 80% der EU-Zuwanderer arbeiten und Steuern zahlen« *(Argumentation + Zahl)*
+
+❌ Banal: »Wir müssen über Sozialtourismus diskutieren« *(keine Position)*
+
+---
+
+### 2. Prominenz des Sprechers (Gewicht: Hoch, aber nachrangig!)
+
+Rangfolge bei gleicher Qualität:
+1. Bundeskanzler/Bundespräsident
+2. Minister (Bundesregierung)
+3. Staatssekretäre
+4. Fraktionsvorsitzende
+5. Bekannte Abgeordnete (langjährig, Ex-Minister)
+6. Reguläre Abgeordnete
+
+---
+
+### 3. Art der Verwendung (Gewicht: Sehr hoch)
+
+**Affirmativ** (Sprecher nutzt Begriff selbst → zeigt Etablierung):
+- "Wir müssen X verhindern"
+- "Das ist X"
+
+**Kritisch** (Sprecher lehnt Begriff ab → zeigt Gegenwehr):
+- "Der Begriff X ist falsch"
+- "Das Unwort X stigmatisiert"
+
+**PFLICHT: Mindestens 2-3 affirmative Zitate** — sonst fehlt die Etablierungsgeschichte.
+
+---
+
+### 4. Primär- vs. Sekundärzitat (Gewicht: Hoch)
+
+**Primärzitat (bevorzugen):** Sprecher verwendet Begriff selbst, direkte Rede.
+
+**Sekundärzitat (vermeiden):** "Merz sagte, es sei X" / indirekte Rede.
+
+---
+
+### 5. Klarheit der Verwendung (Gewicht: Mittel)
+
+Begriff steht im Zentrum — nicht beiläufig, nicht verschachtelt.
+
+✅ Gut: »Aber sie darf nicht zu einer Art „X" mit massiver Armutseinwanderung führen«
+
+❌ Schlecht: »...und dann wurde auch das Thema X kurz angesprochen, wobei...«
+
+---
+
+### 6. Zitat-Länge: Kontext bevorzugen (Gewicht: Mittel)
+
+Lieber **2-4 Sätze** mit Kontext als 1 Satz isoliert. Beim Schreiben kürzen wir — beim Sichten nicht.
+
+✅ Gut: »Die Niederlassungsfreiheit müssen wir bewahren. Aber sie darf nicht zu einer Art „X" führen.« *(Kontext erkennbar)*
+
+❌ Zu kurz: »Das ist X.« *(Wovon spricht er? Affirmativ oder sarkastisch?)*
+
+---
+
+### 7. Zeitliche Spreizung (Gewicht: Mittel)
+
+Entwicklung des Begriffs zeigen:
+- 1× Frühe Phase (Etablierung)
+- 2-3× Hochphase
+- 1× Aktuelle Verwendung
+
+---
+
+### 8. Kontext-Integrität (Gewicht: Sehr hoch)
+
+Zitat darf nicht aus dem Zusammenhang gerissen sein.
+
+❌ Problematisch: Sprecher sagt "Das ist KEIN X!" → Zitat zeigt "Das ist [...] X!"
+
+---
+
+## HÄUFIGE FEHLER
+
+- ❌ Nur kritische Zitate → Etablierungsgeschichte fehlt
+- ❌ Alle aus einem Jahr → keine zeitliche Entwicklung
+- ❌ Sekundärzitate ("X sagte...") bevorzugt
+- ❌ Banales Minister-Zitat statt gutem Hinterbänkler-Zitat
 
 ---
 
@@ -54,46 +146,8 @@
 
 - **Keine Begründungen** — nur Fakten, kein Meta-Kommentar
 - **Zitate exakt** aus DIP-Datei (nicht kürzen, nicht paraphrasieren)
-- **Citekeys** aus DIP-Datei übernehmen
-- **BibTeX** aus DIP-Datei übernehmen (Format: `note = {Plenarprotokoll WP/Nr}`)
-
----
-
-## BEISPIEL-OUTPUT
-
-```markdown
-## KONTEXT-MATERIAL (Bundestag-Recherche)
-
-*9 Zitate aus 2014–2025. Faktische Grundlage für Phasen B und C. Belege-Sektion NICHT ausfüllen.*
-
-### Affirmativ (Begriff wird verwendet)
-
-1. **Wolfgang Schäuble** (Finanzminister/CDU, 2014-04-08): »Die Niederlassungsfreiheit in Europa müssen wir bewahren. Aber sie darf natürlich nicht zu einer Art „Sozialtourismus" mit massiver Armutseinwanderung führen.«
-   `schaeuble_2014` · BT 18/28
-
-2. **Olaf Scholz** (Bundeskanzler/SPD, 2025-01-30): »[Zitat]«
-   `scholz_2025` · BT 21/XX
-
-### Kritisch / Metasprachlich
-
-1. **[Name]** ([Funktion], [JJJJ-MM-TT]): »[Zitat]«
-   `[citekey]` · BT [WP]/[Nr]
-
-### BibTeX (für Zotero-Import)
-
-```bibtex
-@misc{schaeuble_2014,
-  title = {Rede im Deutschen Bundestag als Bundesminister der Finanzen},
-  author = {Schäuble, Wolfgang},
-  year = {2014},
-  month = {4},
-  day = {8},
-  howpublished = {Plenarprotokoll 18/28, Deutscher Bundestag},
-  url = {https://dserver.bundestag.de/btp/18/18028.pdf},
-  note = {Plenarprotokoll 18/28}
-}
-```
-```
+- **Citekeys + BibTeX** exakt aus DIP-Datei übernehmen
+- **BibTeX-Format:** `note = {Plenarprotokoll WP/Nr}` — keine Seitenzahlen
 
 ---
 
