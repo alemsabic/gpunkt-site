@@ -66,7 +66,7 @@ def extract_context_around_paragraph(rede_elem, target_p, term):
     context = re.sub(r'^[–\-\s]+', '', context).strip()
     # Fragment-Markierung: Kleinbuchstaben-Start → Zitat beginnt mid-sentence
     if context and context[0].islower():
-        context = '\u2026 ' + context
+        context = '[\u2026] ' + context
     # Satzzeichen-Cluster in der Mitte glätten (z.B. ,. → .)
     context = re.sub(r',([.!?])', r'\1', context)
     context = re.sub(r'[–\-]([.!?])', r'\1', context)
