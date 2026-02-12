@@ -59,9 +59,14 @@ def extract_context_around_paragraph(rede_elem, target_p, term):
                 paragraphs.append(text)
             break
 
-    context = '  '.join(paragraphs)
+    context = ' '.join(paragraphs)
+    # Mehrfache Leerzeichen normalisieren
+    context = re.sub(r' {2,}', ' ', context).strip()
     # Führende Artefakte (Gedankenstriche, Leerzeichen)
     context = re.sub(r'^[–\-\s]+', '', context).strip()
+    # Fragment-Markierung: Kleinbuchstaben-Start → Zitat beginnt mid-sentence
+    if context and context[0].islower():
+        context = '\u2026 ' + context
     # Satzzeichen-Cluster in der Mitte glätten (z.B. ,. → .)
     context = re.sub(r',([.!?])', r'\1', context)
     context = re.sub(r'[–\-]([.!?])', r'\1', context)
@@ -114,6 +119,7 @@ def extract_top_title(rede_elem, parent_map):
     #   "– Zweite Beratung..." → "Zweite Beratung..."
     title = re.sub(r'^[–\-\s]+', '', title)
     title = re.sub(r'^\d+\.?\s+([a-zA-Z]\)\s+)?', '', title)
+    title = re.sub(r'^[a-zA-Z]\)\s+', '', title)
     # Abschließenden Doppelpunkt entfernen
     title = title.rstrip(': \t')
     # Ersten Buchstaben großschreiben (Fragmente wie "auf Verlangen..." → "Auf Verlangen...")
@@ -227,7 +233,7 @@ def generate_bibtex(nachname, vorname, jahr, monat, tag, wp, dok_nr, pdf_url, ci
         f"  shorttitle = {{{shorttitle}}},",
         f"  author = {{{nachname}, {vorname}}},",
         f"  year = {{{jahr}}},",
-        f"  month = {{{monat}}},",
+        f"  month = {{{monat:02d}}},",
         f"  day = {{{tag}}},",
         f"  address = {{{address}}},",
         f"  organization = {{{organization}}},",
