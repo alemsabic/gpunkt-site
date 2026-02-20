@@ -13,7 +13,7 @@ tags:
 
 ## Aufbau
 
-„Lügen-" (voller Lügen, Absicht als Bedingung) + „-presse" (die Institution, nicht die Einzelzeitung) = Das Kompositum überträgt die Eigenschaft des Einzelfehlers auf das Gesamtgebäude — als wäre die Eigenschaft nicht Merkmal, sondern Wesenskern.
+„Lügen-" (Absicht als Bedingung) + „-presse" (die Institution, nicht die Einzelzeitung) = Der Fehler einer Redaktion wird zur Natur aller Medien.
 
 ## Bedeutung · [K]
 
@@ -23,7 +23,7 @@ Das Wort greift nicht den Wahrheitsgehalt eines einzelnen Artikels an — es gre
 
 ## Andere Lesart · [A]
 
-Der Sprecher erlebt eine Lücke, die sich nicht durch Zufall erklären lässt: was er in seiner Alltagswirklichkeit wahrnimmt — gestiegene Kriminalität, kulturelle Verschiebungen, wirtschaftlicher Druck — findet in der etablierten Berichterstattung keinen Widerhall. Nicht gelegentlich und nicht zufällig, sondern mit einer Regelmäßigkeit, die koordiniertes Schweigen nahelegt. Das Wort schließt diese Erklärungslücke: nicht viele kleine Versehen verstreut über viele Redaktionen, sondern eine Institution mit einer Agenda. Wer das einmal so sieht, gehört zu jenen, die aufgehört haben, sich täuschen zu lassen — das ist die initiatorische Kraft des Begriffs: nicht nur Diagnose, sondern Mitgliedschaft.
+Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist — gestiegene Kriminalität, kulturelle Verschiebungen, wirtschaftlicher Druck — findet in der etablierten Berichterstattung keinen Widerhall. Nicht gelegentlich und nicht zufällig, sondern mit einer Regelmäßigkeit, die koordiniertes Schweigen nahelegt. Das Wort schließt diese Erklärungslücke: nicht viele kleine Versehen verstreut über viele Redaktionen, sondern eine Institution mit einer Agenda. Wer das einmal so sieht, gehört zu jenen, die aufgehört haben, sich täuschen zu lassen — das ist die initiatorische Kraft des Begriffs: nicht nur Diagnose, sondern Mitgliedschaft.
 
 ---
 
@@ -82,12 +82,14 @@ Der Sprecher erlebt eine Lücke, die sich nicht durch Zufall erklären lässt: w
 
 ## Mechanismen
 
-*   ● **Inversion (dominant):** Die freie Presse, die Mächtige kontrolliert, wird selbst zur Macht erklärt — zur Täterinstanz, die das Volk manipuliert. Was Schutz vor Mächtigen ist, gilt als Werkzeug der Mächtigen.
-*   ● **Kriminalisierung (dominant):** „Lüge" ist keine Falschaussage — sie setzt Absicht voraus. Das Wort erhebt die Anklage auf Täuschung, bevor ein konkreter Fehler benannt ist. Jede Korrektur, jede Lücke, jede andere Gewichtung gilt seitdem als Beleg.
-*   ● **Ontologisierung (dominant):** „Die Lügenpresse" ist keine Beschreibung einzelner Artikel oder Fehler — sie ist eine Wesenskategorie. Das Kompositum macht aus Ereignissen eine Eigenschaft, aus einer Institution ein Wesen mit festem Charakter. **Zoom:** „Die Lügenpresse lügt" ist eine Tautologie — aber die Tautologie ist unsichtbar, weil die Ontologisierung grammatisch vollzogen ist. Vergleich: „Eine Zeitung hat falsch berichtet" erfordert Belege; „die Lügenpresse lügt" erfordert keine. Das Wort schafft eine Kategorie, die sich selbst beweist.
+*   ● **Inversion:** Die freie Presse, die Mächtige kontrolliert, wird selbst zur Macht erklärt — zur Täterinstanz, die das Volk manipuliert. Was Schutz vor Mächtigen ist, gilt als Werkzeug der Mächtigen.
+*   ● **Kriminalisierung:** „Lüge" ist keine Falschaussage — sie setzt Absicht voraus. Das Wort erhebt die Anklage auf Täuschung, bevor ein konkreter Fehler benannt ist. Jede Korrektur, jede Lücke, jede andere Gewichtung gilt seitdem als Beleg.
+*   ● **Ontologisierung (im Fokus):** „Die Lügenpresse" ist keine Beschreibung einzelner Artikel oder Fehler — sie ist eine Wesenskategorie. Das Kompositum macht aus Ereignissen eine Eigenschaft, aus einer Institution ein Wesen mit festem Charakter. „Die Lügenpresse lügt" ist eine Tautologie — aber die Tautologie ist unsichtbar, weil die Ontologisierung grammatisch vollzogen ist. Vergleich: „Eine Zeitung hat falsch berichtet" erfordert Belege; „die Lügenpresse lügt" erfordert keine. Das Wort schafft eine Kategorie, die sich selbst beweist.
 *   ◐ **Entpolitisierung:** Der Angriff auf die Pressefreiheit erscheint als epistemische Kritik — als Frage der Wahrheit, nicht der Macht. Wer „Lügenpresse" sagt, behauptet keine politische Agenda, sondern Wahrheitsliebe.
-*   ◐ **Militarisierung:** Das Wort selbst ist zivil — im PEGIDA- und AfD-Kontext nimmt es Kriegsvokabular auf: „Kampf gegen die Lügenpresse", „Widerstand", „Front". Der Mechanismus liegt nicht im Begriff, sondern in seinem habituellen Verwendungsrahmen.
+*   ◐ **Militarisierung:** Das Wort selbst ist zivil — im PEGIDA[^1]- und AfD-Kontext nimmt es Kriegsvokabular auf: „Kampf gegen die Lügenpresse", „Widerstand", „Front". Der Mechanismus liegt nicht im Begriff, sondern in seinem habituellen Verwendungsrahmen.
 
 ---
 
 <aside>(*) Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf — beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
+
+[^1]: Pegida (Patriotische Europäer gegen die Islamisierung des Abendlandes), 2014 in Dresden gegründet. Wöchentliche Montagsdemonstrationen, auf denen „Lügenpresse!" zur Standardparole wurde.
