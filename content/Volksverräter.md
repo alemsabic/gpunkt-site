@@ -18,7 +18,7 @@ tags:
 
 Das Wort sitzt auf dem Gerüst von *Volksvertreter* – gleicher Klang, gleicher Rhythmus. Es muss nicht argumentieren: Die demokratische Form bleibt, ihr Inhalt ist umgekehrt. Das Suffix *-er* macht aus dem Verrat ein Wesen – wer Volksverräter ist, ist es dauerhaft, ohne Widerruf. Das Stammwort gehört zum Kriegsvokabular: Es setzt einen Krieg voraus, ohne ihn zu benennen, und schreibt die Strafe in den Begriff, ohne sie auszusprechen.
 
-<aside>Nicht gemeint, wenn das Wort metasprachlich zitiert wird – als Objekt der Analyse, als Beleg für den Zustand des Diskurses, als historisches Dokument. Sieben von neun Belegen im parlamentarischen Korpus haben diese Funktion.</aside>
+<aside>**Ausnahme:** Nicht gemeint, wenn das Wort metasprachlich zitiert wird – als Objekt der Analyse, als Beleg für den Zustand des Diskurses, als historisches Dokument. Sieben von neun Belegen im parlamentarischen Korpus haben diese Funktion.</aside>
 
 ## Andere Lesart · [A]
 

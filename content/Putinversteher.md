@@ -16,7 +16,7 @@ tags:
 
 Putinversteher verschiebt den Gegenstand einer Debatte: nicht das Argument steht zur Prüfung, sondern die Person, die es vorträgt. Es beantwortet keinen Einwand – es ersetzt ihn durch eine Loyalitätsfrage. Es dreht die Logik des Suffix um: Wer Putin versteht, hat sich nicht erklärt – er hat sich verraten. Das Wort belegt keine These des Bezeichneten – es beschreibt seinen Charakter.
 
-<aside>Nicht gemeint, wenn das Verstehen analytisch ist und der Erklärung dient, nicht der Billigung. Ein Diplomat, der Putins Kalkül beschreibt, um ihm entgegenzuwirken, ist Fachmann.</aside>
+<aside>**Ausnahme:** Nicht gemeint, wenn das Verstehen analytisch ist und der Erklärung dient, nicht der Billigung. Ein Diplomat, der Putins Kalkül beschreibt, um ihm entgegenzuwirken, ist Fachmann.</aside>
 
 ## Andere Lesart · [A]
 

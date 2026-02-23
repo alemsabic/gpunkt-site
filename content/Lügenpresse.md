@@ -18,7 +18,7 @@ tags:
 
 Das Wort greift nicht den Wahrheitsgehalt eines einzelnen Artikels an. Es greift den Existenzgrund der Institution an. Es spaltet die Medienlandschaft in Manipulateure und Wahrheitssprecher, ohne dass ein Beweis diesen Status vergeben oder entziehen könnte. Es verwandelt redaktionelle Fehler und Auslassungen in Indizien – nicht für Versagen, sondern für Vorsatz. Das Kompositum entzieht dem Medium die Glaubwürdigkeit, noch bevor der erste Artikel gelesen ist. Wer diesen Vorwurf widerlegen will, muss nicht mehr die Recherche belegen. Er muss seine Unschuld beweisen.
 
-<aside>Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf – beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
+<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf – beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
 
 ## Andere Lesart · [A]
 

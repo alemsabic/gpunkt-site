@@ -18,7 +18,7 @@ tags:
 
 Wirtschaftsflüchtling fällt das Urteil, bevor der Fall geprüft ist. Das Wort spaltet Schutzsuchende in zwei Gruppen: die „echt“ Verfolgten, denen Schutz zusteht, und die „unechten“ Profiteure, die das Asylrecht missbrauchen. Indem es wirtschaftliche Not als persönliche Entscheidung rahmt – nicht als Flucht, sondern als Kalkül –, entzieht es dem Schutzsuchenden seinen Status noch vor der individuellen Prüfung. Was wie eine Unterscheidung aussieht, ist ein Urteil vor dem Verfahren.
 
-<aside>Nicht gemeint, wenn der Begriff verwaltungssprachlich oder sozialwissenschaftlich verwendet wird, um Migrationsursachen zu klassifizieren – ohne den normativen Subtext der Delegitimierung des Schutzanspruchs.</aside>
+<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff verwaltungssprachlich oder sozialwissenschaftlich verwendet wird, um Migrationsursachen zu klassifizieren – ohne den normativen Subtext der Delegitimierung des Schutzanspruchs.</aside>
 
 ## Andere Lesart · [A]
 

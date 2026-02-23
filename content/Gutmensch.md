@@ -18,7 +18,7 @@ tags:
 
 Gutmensch greift nicht das Argument an. Es greift das Motiv an. Überzeugung erscheint als Eitelkeit, Empathie als Pose, Engagement als Selbstdarstellung. Wer so bezeichnet wird, hat keine Sachfrage mehr zu beantworten. Er hat zu beweisen, dass er das, was er vertritt, wirklich meint. Das Wort hat die Debatte gewonnen, bevor sie geführt wurde.
 
-<aside>Nicht gemeint, wenn der Begriff bewusst ironisch als Selbstbezeichnung oder Ehrentitel verwendet wird – eine Umdeutung, die seinen pejorativen Ursprung kennt und ihn bewusst unterläuft.</aside>
+<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff bewusst ironisch als Selbstbezeichnung oder Ehrentitel verwendet wird – eine Umdeutung, die seinen pejorativen Ursprung kennt und ihn bewusst unterläuft.</aside>
 
 ## Andere Lesart · [A]
 
