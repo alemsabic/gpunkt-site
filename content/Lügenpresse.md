@@ -9,8 +9,7 @@ tags:
   - Unwort2014
 ---
 
-# Lü|gen|pres|se (*)
-
+# Lü|gen|pres|se
 ## Aufbau
 
 „Lügen-" (Absicht als Bedingung) + „-presse" (die Institution, nicht die Einzelzeitung) = Der Fehler einer Redaktion wird zur Natur aller Medien.
@@ -19,13 +18,11 @@ tags:
 
 Das Wort greift nicht den Wahrheitsgehalt eines einzelnen Artikels an — es greift den Existenzgrund der Institution an. Es spaltet die Medienlandschaft in Manipulateure und Wahrheitssprecher, ohne dass ein Beweis diesen Status vergeben oder entziehen könnte. Es verwandelt redaktionelle Fehler und Auslassungen in Indizien — nicht für Versagen, sondern für Vorsatz. Das Kompositum entzieht dem Medium die Glaubwürdigkeit, noch bevor der erste Artikel gelesen ist. Wer diesen Vorwurf widerlegen will, muss nicht mehr die Recherche belegen — er muss seine Unschuld beweisen.
 
----
+<aside>Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf — beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
 
 ## Andere Lesart · [A]
 
 Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist — gestiegene Kriminalität, kulturelle Verschiebungen, wirtschaftlicher Druck — findet in der etablierten Berichterstattung keinen Widerhall. Nicht gelegentlich und nicht zufällig, sondern mit einer Regelmäßigkeit, die koordiniertes Schweigen nahelegt. Das Wort schließt diese Erklärungslücke: nicht viele kleine Versehen verstreut über viele Redaktionen, sondern eine Institution mit einer Agenda. Wer das einmal so sieht, gehört zu jenen, die aufgehört haben, sich täuschen zu lassen — das ist die initiatorische Kraft des Begriffs: nicht nur Diagnose, sondern Mitgliedschaft.
-
----
 
 ## Wortgefecht
 
@@ -78,8 +75,6 @@ Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist — gestiegene K
 >
 > — **Renate Künast** (BÜNDNIS 90/DIE GRÜNEN) · [@kuenast_2025_01_30]
 
----
-
 ## Mechanismen
 
 *   ● **Inversion:** Die freie Presse, die Mächtige kontrolliert, wird selbst zur Macht erklärt — zur Täterinstanz, die das Volk manipuliert. Was Schutz vor Mächtigen ist, gilt als Werkzeug der Mächtigen.
@@ -87,9 +82,4 @@ Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist — gestiegene K
 *   ● **Ontologisierung (im Fokus):** „Die Lügenpresse" ist keine Beschreibung einzelner Artikel oder Fehler — sie ist eine Wesenskategorie. Das Kompositum macht aus Ereignissen eine Eigenschaft, aus einer Institution ein Wesen mit festem Charakter. „Die Lügenpresse lügt" ist eine Tautologie — aber die Tautologie ist unsichtbar, weil die Ontologisierung grammatisch vollzogen ist. Vergleich: „Eine Zeitung hat falsch berichtet" erfordert Belege; „die Lügenpresse lügt" erfordert keine. Das Wort schafft eine Kategorie, die sich selbst beweist.
 *   ◐ **Entpolitisierung:** Der Angriff auf die Pressefreiheit erscheint als epistemische Kritik — als Frage der Wahrheit, nicht der Macht. Wer „Lügenpresse" sagt, behauptet keine politische Agenda, sondern Wahrheitsliebe.
 *   ◐ **Militarisierung:** Das Wort selbst ist zivil — im PEGIDA[^1]- und AfD-Kontext nimmt es Kriegsvokabular auf: „Kampf gegen die Lügenpresse", „Widerstand", „Front". Der Mechanismus liegt nicht im Begriff, sondern in seinem habituellen Verwendungsrahmen.
-
----
-
-<aside>(*) Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf — beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
-
 [^1]: Pegida (Patriotische Europäer gegen die Islamisierung des Abendlandes), 2014 in Dresden gegründet. Wöchentliche Montagsdemonstrationen, auf denen „Lügenpresse!" zur Standardparole wurde.

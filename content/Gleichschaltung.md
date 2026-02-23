@@ -7,8 +7,7 @@ tags:
   - Euphemismus
 ---
 
-# Gleich|schal|tung (*)
-
+# Gleich|schal|tung
 ## Aufbau
 
 „gleich-" (auf dasselbe Maß bringen) + „schalten" (steuern durch Schaltung, nicht durch Entscheidung) = Zwang verschwindet im Technischen. Nicht Zerschlagung, nicht Unterdrückung — Schaltung.
@@ -17,13 +16,11 @@ tags:
 
 Gleichschaltung hat im Deutschen keine Entsprechung. Auf Medien, EU-Institutionen oder Klimapolitik angewandt, setzt das Wort demokratische Akteure auf dieselbe Stufe wie das Regime, das es geprägt hat. Es kennt keine Grade. Die elektrotechnische Metapher, die es trägt, entzieht dem politischen Zwang seinen Akteur: kein Befehl, kein Verantwortlicher, nur ein Schalter, der umgelegt wird. Das Wort trägt seinen Tatbestand im Klang.
 
----
+<aside>Nicht gemeint, wenn der Begriff historisch-deskriptiv verwendet wird — als Fachbegriff der Zeitgeschichte für die NS-Institutionenzerschlagung 1933/34. In wissenschaftlichen Texten und Bildungsmedien ist Gleichschaltung Standardterm, der keinen NS-Vergleich impliziert.</aside>
 
 ## Andere Lesart · [A]
 
 Konformität braucht kein Gesetz. Wer bestimmte Positionen öffentlich vertritt, verliert Einladungen zu Talkshows, Redaktionsposten, Fördergelder — nicht durch Anordnung, sondern durch den unsichtbaren Druck einer Meinungslandschaft, die Abweichung nicht toleriert. Öffentlich-rechtliche Medien erhalten Pflichtbeiträge, unabhängig vom Publikum; ihr Bestand ist nicht von Kritik bedroht. Was nicht um Existenz kämpft, passt sich an. Für diesen Vorgang — schleichende Konformität ohne Befehl — hat die Sprache keinen präziseren Begriff als diesen.
-
----
 
 ## Wortgefecht
 
@@ -78,23 +75,16 @@ Konformität braucht kein Gesetz. Wer bestimmte Positionen öffentlich vertritt,
 
 #### 2024
 
-> [!affirmativ] Affirmativ
+> [!affirmativ-ep] Affirmativ
 > »Erst der Draghi-Bericht, jetzt der Niinistö-Bericht – die Europäische Union ist mal wieder offensichtlich besonders kreativ, wenn es darum geht, die Nationalstaaten zu entmachten. Noch mehr Kompetenzen, noch mehr Zentralisierung, noch mehr **Gleichschaltung**, bis das offensichtlich große Ziel eines europäischen Staates endlich erreicht ist. Diese Berichte sind allesamt – ja, unter dem Deckmantel wichtiger und richtiger Themen –, jedoch nichts anderes als Anschläge auf die Demokratie und Souveränität der Mitgliedstaaten.«
 >
 > — **Petra Steger** (FPÖ · PfE, Europaparlament)[^2] · [@steger_2024_11_14]
-
----
 
 ## Mechanismen
 
 *   ● **Inversion:** Das Wort des Täterregimes trifft heute die Nachfolger seiner Opfer. 1933 prägten die Nationalsozialisten es für ihre eigene Praxis — die Zerschlagung der Weimarer Pluralität. Gegen den öffentlich-rechtlichen Rundfunk, die EU, die Klimapolitik eingesetzt, richtet es das Vokabular des Regimes gegen jene, die das Regime bekämpft haben. Täter-Opfer-Umkehr, nicht als These — als Wortschatz.
 *   ◐ **Euphemismus (im Fokus):** Der Euphemismus ist nicht nachträglich — er ist im Wort selbst kodiert. Die elektrotechnische Metapher wurde 1933 bewusst gewählt: nicht „Zerschlagung der Presse", nicht „Unterdrückung der Länder" — sondern ein technischer Vorgang. Kein Täter, nur ein Schalter. Das Wort steht nicht allein: NS-Bürokratensprache ist strukturell euphemistisch — sie beschreibt Gewalt als Verwaltung, Verbrechen als Vorgang. Gleichschaltung ist nicht die Ausnahme dieses Prinzips. Es ist sein erster amtlicher Ausdruck.
 *   ◐ **Kriminalisierung:** Das Wort erklärt, auf Institutionen angewandt, deren Verantwortliche implizit zu Tätern des NS-Regimes — ohne Anklage, ohne Ausführung. Das Urteil liegt im Wort selbst.
-
----
-
-<aside>(*) Nicht gemeint, wenn der Begriff historisch-deskriptiv verwendet wird — als Fachbegriff der Zeitgeschichte für die NS-Institutionenzerschlagung 1933/34. In wissenschaftlichen Texten und Bildungsmedien ist Gleichschaltung Standardterm, der keinen NS-Vergleich impliziert.</aside>
-
 [^1]: Arno Esch (1928–1951), Vorsitzender der Liberal-Demokratischen Partei (LDP) Mecklenburg-Vorpommerns, 1949 von der sowjetischen Besatzungsmacht verhaftet, 1951 in Moskau hingerichtet — weil er die Eingliederung seiner Partei unter SED-Kontrolle verweigerte. Die LDPD (Liberal-Demokratische Partei Deutschlands) war eine DDR-Blockpartei: formal selbständig, faktisch SED-kontrolliert.
 
 [^2]: Mario Draghi (geb. 1947), ehemaliger EZB-Präsident und Ministerpräsident Italiens, legte 2024 im Auftrag der EU-Kommission einen Bericht zur europäischen Wettbewerbsfähigkeit vor. Der Niinistö-Bericht (2024), verfasst von Sauli Niinistö (ehem. finnischer Staatspräsident), analysierte die Verteidigungsbereitschaft der EU-Mitgliedstaaten. Beide wurden als Grundlage für eine verstärkte EU-Zentralisierung rezipiert.

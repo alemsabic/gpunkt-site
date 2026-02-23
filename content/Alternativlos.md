@@ -1,5 +1,5 @@
 ---
-title: Alternativlos
+title: alternativlos
 language: de
 cssclasses: dictionary-entry
 tags:
@@ -8,23 +8,20 @@ tags:
   - Unwort2010
 ---
 
-# Al|ter|na|tiv|los (*)
-
+# al|ter|na|tiv|los
 ## Aufbau
 
-„Alternative" (Wahlmöglichkeit — mindestens zwei Optionen, aus denen eine gewählt werden muss) + „-los" (ohne, tilgt vollständig) = Das Suffix schließt, was das Substantiv noch offenhält — es tilgt den Spielraum, grammatisch, bevor ein Argument folgt.
+„alternativ" (zwischen Möglichkeiten die Wahl lassend) + „-los" (ohne) = Das Suffix schließt, was das Adjektiv noch offenhält — es tilgt den Spielraum, grammatisch, bevor ein Argument folgen kann.
 
 ## Bedeutung · [K]
 
-Alternativlos überführt eine politische Entscheidung in den Status eines Naturgesetzes. Es behauptet nicht, dass die gewählte Option die beste sei — es behauptet, dass es keine andere gibt. Wer begründet, öffnet die Debatte. Wer alternativlos sagt, schließt sie — und nimmt dem demokratischen Verfahren seinen Kern: die Wahl. Das Wort klingt wie Nüchternheit und wirkt wie Abbruch.
+Alternativlos überführt eine politische Entscheidung in den Status eines Naturgesetzes. Es behauptet nicht, dass die gewählte Option die beste sei; es behauptet, dass es keine andere gibt. Begründungen starten Debatten; das Wort beendet sie und nimmt dem demokratischen Verfahren seinen  Kern. Die Wahl entfällt. Das Wort klingt wie Nüchternheit, aber seine Wirkung ist ein Abbruch jeder Diskussion.
 
----
+<aside>Nicht gemeint, wenn der Begriff einen tatsächlichen Zustand ohne Handlungsspielraum beschreibt: physikalische Gesetzmäßigkeiten, medizinische Notfälle, spieltheoretische Situationen mit dominanter Strategie. Die Diagnose gilt ausschließlich für politische Entscheidungen, bei denen strukturell Alternativen existieren.</aside>
 
 ## Andere Lesart · [A]
 
-In Krisen gibt es keine theoretische Zeit. Die Euro-Zone stand 2010 an einem Wochenende vor dem Systemkollaps — Zeit für ausgedehnte Optionenprüfung hatten Griechenland nicht, die Bundesregierung nicht, die europäischen Institutionen nicht. Wer in dieser Lage von Alternativen spricht, beschreibt eine Welt, die in diesem Moment nicht existiert. Es ist die Sprache der Notaufnahme: Hier wird gehandelt, nicht deliberiert. Dahinter steht ein Regierungsverständnis, das Entscheidungen nicht als ideologische Präferenz begreift, sondern als Analyse der Lage — als Befund, dem Klarheit geschuldet ist, keine performative Offenheit. Nicht der Feind der Debatte — ihr Abschluss.
-
----
+In Krisen gibt es keine theoretische Zeit. Die Euro-Zone stand 2010 an einem einzigen Wochenende vor dem Systemkollaps. Zeit, Alternativen zu prüfen, hatten die europäischen Institutionen nicht. Wer in dieser Lage von Alternativen spricht, beschreibt eine falsche Welt; stattdessen gilt die Sprache der Notaufnahme: handeln statt beraten. Dahinter steht eine Regierungslogik, die Entscheidungen nicht als ideologische Präferenz begreift, sondern als Analyse der Lage. Als Befund, dem Klarheit geschuldet ist, keine vorgespielte Offenheit. Nicht der Feind der Debatte. Ihr Abschluss.
 
 ## Wortgefecht
 
@@ -84,18 +81,12 @@ In Krisen gibt es keine theoretische Zeit. Die Euro-Zone stand 2010 an einem Woc
 >
 > — **Stephan Brandner** (AfD) · [@brandner_2023_03_16]
 
----
-
 ## Mechanismen
 
-*   ● **Naturalisierung (im Fokus):** Das Suffix „-los" spricht das Urteil, das die Natur gesprochen haben soll — grammatisch, vor dem ersten Argument. Aus einer politischen Entscheidung, die Akteure hat, Interessen, Kosten und Alternativen, wird ein Sachzwang wie Schwerkraft. Was klingt wie Sachlichkeit, ist Ontologie: Die Entscheidung gehört nicht zu den Dingen, die man wählen kann. Das ist das spezifische Gewicht dieses Mechanismus: Naturalisierung erfolgt hier nicht durch Bild oder Metapher, sondern durch Morphologie — das Suffix erledigt die Arbeit, bevor der Sprecher einen Satz vollendet hat.
+*   ● **Naturalisierung (im Fokus):** Das Suffix „-los" spricht das Urteil, das die Natur gesprochen haben soll. Grammatisch. Vor dem ersten Argument. Aus einer politischen Entscheidung, die Akteure hat, Interessen, Kosten und Alternativen, wird ein Sachzwang wie Schwerkraft. Was klingt wie Sachlichkeit, ist Ontologie: Die Entscheidung gehört nicht zu den Dingen, die man wählen kann. Das Wort naturalisiert nicht durch Bild oder Metapher, sondern durch Morphologie. Das Suffix erledigt die Arbeit, bevor der erste Satz vollendet ist.
 
-*   ● **Entpolitisierung:** Naturalisierung ist der Mechanismus — Entpolitisierung ist seine Wirkung im demokratischen Raum. Die Debatte, die stattfinden müsste, findet nicht statt — nicht weil sie verboten ist, sondern weil das Wort sie für überflüssig erklärt hat. Wer dann noch fragt, handelt nicht als Demokrat, sondern als jemand, der die Lage nicht verstanden hat. Die Beweislast kehrt um: Nicht die Regierung muss ihre Entscheidung rechtfertigen — wer widerspricht, muss belegen, dass eine Alternative existiert.
+*   ● **Entpolitisierung:** Naturalisierung ist der Mechanismus. Entpolitisierung ist seine Wirkung. Die Debatte, die stattfinden müsste, findet nicht statt. Nicht weil sie verboten ist. Das Wort erklärt sie für überflüssig. Jeder Einwand gilt seither als Unverständnis der Lage. Das Wort kehrt die Beweislast um: Nicht die Regierung rechtfertigt ihre Entscheidung. Wer zweifelt, muss belegen, dass eine Alternative existiert.
 
-*   ◐ **Inversion:** Nicht im Wort codiert — entsteht durch diskursive Praxis. Das Wort setzt die Regierung in die Position der Sachkundigen und die Opposition in die des Wunschdenkens. Wer widerspricht, widerspricht nicht einer Entscheidung — er widerspricht der Lage. Dass eine Partei sich explizit als „Alternative" benannte, zeigt die Tiefe der Inversion: Der Gegenbegriff musste als Eigenname institutionalisiert werden.
+*   ◐ **Inversion:** Der Mechanismus liegt nicht im Wort selbst. Er entsteht im Kontext. Das Wort setzt die Regierung in die Position der Sachkundigen und die Opposition in die des Wunschdenkens. Der Einwand gilt nicht als politisches Argument. Er gilt als Unverständnis der Lage. Dass eine Partei sich explizit als „Alternative" benannte, zeigt die Tiefe der Inversion: Der Gegenbegriff musste als Eigenname institutionalisiert werden.
 
-*   ◐ **Ontologisierung:** Nur im Verwendungskontext. Die Formulierung gilt morgen noch — nicht weil die Lage sich nicht ändern kann, sondern weil das Wort keine Revisionsklausel enthält. Was einmal alternativlos ist, wird Zustand.
-
----
-
-<aside>(*) Nicht gemeint, wenn der Begriff einen tatsächlichen Zustand ohne Handlungsspielraum beschreibt: physikalische Gesetzmäßigkeiten, medizinische Notfälle, spieltheoretische Situationen mit dominanter Strategie. Die Diagnose gilt ausschließlich für politische Entscheidungen, bei denen strukturell Alternativen existieren.</aside>
+*   ◐ **Ontologisierung:** Nur im Kontext. Die Formulierung gilt morgen noch. Das Wort enthält kein Ablaufdatum. Nicht weil die Lage sich nicht ändert. Sondern weil die Grammatik keine Revision vorsieht. Was einmal alternativlos ist, wird Zustand.

@@ -16,15 +16,13 @@ tags:
 
 ## Bedeutung · [K]
 
-Wirtschaftsflüchtling(*) fällt das Urteil, bevor der Fall geprüft ist. Das Wort spaltet Schutzsuchende in zwei Gruppen: die „echt“ Verfolgten, denen Schutz zusteht, und die „unechten“ Profiteure, die das Asylrecht missbrauchen. Indem es wirtschaftliche Not als persönliche Entscheidung rahmt — nicht als Flucht, sondern als Kalkül —, entzieht es dem Schutzsuchenden seinen Status noch vor der individuellen Prüfung. Was wie eine Unterscheidung aussieht, ist ein Urteil vor dem Verfahren.
+Wirtschaftsflüchtling fällt das Urteil, bevor der Fall geprüft ist. Das Wort spaltet Schutzsuchende in zwei Gruppen: die „echt“ Verfolgten, denen Schutz zusteht, und die „unechten“ Profiteure, die das Asylrecht missbrauchen. Indem es wirtschaftliche Not als persönliche Entscheidung rahmt — nicht als Flucht, sondern als Kalkül —, entzieht es dem Schutzsuchenden seinen Status noch vor der individuellen Prüfung. Was wie eine Unterscheidung aussieht, ist ein Urteil vor dem Verfahren.
 
----
+<aside>Nicht gemeint, wenn der Begriff verwaltungssprachlich oder sozialwissenschaftlich verwendet wird, um Migrationsursachen zu klassifizieren — ohne den normativen Subtext der Delegitimierung des Schutzanspruchs.</aside>
 
 ## Andere Lesart · [A]
 
 Das Asylrecht schützt vor Verfolgung — nicht vor Armut. Das ist keine Willkür, sondern seine Bedingung: Ein Recht, das jeden schützt, schützt niemanden besonders. Wer aus existenzieller Not flieht, verdient eine Antwort — aber eine andere: geregelte Einwanderung, Arbeitsmigration, legale Wege. Wer diese Unterscheidung auflöst, löst den Schutz auf. Ein System ohne Grenze verspricht mehr, als es halten kann — und bricht zuerst bei denen ein, die am meisten darauf angewiesen sind: bei politisch Verfolgten, für die kein anderer Weg offensteht.
-
----
 
 ## Wortgefecht
 
@@ -84,8 +82,6 @@ Das Asylrecht schützt vor Verfolgung — nicht vor Armut. Das ist keine Willkü
 >
 > — **Maximilian Kneller** (AfD) · [@kneller_2026_01_30]
 
----
-
 ## Mechanismen
 
 *   ● **Inversion:** Aus existenzieller Not wird strategisches Kalkül. Das Wort setzt einen rationalen Akteur voraus, der Märkte vergleicht — nicht einen Menschen, der keine Wahl hat. Was Schutz verdiente, erscheint als Konkurrenz.
@@ -93,7 +89,3 @@ Das Asylrecht schützt vor Verfolgung — nicht vor Armut. Das ist keine Willkü
 *   ● **Ontologisierung (im Fokus):** Das Kompositum macht aus einer Lebenssituation eine Gattung. Nicht: jemand, der aus wirtschaftlichen Gründen geflohen ist — sondern: ein Wirtschaftsflüchtling, eine unveränderliche Art von Mensch. Der Suffix „-ling” ist im Deutschen produktiv für Typisierung — er macht aus Situationen Wesen (vgl. Lehrling, Prüfling). Das Wort braucht kein Argument: Die Grammatik hat die Arbeit erledigt, bevor der erste Satz gesprochen ist.
 *   ◐ **Entpolitisierung:** Die Fluchtursachen werden privatisiert. Globale Ungleichgewichte, Handelspolitik, Ressourcenkonflikte verschwinden — übrig bleibt der individuelle Entschluss: dieser Mensch wollte mehr.
 *   ◐ **Quantifizierung:** Im Diskurs regelmäßig mit „Strömen” und „Fluten” verknüpft — die Masse anonymisiert, was das Kompositum bereits typisiert hat: nicht dieser Mensch, sondern diese Welle.
-
----
-
-<aside>(*) <strong>Abgrenzung:</strong> Nicht gemeint, wenn der Begriff verwaltungssprachlich oder sozialwissenschaftlich verwendet wird, um Migrationsursachen zu klassifizieren — ohne den normativen Subtext der Delegitimierung des Schutzanspruchs.</aside>

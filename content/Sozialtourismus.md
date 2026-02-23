@@ -16,15 +16,13 @@ tags:
 
 ## Bedeutung · [K]
 
-Sozialtourismus(*) macht aus dem Rechtsanspruch eine Urlaubsbuchung. Das Wort legt fest, was Migrationsbewegungen sind, noch bevor ein einzelner Fall geprüft wurde: keine Not, sondern Kalkül; keine Schutzsuche, sondern Konsumentscheidung. Der Sozialstaat wird zum Reiseziel, die Leistungsbeziehung zum Betrug am Gastgeber. Das Motiv ist mit dem Begriff bereits unterstellt — der Antrag ist der Beweis.
+Sozialtourismus macht aus dem Rechtsanspruch eine Urlaubsbuchung. Das Wort legt fest, was Migrationsbewegungen sind, noch bevor ein einzelner Fall geprüft wurde: keine Not, sondern Kalkül; keine Schutzsuche, sondern Konsumentscheidung. Der Sozialstaat wird zum Reiseziel, die Leistungsbeziehung zum Betrug am Gastgeber. Das Motiv ist mit dem Begriff bereits unterstellt — der Antrag ist der Beweis.
 
----
+<aside>Nicht gemeint, wenn der Begriff analytisch verwendet wird, um Migrationsanreize durch Wohlstandsgefälle innerhalb der EU zu beschreiben — ohne den normativen Subtext der Kriminalisierung des Leistungsanspruchs.</aside>
 
 ## Andere Lesart · [A]
 
 Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern — an eine Gemeinschaft, nicht an jeden, der ihr Territorium betritt. Die EU-Freizügigkeit schafft Wohlstandsgefälle und damit rationale Anreize: Wer in einem reichen Land Leistungen beziehen kann, ohne dort gearbeitet zu haben, folgt einer Logik, die das System selbst produziert. Das ist kein moralisches Versagen — das ist Systemdesign. Offene Systeme setzen Anreize; wer diese Anreize nicht begrenzt, kann die Ergebnisse nicht beklagen. Wer das nicht benennen darf, kann es nicht begrenzen.
-
----
 
 ## Wortgefecht
 
@@ -91,8 +89,6 @@ Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern — an eine Gemein
 >
 > — **Olaf Scholz** (Bundeskanzler) · [@scholz_2025_02_11]
 
----
-
 ## Mechanismen
 
 *   ● **Inversion (im Fokus):** „Tourismus” bedeutet Freizeitreise — freiwillig, konsumgesteuert, hedonistisch. Das Wort setzt dies gleich mit existenzieller Not oder der Ausübung eines verbrieften Rechts. Die Wahl von „Tourismus” — nicht „Migration” oder „Zuwanderung” — ist rhetorisch präzise: Tourismus ist die maximale Gegenwelt zur Notlage. Inversion funktioniert umso stärker, je absurder die Gleichsetzung ist. Das Wort wählt nicht irgendein Gegenteil — es wählt das fernstmögliche.
@@ -100,7 +96,3 @@ Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern — an eine Gemein
 *   ● **Euphemismus:** „Tourismus” klingt leicht, saisonal, harmlos. Wer dagegen Maßnahmen fordert, fordert keine Härte — er reguliert lediglich den Fremdenverkehr. Die Abwehrpolitik erscheint als Ordnungspflege.
 *   ◐ **Ethnisierung:** Im Diskurs trifft der Begriff fast durchgehend spezifische Gruppen — Roma, Osteuropäer, Ukrainer. Der ethnische Adressat ist nicht im Wort codiert, aber diskursiv konstitutiv: Nicht im Wort selbst, sondern in seiner Anwendungsgeschichte.
 *   ◐ **Quantifizierung:** Mit Tourismus-Metaphern — „Ansturm”, „Saison”, „Welle” — entsteht das Bild einer Flut, die das Sozialsystem überschwemmt. Die Metapher verwandelt Individuen in eine Naturgewalt.
-
----
-
-<aside>(*) <strong>Abgrenzung:</strong> Nicht gemeint, wenn der Begriff analytisch verwendet wird, um Migrationsanreize durch Wohlstandsgefälle innerhalb der EU zu beschreiben — ohne den normativen Subtext der Kriminalisierung des Leistungsanspruchs.</aside>

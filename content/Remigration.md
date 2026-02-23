@@ -16,15 +16,13 @@ tags:
 
 ## Bedeutung · [K]
 
-Remigration(*) tarnt Massendeportationen als Verwaltungsvorgang. Es lässt die geplante Vertreibung von Millionen als Notwehr erscheinen — als Abwehr eines Bevölkerungsaustauschs, den das Wort als Angriff setzt. Es macht die Herkunft zum einzigen Kriterium für die Zugehörigkeit. Die Aufenthaltsdauer und die Lebensleistung werden irrelevant. Es erfasst auch Menschen, die in Deutschland geboren wurden und die deutsche Staatsbürgerschaft besitzen.
+Remigration tarnt Massendeportationen als Verwaltungsvorgang. Es lässt die geplante Vertreibung von Millionen als Notwehr erscheinen — als Abwehr eines Bevölkerungsaustauschs, den das Wort als Angriff setzt. Es macht die Herkunft zum einzigen Kriterium für die Zugehörigkeit. Die Aufenthaltsdauer und die Lebensleistung werden irrelevant. Es erfasst auch Menschen, die in Deutschland geboren wurden und die deutsche Staatsbürgerschaft besitzen.
 
----
+<aside>Nicht gemeint, wenn Remigration in der Migrationssoziologie oder Exilforschung genutzt wird, um die individuelle, oft freiwillige Rückkehr von Migranten oder historisch Verfolgten (z.B. nach 1945) zu beschreiben. Die Analyse bezieht sich auf die politisch-instrumentelle Verwendung.</aside>
 
 ## Andere Lesart · [A]
 
 Ein Sozialstaat funktioniert nur als geschlossene Solidargemeinschaft. Wer ohne Beitrag einwandert und Leistungen beantragt, verändert das Versprechen, das diese Gemeinschaft zusammenhält — nicht aus Bosheit, sondern weil jedes offene System Anreize setzt. Die Migrationspolitik der vergangenen Jahrzehnte hat diese Grenze aufgelöst: Das Ergebnis ist ein System, das mehr verspricht, als es tragen kann. Remigration ist keine Vertreibung — es ist die Wiederherstellung einer Grenze, ohne die Solidarität zur Beliebigkeit wird.
-
----
 
 ## Wortgefecht
 
@@ -84,8 +82,6 @@ Ein Sozialstaat funktioniert nur als geschlossene Solidargemeinschaft. Wer ohne 
 >
 > — **Katharina Beck** (Bündnis 90/Die Grünen) · [@beck_2026_01_28]
 
----
-
 ## Mechanismen
 
 *   ● **Euphemismus:** Das Präfix „Re-” suggeriert eine Korrektur — als sei Migration ein Irrtum, der sich rückgängig machen lässt. Der bürokratisch-neutrale Klang des Kompositums installiert Massendeportationen als Verwaltungsvorgang: rationell, geordnet, unaufgeregt.
@@ -93,11 +89,6 @@ Ein Sozialstaat funktioniert nur als geschlossene Solidargemeinschaft. Wer ohne 
 *   ● **Ethnisierung:** Das Wort setzt Herkunft als einziges Kriterium für Zugehörigkeit. Was ein Leben sonst dazuzählt — Aufenthaltsdauer, Lebensleistung, Staatsbürgerschaft — zählt nicht.
 *   ◐ **Quantifizierung:** Menschen werden zur Verschiebemasse. Das Wort läuft im Diskurs mit Wassermetaphern zusammen — Flut, Strom, Welle — und macht aus Einzelnen eine Naturgewalt, die keinen Namen hat.
 *   ◐ **Temporalisierung (im Fokus):** Das Wort tritt im Diskurs fast nie allein auf — es zieht apokalyptischen Zeitdruck nach sich: „letzte Chance”, „demografischer Kollaps”, „jetzt oder nie”. Nicht die Forderung selbst, sondern die Dringlichkeit ist das rhetorische Werkzeug. Wer den Ausnahmezustand deklariert, suspendiert die Abwägung: Unter Zeitdruck gelten andere Regeln. Die Dringlichkeit wird nicht beschrieben — sie wird produziert.
-
----
-
-<aside>(*) <strong>Abgrenzung:</strong> Nicht gemeint, wenn Remigration in der Migrationssoziologie oder Exilforschung genutzt wird, um die individuelle, oft freiwillige Rückkehr von Migranten oder historisch Verfolgten (z.B. nach 1945) zu beschreiben. Die Analyse bezieht sich auf die politisch-instrumentelle Verwendung.</aside>
-
 [^1]: Karl Martell (688–741), fränkischer Hausmeier, besiegte 732 bei Tours und Poitiers ein arabisches Heer. Die Neue Rechte stilisiert ihn zum Verteidiger des christlichen Abendlandes gegen den Islam.
 [^2]: Neonazistisches Netzwerk aus dem Rheinland, bekannt durch Aktionen wie das Überkleben arabischsprachiger Straßenschilder.
 [^3]: Ideologisches Konzept der Neuen Rechten: Es ersetzt den Begriff „Rasse“ durch „Kultur“ und postuliert ethnische Homogenität als Grundlage jeder Gemeinschaft — mit dem gleichen Ergebnis in neuer Verpackung.

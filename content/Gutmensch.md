@@ -16,15 +16,13 @@ tags:
 
 ## Bedeutung · [K]
 
-Gutmensch(*) greift nicht das Argument an — es greift das Motiv an. Überzeugung erscheint als Eitelkeit, Empathie als Pose, Engagement als Selbstdarstellung. Wer so bezeichnet wird, hat keine Sachfrage mehr zu beantworten — er hat zu beweisen, dass er das, was er vertritt, wirklich meint. Das Wort hat die Debatte gewonnen, bevor sie geführt wurde.
+Gutmensch greift nicht das Argument an — es greift das Motiv an. Überzeugung erscheint als Eitelkeit, Empathie als Pose, Engagement als Selbstdarstellung. Wer so bezeichnet wird, hat keine Sachfrage mehr zu beantworten — er hat zu beweisen, dass er das, was er vertritt, wirklich meint. Das Wort hat die Debatte gewonnen, bevor sie geführt wurde.
 
----
+<aside>Nicht gemeint, wenn der Begriff bewusst ironisch als Selbstbezeichnung oder Ehrentitel verwendet wird — eine Umdeutung, die seinen pejorativen Ursprung kennt und ihn bewusst unterläuft.</aside>
 
 ## Andere Lesart · [A]
 
 Begrenzte Ressourcen, konkurrierende Interessen. Jemand wird enttäuscht werden — das ist nicht das Versagen der Politik, das ist die Politik selbst. Wer entscheidet, trägt Konsequenzen. Wer nur urteilt, nicht. Das ist die Asymmetrie: wer von den Folgen nicht betroffen ist, kann Forderungen stellen, die kein System erfüllen kann — und die Kosten tragen andere. Moralisches Engagement ohne Haftung ist keine Stärke; es ist deren bequeme Variante. Wer das benennt, ist nicht herzlos; er fordert nur zurück, was jede ernsthafte Politik braucht: die Bereitschaft, die Welt zu nehmen, wie sie ist.
-
----
 
 ## Wortgefecht
 
@@ -77,8 +75,6 @@ Begrenzte Ressourcen, konkurrierende Interessen. Jemand wird enttäuscht werden 
 >
 > — **Markus Frohnmaier** (AfD) · [@frohnmaier_2026_01_29]
 
----
-
 ## Mechanismen
 
 *   ● **Inversion:** Ein ethisches Ideal — empathisch handeln, Gutes wollen — wird in ein Stigma verwandelt. Das Wort dreht die moralische Achse: Wer Mitgefühl zeigt, verdächtigt sich; wer das benennt, gilt als der einzige Realist.
@@ -86,9 +82,4 @@ Begrenzte Ressourcen, konkurrierende Interessen. Jemand wird enttäuscht werden 
 *   ● **Ontologisierung:** Aus einer Haltung wird ein Wesen. Nicht: jemand, der gerade naiv argumentiert — sondern: ein Gutmensch, endgültig und unveränderbar. Argumente treffen auf einen Typus, nicht mehr auf einen Menschen.
 *   ◐ **Pathologisierung:** Begleitbegriffe wie „Helfersyndrom” oder „Gutmenschenwahn” rahmen moralisches Handeln als psychischen Defekt. Wer das Richtige will, ist krank; wer es benennt, der Gesunde.
 *   ◐ **Entmenschlichung:** Der Adressat verliert die Würde des Gesprächspartners. Er wird zum ideologischen Automaten, dessen Handeln keinen rationalen Kern hat — und den man deshalb nicht widerlegen, sondern nur entlarven muss.
-
----
-
-<aside>(*) <strong>Abgrenzung:</strong> Nicht gemeint, wenn der Begriff bewusst ironisch als Selbstbezeichnung oder Ehrentitel verwendet wird — eine Umdeutung, die seinen pejorativen Ursprung kennt und ihn bewusst unterläuft.</aside>
-
 [^1]: Zeile aus Emanuel Geibels Gedicht „Deutschlands Beruf" (1861). Als Motto des deutschen Nationalismus geprägt — Wilhelm II. nutzte sie zur Rechtfertigung imperialer Politik. Die Neue Rechte greift sie als Chiffre für kulturellen Hegemonialanspruch auf.
