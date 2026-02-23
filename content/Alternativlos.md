@@ -11,7 +11,7 @@ tags:
 # al|ter|na|tiv|los
 ## Aufbau
 
-„alternativ" (zwischen Möglichkeiten die Wahl lassend) + „-los" (ohne) = Das Suffix schließt, was das Adjektiv noch offenhält — es tilgt den Spielraum, grammatisch, bevor ein Argument folgen kann.
+„alternativ" (zwischen Möglichkeiten die Wahl lassend) + „-los" (ohne) = Das Suffix schließt, was das Adjektiv noch offenhält – es tilgt den Spielraum, grammatisch, bevor ein Argument folgen kann.
 
 ## Bedeutung · [K]
 
@@ -30,56 +30,56 @@ In Krisen gibt es keine theoretische Zeit. Die Euro-Zone stand 2010 an einem ein
 > [!kritisch] Kritisch
 > »Die Bundesregierung und die Koalitionen kennen beim Beschreiben gesellschaftlicher Zustände nur noch drei Aggregatzustände: Entweder ist es gut, oder es ist auf einem guten Weg, oder es ist **alternativlos**. Wir sagen Ihnen: Das, was die Koalition hier abliefert, ist weder gut noch auf einem guten Weg, und schon gar nicht – zum Glück – ist es alternativlos.«
 >
-> — **Roland Claus** (DIE LINKE) · [@claus_2014_06_27]
+> – **Roland Claus** (DIE LINKE) · [@claus_2014_06_27]
 
 #### 2015
 
 > [!kritisch] Kritisch
 > »Ich sage deshalb auch klar: Wir wollen Griechenland in der Euro-Zone halten, nicht, weil es **alternativlos** ist, sondern, weil es das Richtige ist, um Europas wirtschaftliche und politische Zukunft zu sichern.«
 >
-> — **Sigmar Gabriel** (SPD, Bundesminister für Wirtschaft und Energie) · [@gabriel_2015_01_29]
+> – **Sigmar Gabriel** (SPD, Bundesminister für Wirtschaft und Energie) · [@gabriel_2015_01_29]
 
 #### 2015
 
 > [!affirmativ] Affirmativ
 > »Das ist fast eine Mission Impossible, aber es ist **alternativlos**, weil die Menschen in der Ukraine, auch in Moldau und Georgien ihre Erwartungen erfüllt sehen wollen, dass die Europäische Union Freiheit bedeutet, auch Wohlstand und Rechtsstaat – ich kann vor Gericht gehen und Recht bekommen, auch gegen jemanden, der reicher und mächtiger ist. All das muss eingelöst werden, auch wenn es unter diesen Bedingungen fast unmöglich ist.«
 >
-> — **Marieluise Beck** (BÜNDNIS 90/DIE GRÜNEN) · [@beck_2015_03_26]
+> – **Marieluise Beck** (BÜNDNIS 90/DIE GRÜNEN) · [@beck_2015_03_26]
 
 #### 2016
 
 > [!kritisch] Kritisch
 > »Ich finde es übrigens durchaus ärgerlich, wie wir die meisten Gesetzentwürfe vom Text her aufbauen. Oben steht immer der Titel, etwa „Entwurf eines Asylverfahrensbeschleunigungsgesetzes", unter A. kommen dann das Problem und das Ziel, unter B. die Lösung, und unter „C. Alternativen" steht: Keine. – Eigentlich lehrt die Erfahrung des Lebens: Es gibt immer eine Alternative. Handeln steht Unterlassen gegenüber und umgekehrt. Ich finde – das ist an uns gerichtet –: Wir müssen Politik deutlicher erklären und sagen, dass es zu Gesetzentwürfen eine Alternative gibt, möglicherweise auch eine politische Alternative. Wir müssen auch besser erläutern, warum wir uns für einen Weg entscheiden und der andere eben nicht zum Zug gekommen ist. Die beschriebene **Alternativlosigkeit** – das hatten wir in der vorangegangenen Debatte – müssen wir denen überlassen, die auf den Straßen populistische Sprüche skandieren und glauben, das Recht auf ihrer Seite zu haben oder im Besitz der richtigen alternativlosen Lösungen zu sein.«
 >
-> — **René Röspel** (SPD) · [@roespel_2016_02_18]
+> – **René Röspel** (SPD) · [@roespel_2016_02_18]
 
 #### 2017
 
 > [!affirmativ] Affirmativ
 > »Deshalb steht für uns fest: Die Rückkehr zur Parität – die Wortwahl ist jetzt ganz bewusst – ist **alternativlos**. Vielleicht schaffen es ja Herr Laumann oder der Arbeitnehmerflügel der Union, bis zur Sommerpause den Rest ihrer Parteifreunde davon noch zu überzeugen.«
 >
-> — **Sabine Dittmar** (SPD) · [@dittmar_2017_03_31]
+> – **Sabine Dittmar** (SPD) · [@dittmar_2017_03_31]
 
 #### 2017
 
 > [!kritisch] Kritisch
 > »Wir leben in Zeiten des Übergangs. Wie die Zukunft wird, darauf gibt es nicht nur eine Antwort. Da ist Zukunft nicht „**alternativlos**". Im Gegenteil: Die Zukunft ist offen, und sie ist überwältigend ungewiss. Diese Offenheit, die bei den einen Hoffnung auslöst, jagt anderen Angst ein.«
 >
-> — **Frank-Walter Steinmeier** (Bundespräsident) · [@steinmeier_2017_03_22]
+> – **Frank-Walter Steinmeier** (Bundespräsident) · [@steinmeier_2017_03_22]
 
 #### 2022
 
 > [!affirmativ] Affirmativ
 > »Aber ich will auch klar sagen: Es ist nicht in Ordnung und es ist vor allem auch nicht **alternativlos**, wenn die Landwirtin und der Landwirt von dem Euro, den der Kunde im Laden für das Schweinefleisch ausgibt, gerade einmal 22 Cent bekommt, meine Damen und Herren. Das ist einfach eine Sauerei. Das kann man ändern, das muss man ändern, und diese Koalition wird das ändern.«
 >
-> — **Cem Özdemir** (BÜNDNIS 90/DIE GRÜNEN, Bundesminister für Ernährung und Landwirtschaft) · [@oezdemir_2022_01_14]
+> – **Cem Özdemir** (BÜNDNIS 90/DIE GRÜNEN, Bundesminister für Ernährung und Landwirtschaft) · [@oezdemir_2022_01_14]
 
 #### 2023
 
 > [!kritisch] Kritisch
 > »**Alternativlos** – damit schließen Sie nahtlos an düstere Merkel-Politik und schräge Polit-Apodiktik an. Ich stelle fest: Mit einer AfD in Regierungsverantwortung hätten wir nicht nur diesen Tagesordnungspunkt heute Abend nicht, wir hätten gar kein energiepolitisches Problem zu lösen, meine Damen und Herren.«
 >
-> — **Stephan Brandner** (AfD) · [@brandner_2023_03_16]
+> – **Stephan Brandner** (AfD) · [@brandner_2023_03_16]
 
 ## Mechanismen
 

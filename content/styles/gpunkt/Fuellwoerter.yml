@@ -1,0 +1,9 @@
+extends: existence
+message: 'Füllwort: „%s" streichen.'
+level: warning
+ignorecase: true
+tokens:
+  - eigentlich
+  - sozusagen
+  - gewissermaßen
+  - quasi

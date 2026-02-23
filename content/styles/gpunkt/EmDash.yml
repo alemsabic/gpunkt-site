@@ -1,0 +1,6 @@
+extends: existence
+message: 'Em Dash (—) gefunden. Durch En Dash (–) mit Leerzeichen ersetzen oder Gedanken ausformulieren.'
+level: error
+nonword: true
+tokens:
+  - '—'
