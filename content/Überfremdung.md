@@ -18,7 +18,7 @@ tags:
 
 Überfremdung setzt eine Grenze voraus, die es nicht benennt. Es trägt das Urteil im Präfix: zu viel – ohne Zahl, ohne Maßstab, ohne Beweis. Im Stammwort bestimmt es die Ursache: nicht eine Handlung, nicht ein Verhalten – Andersartigkeit selbst, als Wesen. Wer ein Verhalten anklagt, gibt dem Gegenüber eine Antwortmöglichkeit; wer ein Wesen benennt, nicht. Das Wort leiht sich die Grammatik einer Naturmessung – Überhitzung, Überflutung – und macht aus einer politischen Behauptung einen Befund, den man nur noch bestätigen oder leugnen kann.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn das Wort als Analyseobjekt erscheint – in historischer Forschung, die den „Überfremdungsdiskurs" beschreibt (über den Begriff gesprochen, nicht mit ihm), oder wenn es durch ironische Übertragung seinen Mechanismus sichtbar macht: die Dampfmaschine als „technische Überfremdung" entlarvt die Prämisse, die das Wort braucht.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn das Wort als Analyseobjekt erscheint – in historischer Forschung, die den „Überfremdungsdiskurs" beschreibt (über den Begriff gesprochen, nicht mit ihm), oder wenn es durch ironische Übertragung seinen Mechanismus sichtbar macht: die Dampfmaschine als „technische Überfremdung" entlarvt die Prämisse, die das Wort braucht.</aside>
 
 ## Andere Lesart · [A]
 

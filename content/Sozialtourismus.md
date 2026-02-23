@@ -18,7 +18,7 @@ tags:
 
 Sozialtourismus macht aus dem Rechtsanspruch eine Urlaubsbuchung. Das Wort legt fest, was Migrationsbewegungen sind, noch bevor ein einzelner Fall geprüft wurde: keine Not, sondern Kalkül; keine Schutzsuche, sondern Konsumentscheidung. Der Sozialstaat wird zum Reiseziel, die Leistungsbeziehung zum Betrug am Gastgeber. Das Motiv ist mit dem Begriff bereits unterstellt – der Antrag ist der Beweis.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff analytisch verwendet wird, um Migrationsanreize durch Wohlstandsgefälle innerhalb der EU zu beschreiben – ohne den normativen Subtext der Kriminalisierung des Leistungsanspruchs.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn der Begriff analytisch verwendet wird, um Migrationsanreize durch Wohlstandsgefälle innerhalb der EU zu beschreiben – ohne den normativen Subtext der Kriminalisierung des Leistungsanspruchs.</aside>
 
 ## Andere Lesart · [A]
 

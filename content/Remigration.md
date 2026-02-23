@@ -18,7 +18,7 @@ tags:
 
 Remigration tarnt Massendeportationen als Verwaltungsvorgang. Es lässt die geplante Vertreibung von Millionen als Notwehr erscheinen – als Abwehr eines Bevölkerungsaustauschs, den das Wort als Angriff setzt. Es macht die Herkunft zum einzigen Kriterium für die Zugehörigkeit. Die Aufenthaltsdauer und die Lebensleistung werden irrelevant. Es erfasst auch Menschen, die in Deutschland geboren wurden und die deutsche Staatsbürgerschaft besitzen.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn Remigration in der Migrationssoziologie oder Exilforschung genutzt wird, um die individuelle, oft freiwillige Rückkehr von Migranten oder historisch Verfolgten (z.B. nach 1945) zu beschreiben. Die Analyse bezieht sich auf die politisch-instrumentelle Verwendung.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn Remigration in der Migrationssoziologie oder Exilforschung genutzt wird, um die individuelle, oft freiwillige Rückkehr von Migranten oder historisch Verfolgten (z.B. nach 1945) zu beschreiben. Die Analyse bezieht sich auf die politisch-instrumentelle Verwendung.</aside>
 
 ## Andere Lesart · [A]
 

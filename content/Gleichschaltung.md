@@ -16,7 +16,7 @@ tags:
 
 Gleichschaltung hat im Deutschen keine Entsprechung. Auf Medien, EU-Institutionen oder Klimapolitik angewandt, setzt das Wort demokratische Akteure auf dieselbe Stufe wie das Regime, das es geprägt hat. Es kennt keine Grade. Die elektrotechnische Metapher, die es trägt, entzieht dem politischen Zwang seinen Akteur: kein Befehl, kein Verantwortlicher, nur ein Schalter, der umgelegt wird. Das Wort trägt seinen Tatbestand im Klang.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff historisch-deskriptiv verwendet wird – als Fachbegriff der Zeitgeschichte für die NS-Institutionenzerschlagung 1933/34. In wissenschaftlichen Texten und Bildungsmedien ist Gleichschaltung Standardterm, der keinen NS-Vergleich impliziert.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn der Begriff historisch-deskriptiv verwendet wird – als Fachbegriff der Zeitgeschichte für die NS-Institutionenzerschlagung 1933/34. In wissenschaftlichen Texten und Bildungsmedien ist Gleichschaltung Standardterm, der keinen NS-Vergleich impliziert.</aside>
 
 ## Andere Lesart · [A]
 

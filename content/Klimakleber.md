@@ -17,7 +17,7 @@ tags:
 
 Das Wort benennt den Aktivisten über seine auffälligste Aktion, nicht über sein Anliegen. Es macht aus dem Klimaschutz die Herkunft des Problems, nicht seinen Inhalt. Eine politische Forderung löst es damit aus dem Diskurs. Widerlegt hat es sie nicht.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn Aktivisten den Begriff selbst gebrauchen.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn Aktivisten den Begriff selbst gebrauchen.</aside>
 
 ## Andere Lesart · [A]
 

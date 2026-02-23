@@ -17,7 +17,7 @@ tags:
 
 Alternativlos überführt eine politische Entscheidung in den Status eines Naturgesetzes. Es behauptet nicht, dass die gewählte Option die beste sei; es behauptet, dass es keine andere gibt. Begründungen starten Debatten; das Wort beendet sie und nimmt dem demokratischen Verfahren seinen Kern. Die Wahl entfällt. Das Wort klingt wie Nüchternheit, aber seine Wirkung ist ein Abbruch jeder Diskussion.
 
-<aside>**Ausnahme:** Nicht gemeint, wenn der Begriff einen tatsächlichen Zustand ohne Handlungsspielraum beschreibt: physikalische Gesetzmäßigkeiten, medizinische Notfälle, spieltheoretische Situationen mit dominanter Strategie. Die Diagnose gilt ausschließlich für politische Entscheidungen, bei denen strukturell Alternativen existieren.</aside>
+<aside><strong>Ausnahme:</strong> Nicht gemeint, wenn der Begriff einen tatsächlichen Zustand ohne Handlungsspielraum beschreibt: physikalische Gesetzmäßigkeiten, medizinische Notfälle, spieltheoretische Situationen mit dominanter Strategie. Die Diagnose gilt ausschließlich für politische Entscheidungen, bei denen strukturell Alternativen existieren.</aside>
 
 ## Andere Lesart · [A]
 
