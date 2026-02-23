@@ -41,9 +41,9 @@ Konformität braucht kein Gesetz. Wer bestimmte Positionen öffentlich vertritt,
 #### 2019
 
 > [!kritisch] Kritisch
-> »Dafür gibt es Beispiele, ich nenne zwei aus Mecklenburg-Vorpommern für Frau Schwesig. Arno Esch zum Beispiel hat mit seinem Leben dafür bezahlt, dass er sich der **Gleichschaltung** der LDPD durch die SED verweigert hat. Er musste dafür in Moskau sterben. Der spätere FDP-Generalsekretär Karl-Hermann Flach wurde gewarnt und konnte durch Flucht diesem Schicksal entgehen. So ging es auch Menschen aus anderen demokratischen Parteien, die sich der **Gleichschaltung** widersetzt haben. Daran sollten wir heute auch denken. Liebe Kolleginnen und Kollegen, lange Teilung braucht auch Zeit zur Heilung. Die Heilung der Wunden und Kränkungen muss man allerdings auch wollen.«
+> »Dafür gibt es Beispiele, ich nenne zwei aus Mecklenburg-Vorpommern für Frau Schwesig. Arno Esch zum Beispiel hat mit seinem Leben dafür bezahlt, dass er sich der **Gleichschaltung** der LDPD durch die SED verweigert hat. Er musste dafür in Moskau sterben. Der spätere FDP-Generalsekretär Karl-Hermann Flach wurde gewarnt und konnte durch Flucht diesem Schicksal entgehen. So ging es auch Menschen aus anderen demokratischen Parteien, die sich der **Gleichschaltung** widersetzt haben. Daran sollten wir heute auch denken. Liebe Kolleginnen und Kollegen, lange Teilung braucht auch Zeit zur Heilung. Die Heilung der Wunden und Kränkungen muss man allerdings auch wollen.«[^1]
 >
-> – **Linda Teuteberg** (FDP)[^1] · [@teuteberg_2019_11_08]
+> – **Linda Teuteberg** (FDP) · [@teuteberg_2019_11_08]
 
 #### 2019
 
@@ -76,9 +76,9 @@ Konformität braucht kein Gesetz. Wer bestimmte Positionen öffentlich vertritt,
 #### 2024
 
 > [!affirmativ-ep] Affirmativ
-> »Erst der Draghi-Bericht, jetzt der Niinistö-Bericht – die Europäische Union ist mal wieder offensichtlich besonders kreativ, wenn es darum geht, die Nationalstaaten zu entmachten. Noch mehr Kompetenzen, noch mehr Zentralisierung, noch mehr **Gleichschaltung**, bis das offensichtlich große Ziel eines europäischen Staates endlich erreicht ist. Diese Berichte sind allesamt – ja, unter dem Deckmantel wichtiger und richtiger Themen –, jedoch nichts anderes als Anschläge auf die Demokratie und Souveränität der Mitgliedstaaten.«
+> »Erst der Draghi-Bericht, jetzt der Niinistö-Bericht – die Europäische Union ist mal wieder offensichtlich besonders kreativ, wenn es darum geht, die Nationalstaaten zu entmachten. Noch mehr Kompetenzen, noch mehr Zentralisierung, noch mehr **Gleichschaltung**, bis das offensichtlich große Ziel eines europäischen Staates endlich erreicht ist. Diese Berichte sind allesamt – ja, unter dem Deckmantel wichtiger und richtiger Themen –, jedoch nichts anderes als Anschläge auf die Demokratie und Souveränität der Mitgliedstaaten.«[^2]
 >
-> – **Petra Steger** (FPÖ · PfE, Europaparlament)[^2] · [@steger_2024_11_14]
+> – **Petra Steger** (FPÖ · PfE, Europaparlament) · [@steger_2024_11_14]
 
 ## Mechanismen
 
