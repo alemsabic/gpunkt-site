@@ -1,0 +1,6 @@
+extends: existence
+message: 'Doppeltes Leerzeichen gefunden.'
+level: warning
+nonword: true
+tokens:
+  - ' {2,}'

@@ -16,20 +16,20 @@ tags:
 
 ## Bedeutung · [K]
 
-Das Wort greift nicht den Wahrheitsgehalt eines einzelnen Artikels an – es greift den Existenzgrund der Institution an. Es spaltet die Medienlandschaft in Manipulateure und Wahrheitssprecher, ohne dass ein Beweis diesen Status vergeben oder entziehen könnte. Es verwandelt redaktionelle Fehler und Auslassungen in Indizien – nicht für Versagen, sondern für Vorsatz. Das Kompositum entzieht dem Medium die Glaubwürdigkeit, noch bevor der erste Artikel gelesen ist. Wer diesen Vorwurf widerlegen will, muss nicht mehr die Recherche belegen – er muss seine Unschuld beweisen.
+Das Wort greift nicht den Wahrheitsgehalt eines einzelnen Artikels an. Es greift den Existenzgrund der Institution an. Es spaltet die Medienlandschaft in Manipulateure und Wahrheitssprecher, ohne dass ein Beweis diesen Status vergeben oder entziehen könnte. Es verwandelt redaktionelle Fehler und Auslassungen in Indizien – nicht für Versagen, sondern für Vorsatz. Das Kompositum entzieht dem Medium die Glaubwürdigkeit, noch bevor der erste Artikel gelesen ist. Wer diesen Vorwurf widerlegen will, muss nicht mehr die Recherche belegen. Er muss seine Unschuld beweisen.
 
 <aside>Nicht gemeint, wenn der Begriff als Analyseobjekt erscheint. In medienwissenschaftlichen, kommunikationswissenschaftlichen und historischen Texten taucht „Lügenpresse" ausschließlich in Anführungszeichen auf – beschrieben, nicht verwendet. Auch legitime Medienkritik, die sich auf einzelne Fehler oder Relevanzentscheidungen eines Mediums bezieht, fällt nicht unter diese Analyse.</aside>
 
 ## Andere Lesart · [A]
 
-Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist – gestiegene Kriminalität, kulturelle Verschiebungen, wirtschaftlicher Druck – findet in der etablierten Berichterstattung keinen Widerhall. Nicht gelegentlich und nicht zufällig, sondern mit einer Regelmäßigkeit, die koordiniertes Schweigen nahelegt. Das Wort schließt diese Erklärungslücke: nicht viele kleine Versehen verstreut über viele Redaktionen, sondern eine Institution mit einer Agenda. Wer das einmal so sieht, gehört zu jenen, die aufgehört haben, sich täuschen zu lassen – das ist die initiatorische Kraft des Begriffs: nicht nur Diagnose, sondern Mitgliedschaft.
+Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist – gestiegene Kriminalität, kulturelle Verschiebungen, wirtschaftlicher Druck – findet in der etablierten Berichterstattung keinen Widerhall. Nicht gelegentlich und nicht zufällig, sondern mit einer Regelmäßigkeit, die koordiniertes Schweigen nahelegt. Das Wort schließt diese Erklärungslücke: nicht viele kleine Versehen verstreut über viele Redaktionen, sondern eine Institution mit einer Agenda. Wer das einmal so sieht, gehört zu jenen, die aufgehört haben, sich täuschen zu lassen. Das ist die initiatorische Kraft des Begriffs: nicht nur Diagnose, sondern Mitgliedschaft.
 
 ## Wortgefecht
 
 #### 2016
 
 > [!kritisch] Kritisch
-> »Journalistinnen und Journalisten werden bei ihrer Arbeit tätlich angegriffen, bedroht und beleidigt. „Lügenpresse" – ein Unwort der Nationalsozialisten – wird heute wieder skandiert und bleibt nahezu unwidersprochen.«
+> »Journalistinnen und Journalisten werden bei ihrer Arbeit tätlich angegriffen, bedroht und beleidigt. „Lügenpresse" – ein Unwort der Nationalsozialisten[^2] – wird heute wieder skandiert und bleibt nahezu unwidersprochen.«
 >
 > – **Tabea Rößner** (BÜNDNIS 90/DIE GRÜNEN) · [@roessner_2016_11_23]
 
@@ -83,3 +83,4 @@ Es gibt eine Lücke: was in der Alltagswahrnehmung sichtbar ist – gestiegene K
 *   ◐ **Entpolitisierung:** Der Angriff auf die Pressefreiheit erscheint als epistemische Kritik – als Frage der Wahrheit, nicht der Macht. Wer „Lügenpresse" sagt, behauptet keine politische Agenda, sondern Wahrheitsliebe.
 *   ◐ **Militarisierung:** Das Wort selbst ist zivil – im PEGIDA[^1]- und AfD-Kontext nimmt es Kriegsvokabular auf: „Kampf gegen die Lügenpresse", „Widerstand", „Front". Der Mechanismus liegt nicht im Begriff, sondern in seinem habituellen Verwendungsrahmen.
 [^1]: Pegida (Patriotische Europäer gegen die Islamisierung des Abendlandes), 2014 in Dresden gegründet. Wöchentliche Montagsdemonstrationen, auf denen „Lügenpresse!" zur Standardparole wurde.
+[^2]: Der Begriff ist älter als der Nationalsozialismus. Er wurde im Ersten Weltkrieg geläufig – die deutsche Reichspressestelle verwendete ihn gegen die alliierte Kriegsberichterstattung. In der Weimarer Republik griffen rechte und antisemitische Kreise ihn gegen die demokratische Presse auf. Die NSDAP übernahm ihn, prägte ihn aber nicht.

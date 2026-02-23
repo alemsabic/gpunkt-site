@@ -43,7 +43,7 @@ Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern – an eine Gemein
 #### 2018
 
 > [!affirmativ] Affirmativ
-> »Da darf man sich über den zunehmenden und von Gabriel zu Recht kritisierten **Sozialtourismus** nach Deutschland nicht wundern. Und die Zahlen der Bundesregierung belegen das. Seit 2010 haben sich die Kindergeldüberweisungen auf ausländische Konten nahezu verzehnfacht. Allein im vergangenen Jahr wurden 343 Millionen Euro direkt auf ausländische Konten überwiesen.«
+> »Da darf man sich über den zunehmenden und von Gabriel[^1] zu Recht kritisierten **Sozialtourismus** nach Deutschland nicht wundern. Und die Zahlen der Bundesregierung belegen das. Seit 2010 haben sich die Kindergeldüberweisungen auf ausländische Konten nahezu verzehnfacht. Allein im vergangenen Jahr wurden 343 Millionen Euro direkt auf ausländische Konten überwiesen.«
 >
 > – **René Springer** (AfD) · [@springer_2018_06_28]
 
@@ -57,7 +57,7 @@ Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern – an eine Gemein
 #### 2022
 
 > [!kritisch] Kritisch
-> »In dieser Zeit gewaltiger Herausforderungen darf man sich auch als Abgeordneter einer Regierungsfraktion eine kritische, aber konstruktive Opposition, eine staatstragende Opposition wünschen. Was haben wir? Einen frisch gewählten Oppositionsführer, der über angeblichen **Sozialtourismus** ukrainischer Flüchtlinge herzieht. Sieht so Ihre Unterstützung für die Ukraine aus, meine sehr verehrten Damen und Herren?«
+> »In dieser Zeit gewaltiger Herausforderungen darf man sich auch als Abgeordneter einer Regierungsfraktion eine kritische, aber konstruktive Opposition, eine staatstragende Opposition wünschen. Was haben wir? Einen frisch gewählten Oppositionsführer[^2], der über angeblichen **Sozialtourismus** ukrainischer Flüchtlinge herzieht. Sieht so Ihre Unterstützung für die Ukraine aus, meine sehr verehrten Damen und Herren?«
 >
 > – **Ralf Stegner** (SPD) · [@stegner_2022_09_28]
 
@@ -96,3 +96,5 @@ Ein Sozialsystem ist ein Versprechen zwischen Beitragszahlern – an eine Gemein
 *   ● **Euphemismus:** „Tourismus” klingt leicht, saisonal, harmlos. Wer dagegen Maßnahmen fordert, fordert keine Härte – er reguliert lediglich den Fremdenverkehr. Die Abwehrpolitik erscheint als Ordnungspflege.
 *   ◐ **Ethnisierung:** Im Diskurs trifft der Begriff fast durchgehend spezifische Gruppen – Roma, Osteuropäer, Ukrainer. Der ethnische Adressat ist nicht im Wort codiert, aber diskursiv konstitutiv: Nicht im Wort selbst, sondern in seiner Anwendungsgeschichte.
 *   ◐ **Quantifizierung:** Mit Tourismus-Metaphern – „Ansturm”, „Saison”, „Welle” – entsteht das Bild einer Flut, die das Sozialsystem überschwemmt. Die Metapher verwandelt Individuen in eine Naturgewalt.
+[^1]: Sigmar Gabriel (SPD-Parteivorsitzender) verwendete den Begriff im Januar 2014 in der Debatte über den Zugang rumänischer und bulgarischer EU-Bürger zu deutschen Sozialleistungen. Als SPD-Politiker übernahm er damit eine Vokabel, die bis dahin vor allem von Unionspolitikern genutzt wurde. Die Übernahme löste innerparteiliche Kritik aus.
+[^2]: Friedrich Merz (CDU), im Dezember 2021 zum Parteivorsitzenden gewählt. Im September 2022 warf er ukrainischen Kriegsflüchtlingen öffentlich vor, zwischen deutschen Bundesländern zu wechseln, um höhere Sozialleistungen zu erhalten. Die Behauptung war empirisch umstritten; Merz bekräftigte sie trotz Kritik.

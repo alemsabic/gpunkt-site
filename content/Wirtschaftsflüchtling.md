@@ -16,7 +16,7 @@ tags:
 
 ## Bedeutung · [K]
 
-Wirtschaftsflüchtling fällt das Urteil, bevor der Fall geprüft ist. Das Wort spaltet Schutzsuchende in zwei Gruppen: die „echt“ Verfolgten, denen Schutz zusteht, und die „unechten“ Profiteure, die das Asylrecht missbrauchen. Indem es wirtschaftliche Not als persönliche Entscheidung rahmt – nicht als Flucht, sondern als Kalkül  – , entzieht es dem Schutzsuchenden seinen Status noch vor der individuellen Prüfung. Was wie eine Unterscheidung aussieht, ist ein Urteil vor dem Verfahren.
+Wirtschaftsflüchtling fällt das Urteil, bevor der Fall geprüft ist. Das Wort spaltet Schutzsuchende in zwei Gruppen: die „echt“ Verfolgten, denen Schutz zusteht, und die „unechten“ Profiteure, die das Asylrecht missbrauchen. Indem es wirtschaftliche Not als persönliche Entscheidung rahmt – nicht als Flucht, sondern als Kalkül –, entzieht es dem Schutzsuchenden seinen Status noch vor der individuellen Prüfung. Was wie eine Unterscheidung aussieht, ist ein Urteil vor dem Verfahren.
 
 <aside>Nicht gemeint, wenn der Begriff verwaltungssprachlich oder sozialwissenschaftlich verwendet wird, um Migrationsursachen zu klassifizieren – ohne den normativen Subtext der Delegitimierung des Schutzanspruchs.</aside>
 
@@ -64,7 +64,7 @@ Das Asylrecht schützt vor Verfolgung – nicht vor Armut. Das ist keine Willkü
 #### 2018
 
 > [!kritisch] Kritisch
-> »Jetzt sage ich Ihnen, den angeblichen Vertretern des deutschen Volkes, mal was zum Thema „Verschiebung von Migrantenströmen“. Zwischen 1820 und 1930 haben 6 Millionen Menschen Deutschland verlassen, meist aus denselben Gründen wie diejenigen, die Sie heute als **Wirtschaftsflüchtlinge** bezeichnen, und zwar in Richtung der Vereinigten Staaten von Amerika. Falls Sie denken, dass Migration damals einfach war, dann haben Sie sich geschnitten.«
+> »Jetzt sage ich Ihnen, den angeblichen Vertretern des deutschen Volkes, mal was zum Thema „Verschiebung von Migrantenströmen“. Zwischen 1820 und 1930 haben 6 Millionen Menschen Deutschland verlassen[^1], meist aus denselben Gründen wie diejenigen, die Sie heute als **Wirtschaftsflüchtlinge** bezeichnen, und zwar in Richtung der Vereinigten Staaten von Amerika. Falls Sie denken, dass Migration damals einfach war, dann haben Sie sich geschnitten.«
 >
 > – **Stefan Liebich** (Die Linke) · [@liebich_2018_11_30]
 
@@ -89,3 +89,4 @@ Das Asylrecht schützt vor Verfolgung – nicht vor Armut. Das ist keine Willkü
 *   ● **Ontologisierung (im Fokus):** Das Kompositum macht aus einer Lebenssituation eine Gattung. Nicht: jemand, der aus wirtschaftlichen Gründen geflohen ist – sondern: ein Wirtschaftsflüchtling, eine unveränderliche Art von Mensch. Der Suffix „-ling” ist im Deutschen produktiv für Typisierung – er macht aus Situationen Wesen (vgl. Lehrling, Prüfling). Das Wort braucht kein Argument: Die Grammatik hat die Arbeit erledigt, bevor der erste Satz gesprochen ist.
 *   ◐ **Entpolitisierung:** Die Fluchtursachen werden privatisiert. Globale Ungleichgewichte, Handelspolitik, Ressourcenkonflikte verschwinden – übrig bleibt der individuelle Entschluss: dieser Mensch wollte mehr.
 *   ◐ **Quantifizierung:** Im Diskurs regelmäßig mit „Strömen” und „Fluten” verknüpft – die Masse anonymisiert, was das Kompositum bereits typisiert hat: nicht dieser Mensch, sondern diese Welle.
+[^1]: Zwischen 1820 und 1930 verließen schätzungsweise 5 bis 6 Millionen Deutsche ihre Heimat, die meisten in Richtung USA. Hauptgründe: wirtschaftliche Not, Landflucht, fehlende Arbeit. Die Auswanderer der Gründerzeit folgten derselben Logik, die der Begriff heute delegitimiert.

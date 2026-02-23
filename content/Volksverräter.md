@@ -22,7 +22,7 @@ Das Wort sitzt auf dem Gerüst von *Volksvertreter* – gleicher Klang, gleicher
 
 ## Andere Lesart · [A]
 
-Ein gewähltes Amt ist ein Auftrag, kein Freibrief. Wer Politiken durchsetzt, die dem Willen seiner Wähler direkt entgegenstehen – in der Migrationsfrage, in der Außenpolitik, in der Sicherheit des Landes  – , bricht diesen Auftrag: nicht aus Irrtum, sondern aus Entscheidung. Irrtum lässt sich korrigieren. Wer wissentlich gegen das eigene Volk handelt, hat die Kategorie des Irrtums verlassen. Wer das ausspricht, verteidigt – er pöbelt nicht.
+Ein gewähltes Amt ist ein Auftrag, kein Freibrief. Wer Politiken durchsetzt, die dem Willen seiner Wähler direkt entgegenstehen – in der Migrationsfrage, in der Außenpolitik, in der Sicherheit des Landes –, bricht diesen Auftrag: nicht aus Irrtum, sondern aus Entscheidung. Irrtum lässt sich korrigieren. Wer wissentlich gegen das eigene Volk handelt, hat die Kategorie des Irrtums verlassen. Wer das ausspricht, verteidigt – er pöbelt nicht.
 
 ## Wortgefecht
 

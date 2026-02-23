@@ -16,13 +16,13 @@ tags:
 
 ## Bedeutung · [K]
 
-Gutmensch greift nicht das Argument an – es greift das Motiv an. Überzeugung erscheint als Eitelkeit, Empathie als Pose, Engagement als Selbstdarstellung. Wer so bezeichnet wird, hat keine Sachfrage mehr zu beantworten – er hat zu beweisen, dass er das, was er vertritt, wirklich meint. Das Wort hat die Debatte gewonnen, bevor sie geführt wurde.
+Gutmensch greift nicht das Argument an. Es greift das Motiv an. Überzeugung erscheint als Eitelkeit, Empathie als Pose, Engagement als Selbstdarstellung. Wer so bezeichnet wird, hat keine Sachfrage mehr zu beantworten. Er hat zu beweisen, dass er das, was er vertritt, wirklich meint. Das Wort hat die Debatte gewonnen, bevor sie geführt wurde.
 
 <aside>Nicht gemeint, wenn der Begriff bewusst ironisch als Selbstbezeichnung oder Ehrentitel verwendet wird – eine Umdeutung, die seinen pejorativen Ursprung kennt und ihn bewusst unterläuft.</aside>
 
 ## Andere Lesart · [A]
 
-Begrenzte Ressourcen, konkurrierende Interessen. Jemand wird enttäuscht werden – das ist nicht das Versagen der Politik, das ist die Politik selbst. Wer entscheidet, trägt Konsequenzen. Wer nur urteilt, nicht. Das ist die Asymmetrie: wer von den Folgen nicht betroffen ist, kann Forderungen stellen, die kein System erfüllen kann – und die Kosten tragen andere. Moralisches Engagement ohne Haftung ist keine Stärke; es ist deren bequeme Variante. Wer das benennt, ist nicht herzlos; er fordert nur zurück, was jede ernsthafte Politik braucht: die Bereitschaft, die Welt zu nehmen, wie sie ist.
+Begrenzte Ressourcen, konkurrierende Interessen. Jemand wird enttäuscht werden. Das ist nicht das Versagen der Politik, das ist die Politik selbst. Wer entscheidet, trägt Konsequenzen. Wer nur urteilt, nicht. Das ist die Asymmetrie: wer von den Folgen nicht betroffen ist, kann Forderungen stellen, die kein System erfüllen kann. Die Kosten tragen andere. Moralisches Engagement ohne Haftung ist keine Stärke; es ist deren bequeme Variante. Wer das benennt, ist nicht herzlos; er fordert nur zurück, was jede ernsthafte Politik braucht: die Bereitschaft, die Welt zu nehmen, wie sie ist.
 
 ## Wortgefecht
 
