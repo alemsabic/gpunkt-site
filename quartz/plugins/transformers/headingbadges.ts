@@ -2,8 +2,24 @@ import { QuartzTransformerPlugin } from "../types"
 import { visit } from "unist-util-visit"
 import { Element, Text, Root, ElementContent } from "hast"
 
-// Matches [K], [A], [K], etc. in heading text nodes
+// Matches [K], [A], etc. in heading text nodes
 const BADGE_RE = /(\[[A-ZÄÖÜ]\])/g
+
+// Splits text on "|" and inserts <wbr> after each pipe for soft line breaks
+function insertPipeBreaks(text: string): ElementContent[] {
+  const parts = text.split("|")
+  if (parts.length === 1) return [{ type: "text", value: text } as Text]
+
+  const result: ElementContent[] = []
+  parts.forEach((part, i) => {
+    if (i > 0) {
+      result.push({ type: "text", value: "|" } as Text)
+      result.push({ type: "element", tagName: "wbr", properties: {}, children: [] } as Element)
+    }
+    if (part) result.push({ type: "text", value: part } as Text)
+  })
+  return result
+}
 
 export const HeadingBadges: QuartzTransformerPlugin = () => {
   return {
@@ -24,11 +40,6 @@ export const HeadingBadges: QuartzTransformerPlugin = () => {
 
               const parts = (child as Text).value.split(BADGE_RE)
 
-              if (parts.length === 1) {
-                newChildren.push(child)
-                continue
-              }
-
               for (const part of parts) {
                 if (part === "") continue
                 if (/^\[[A-ZÄÖÜ]\]$/.test(part)) {
@@ -39,7 +50,7 @@ export const HeadingBadges: QuartzTransformerPlugin = () => {
                     children: [{ type: "text", value: part.slice(1, -1) }],
                   } as Element)
                 } else {
-                  newChildren.push({ type: "text", value: part } as Text)
+                  newChildren.push(...insertPipeBreaks(part))
                 }
               }
             }
