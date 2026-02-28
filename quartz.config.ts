@@ -41,26 +41,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f9f66f", // background-color - bright yellow (original light theme)
-          lightgray: "rgba(0, 0, 0, 0.15)", // UI Background
-          gray: "#8B9DAA", // muted blue-gray
-          darkgray: "#111", // medium navy
-          dark: "#111", // primary text - dark navy
-          secondary: "#111", // link-color
-          tertiary: "#111", // link-color (hover)
-          highlight: "rgba(77, 181, 181, 0.2)", // teal highlight
-          textHighlight: "#4DB5B533",
+          light: "#ffffff", // background - clinical white
+          lightgray: "rgba(0, 0, 0, 0.2)", // UI Background
+          gray: "#666666", // muted
+          darkgray: "#333333", // headings
+          dark: "#222222", // primary text
+          secondary: "#222222", // link-color
+          tertiary: "#333333", // link-color (hover)
+          highlight: "rgba(0, 0, 0, 0.08)", // subtle highlight
+          textHighlight: "#00000014",
         },
         darkMode: {
-          light: "#ff5722", // background-color - bright red (former light theme)
-          lightgray: "rgba(0, 0, 0, 0.15)", // UI Background - minimal darker
-          gray: "#8B9DAA", // muted blue-gray
-          darkgray: "#111", // medium navy
-          dark: "#111", // primary text - dark navy
-          secondary: "#111", // link-color
-          tertiary: "#111", // link-color (hover)
-          highlight: "rgba(77, 181, 181, 0.2)", // teal highlight
-          textHighlight: "#4DB5B533",
+          light: "#000000", // background - pure black
+          lightgray: "rgba(255, 255, 255, 0.2)", // UI Background
+          gray: "#888888", // muted
+          darkgray: "#bbbbbb", // headings
+          dark: "#dddddd", // primary text
+          secondary: "#dddddd", // link-color
+          tertiary: "#bbbbbb", // link-color (hover)
+          highlight: "rgba(255, 255, 255, 0.1)", // subtle highlight
+          textHighlight: "#ffffff14",
         },
       },
     },
