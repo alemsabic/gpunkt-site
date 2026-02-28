@@ -122,6 +122,8 @@ article h2 {
   margin-top: 3.9rem !important;
   font-weight: 500;
   font-size: 1.8rem;
+  border-bottom: 2px solid;
+  padding-bottom: 0.25rem;
 }
 
 article h2:has(+ ul) {
@@ -679,7 +681,7 @@ a.internal.tag-link:hover {
 
 .callout {
   border: none !important;
-  border-radius: 15px;
+  border-radius: 5px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
