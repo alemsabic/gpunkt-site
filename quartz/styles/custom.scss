@@ -100,10 +100,16 @@ h1 {
 // Additional margin for h2 and h3 within content
 article h2 {
   margin-top: 3.9rem !important;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+article h2:has(+ ul) {
+  margin-bottom: 2rem !important;
 }
 
 // Exception: h2 following h1 should have no margin
-article h1 + h2 {
+article.first-page h1 + h2 {
   margin-top: 0 !important;
   font-family: var(--bodyFont) !important;
   font-weight: 500;
@@ -112,6 +118,14 @@ article h1 + h2 {
 
 article h3 {
   margin-top: 3.9rem !important;
+}
+
+article h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 // Footer links uppercase and font size
@@ -123,6 +137,11 @@ footer a {
 // Normalize all links to font-weight 400
 a {
   font-weight: 400 !important;
+}
+
+// Aside element font size
+aside {
+  font-size: 0.85rem !important;
 }
 
 // Font smoothing for dark theme
@@ -382,36 +401,43 @@ article.first-page {
   * {
     line-height: inherit !important;
   }
+
+  // Lists within dictionary entries
+  ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+
+    li {
+      margin-bottom: 2rem !important;
+    }
+  }
 }
 
 // ============================================
 // DICTIONARY ENTRY - FOOTNOTES STYLING
 // ============================================
 
-// Hide "Footnotes" heading for dictionary entries
-article.dictionary-entry .footnotes h2 {
-  display: none !important;
-}
-
 // Footnotes styling for dictionary entries - compact, book-like layout
 article.dictionary-entry .footnotes {
-  margin-top: 0.75rem !important; // Halved from 1.5rem
-  padding-top: 0.75rem !important; // Add padding for border spacing
-  font-size: 0.85rem !important; // Smaller than main text
-  text-align: left !important; // Left-aligned, not justified
-  border-top: none !important; // Remove default border
+  margin-top: 0.75rem !important;
+  padding-top: 0.75rem !important;
+  font-size: 0.9rem !important;
+  text-align: left !important;
+  border-top: none !important;
   position: relative;
 
   // Shorter border-top (1/5 width) using ::before
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 1px;
-    background-color: var(--lightgray);
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 20%;
+  //   height: 1px;
+  //   background-color: var(--lightgray);
+  // }
 
   ol {
     padding-left: 1rem !important; // Reduced padding for compact layout
@@ -459,32 +485,16 @@ article.dictionary-entry .data-footnote-backref {
 // REFERENCES / BIBLIOGRAPHY STYLING (GLOBAL)
 // ============================================
 
-// References/Bibliography section - clean, book-like layout
-#refs.references.csl-bib-body {
-  margin-top: 0.75rem !important;
-  padding-top: 0.75rem;
-  border-top: none !important;
-  position: relative;
 
-  // Remove "References" heading using ::before and replace with colored line
-  &::before {
-    content: "";
-    background-color: var(--secondary); // Use theme accent color
-    width: 40%;
-    height: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
 
 // Individual bibliography entries
 .csl-entry {
-  text-align: left !important;
+  font-size: .9rem;
 
   // Hanging indent for citations (classic bibliography style)
   padding-left: 2rem !important;
   text-indent: -2rem !important;
+  margin-bottom: .25rem;
 }
 
 // Disable popovers for all footnote links (sup a)
@@ -545,13 +555,13 @@ ul.tags {
 // ============================================
 
 // Links underlined by default, no underline on hover with transition
-.content-header a,
+
 article.dictionary-entry a {
   text-decoration: underline !important;
   transition: text-decoration 0.2s ease;
 }
 
-.content-header a:hover,
+
 article.dictionary-entry a:hover {
   text-decoration: none !important;
 }
@@ -578,6 +588,7 @@ a.internal.tag-link:hover {
 }
 
 // Tooltip content (appears above the element)
+// Light mode: heller Tooltip (passt zum weißen Theme)
 [data-tooltip]::after {
   content: attr(data-tooltip);
   visibility: hidden;
@@ -591,19 +602,24 @@ a.internal.tag-link:hover {
   transform: translateX(-50%);
   overflow-wrap: break-word;
   border-radius: 0.375rem;
-  background-color: var(--darkgray);
+  background-color: #f2f2f2;
   padding: 0.5rem 0.75rem;
   text-align: left;
   font-size: 0.75rem;
   line-height: 1.25rem;
-  color: var(--light);
+  color: #1a1a1a;
   opacity: 0;
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
   transition: opacity 0.2s;
   pointer-events: none;
-  text-shadow: none !important; // Remove letterpress effect for tooltips
+  text-shadow: none !important;
+}
+
+// Dark mode: dunkler Tooltip (passt zum schwarzen Theme)
+[saved-theme="dark"] [data-tooltip]::after {
+  background-color: #111111;
+  color: #e8e8e8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 // Tooltip arrow (small triangle pointing down)
@@ -618,11 +634,16 @@ a.internal.tag-link:hover {
   width: 0;
   transform: translateX(-50%);
   border: 8px solid transparent;
-  border-top-color: var(--darkgray);
+  border-top-color: #f2f2f2;
   opacity: 0;
   transition: opacity 0.2s;
   margin-bottom: -6px;
   pointer-events: none;
+  z-index: 51; // Über dem Shadow von ::after rendern
+}
+
+[saved-theme="dark"] [data-tooltip]::before {
+  border-top-color: #111111;
 }
 
 // Show tooltip on hover (no delay!)
@@ -636,13 +657,32 @@ a.internal.tag-link:hover {
 // CALLOUT STYLING - DEZENTER (QUELLENVERZEICHNIS)
 // ============================================
 
-// Callout titles: remove bold and make colors more muted (add gray)
+.callout {
+  border: none !important;
+  border-radius: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: visible !important; // Tooltips nicht abschneiden
+}
+
+// Tooltips dürfen aus dem Callout-Content-Bereich herausragen
+.callout-content-inner {
+  overflow: visible !important;
+}
+.callout-icon {
+  display: none;
+}
 .callout-title {
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 
-  .callout-title-inner {
+  .callout-title-inner p {
     font-weight: 400 !important; // Remove bold
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 }
 
@@ -651,13 +691,20 @@ a.internal.tag-link:hover {
   font-size: 0.95rem;
 }
 
+// Callout citation/attribution: right-aligned (last paragraph in callout)
+.callout-content-inner > p:last-of-type:has(strong) {
+  text-align: right;
+}
+
 // Override callout colors - add more gray for subtler appearance
 .callout[data-callout] {
   --color: var(--darkgray) !important; // Muted blue-gray (instead of bright #448aff)
 }
 
-.callout[data-callout="abstract"] {
-  --color: var(--darkgray) !important; // Muted cyan-gray (instead of bright #00b0ff)
+.callout[data-callout="affirmativ"],
+.callout[data-callout="affirmativ-ep"],
+.callout[data-callout="kritisch"] {
+  background-color: var(--lightgray);
 }
 
 .callout[data-callout="info"],

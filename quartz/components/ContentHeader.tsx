@@ -1,8 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { formatDate, getDate } from "./Date"
-import readingTime from "reading-time"
-import { i18n } from "../i18n"
 import { FullSlug, resolveRelative } from "../util/path"
 
 interface ContentHeaderOptions {
@@ -11,10 +9,6 @@ interface ContentHeaderOptions {
    */
   baseUrl: string
   /**
-   * Text to display for the edit link
-   */
-  editButtonText?: string
-  /**
    * Whether to show tags in the header
    */
   showTags?: boolean
@@ -22,7 +16,6 @@ interface ContentHeaderOptions {
 
 const defaultOptions: ContentHeaderOptions = {
   baseUrl: "",
-  editButtonText: "Verbesser die Seite auf GitHub.",
   showTags: false,
 }
 
@@ -30,7 +23,6 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
   const options: ContentHeaderOptions = { ...defaultOptions, ...opts }
 
   const ContentHeader: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
-    const title = fileData.frontmatter?.title
     const text = fileData.text
     const tags = fileData.frontmatter?.tags
 
@@ -47,10 +39,6 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
     // Only render if there's content and showContentHeader is not false
     if (!text || !showContentHeader) return null
 
-    // Calculate word count
-    const { words } = readingTime(text)
-    const wordCountText = `${words} Wörter.`
-
     // Get date
     const date = getDate(cfg, fileData)
     const dateText = date ? formatDate(date, cfg.locale) : null
@@ -58,26 +46,14 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
     return (
       <div class={classNames(displayClass, "content-header")}>
         <dl>
-          {/* Title removed - redundant with ArticleTitle H1
-          {title && (
-            <>
-              <dt>Titel:</dt>
-              <dd>{title}.</dd>
-            </>
-          )}
-          */}
-
           {dateText && (
             <>
-              <dt>Datum:</dt>
+              <dt>Stand:</dt>
               <dd>
                 <time datetime={date!.toISOString()}>{dateText}</time>
               </dd>
             </>
           )}
-
-          <dt>Textlänge:</dt>
-          <dd>{wordCountText}</dd>
 
           {options.showTags && tags && tags.length > 0 && (
             <>
@@ -97,13 +73,11 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
               </dd>
             </>
           )}
-
-          <dd>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-              {options.editButtonText}
-            </a>
-          </dd>
         </dl>
+
+        <a class="edit-link" href={githubUrl} target="_blank" rel="noopener noreferrer">
+          Auf GitHub bearbeiten →
+        </a>
       </div>
     )
   }
@@ -141,17 +115,6 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
     margin-bottom: 0.25rem;
   }
 
-  .content-header a {
-    color: var(--secondary);
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-  }
-
-  .content-header a:hover {
-    opacity: 0.7;
-    text-decoration: underline;
-  }
-
   .content-header .tags-inline {
     display: inline;
   }
@@ -159,6 +122,21 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
   .content-header .tags-inline a.tag-link {
     color: var(--secondary);
     font-size: 0.7rem;
+  }
+
+  .content-header a.edit-link {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    opacity: 0.5;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .content-header a.edit-link:hover {
+    opacity: 1;
+    text-decoration: underline;
   }
   `
 

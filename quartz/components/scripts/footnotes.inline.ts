@@ -26,6 +26,22 @@ function highlightFootnote() {
 
 // Initialize on page load and SPA navigation
 document.addEventListener("nav", () => {
+  // Change "Footnotes" to "Fußnoten"
+  const footnoteHeading = document.querySelector(".footnotes h2#footnote-label")
+  if (footnoteHeading) {
+    footnoteHeading.textContent = "Fußnoten"
+  }
+
+  // Add "Quellen" heading to References section if not present
+  const refsSection = document.querySelector("#refs.references.csl-bib-body")
+  if (refsSection && !refsSection.querySelector("h2")) {
+    const heading = document.createElement("h2")
+    heading.textContent = "Quellen"
+    heading.style.marginBottom = "1rem"
+    heading.style.fontWeight = "500"
+    refsSection.insertBefore(heading, refsSection.firstChild)
+  }
+
   // Highlight footnote if hash is present
   highlightFootnote()
 

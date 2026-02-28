@@ -29,7 +29,6 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ContentHeader({
       baseUrl: "https://github.com/alemsabic/gpunkt-woerter/blob/main",
-      editButtonText: "Verbesser die Seite auf GitHub.",
       showTags: true,
     }),
   ],
