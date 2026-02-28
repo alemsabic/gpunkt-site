@@ -18,17 +18,17 @@ main {
     "Segoe UI Emoji",
     "Segoe UI Symbol";
 
-  /* NEKONTAM Light Mode Colors */
-  --bg: #f9f66f; /* Yellow */
-  --bg-secondary: rgba(0, 0, 0, 0.05); /* Minimal darker/transparent overlay */
-  --text: #111111; /* Black */
-  --text-muted: #111111; /* Black */
-  --link: #111111; /* Black */
-  --link-hover: #111111; /* Black */
-  --border: #111111; /* Black */
+  /* Clinical Cold Theme - Light Mode */
+  --bg: #ffffff; /* White */
+  --bg-secondary: rgba(0, 0, 0, 0.05);
+  --text: #222222; /* Dark gray */
+  --text-muted: #666666; /* Muted gray */
+  --link: #222222; /* Dark gray */
+  --link-hover: #333333; /* Darker gray */
+  --border: #cccccc; /* Light gray border */
 
   /* Syntax highlighting */
-  --color-prettylights-syntax-comment: rgba(17, 17, 17, 0.6);
+  --color-prettylights-syntax-comment: rgba(34, 34, 34, 0.6);
   --color-prettylights-syntax-constant: var(--link);
   --color-prettylights-syntax-entity: var(--link);
   --color-prettylights-syntax-storage-modifier-import: var(--text);
@@ -60,42 +60,42 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: var(--link);
 
   /* Button styles */
-  --color-btn-text: #f9f66f; /* Yellow text */
-  --color-btn-bg: #111111; /* Black button */
-  --color-btn-border: #111111;
+  --color-btn-text: #222222;
+  --color-btn-bg: transparent;
+  --color-btn-border: #cccccc;
   --color-btn-shadow: none;
   --color-btn-inset-shadow: none;
-  --color-btn-hover-bg: rgba(17, 17, 17, 0.8);
-  --color-btn-hover-border: #111111;
-  --color-btn-active-bg: #111111;
-  --color-btn-active-border: #111111;
-  --color-btn-selected-bg: #111111;
+  --color-btn-hover-bg: rgba(0, 0, 0, 0.05);
+  --color-btn-hover-border: #999999;
+  --color-btn-active-bg: rgba(0, 0, 0, 0.1);
+  --color-btn-active-border: #999999;
+  --color-btn-selected-bg: rgba(0, 0, 0, 0.1);
 
   /* Primary button */
-  --color-btn-primary-text: #f9f66f;
-  --color-btn-primary-bg: #111111;
-  --color-btn-primary-border: #111111;
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #222222;
+  --color-btn-primary-border: #222222;
   --color-btn-primary-shadow: none;
   --color-btn-primary-inset-shadow: none;
-  --color-btn-primary-hover-bg: rgba(17, 17, 17, 0.8);
-  --color-btn-primary-hover-border: #111111;
-  --color-btn-primary-selected-bg: #111111;
+  --color-btn-primary-hover-bg: #333333;
+  --color-btn-primary-hover-border: #333333;
+  --color-btn-primary-selected-bg: #333333;
   --color-btn-primary-selected-shadow: none;
 
   /* Disabled state */
-  --color-btn-primary-disabled-text: rgba(249, 246, 111, 0.5);
-  --color-btn-primary-disabled-bg: rgba(17, 17, 17, 0.5);
+  --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.5);
+  --color-btn-primary-disabled-bg: rgba(34, 34, 34, 0.5);
   --color-btn-primary-disabled-border: transparent;
 
   /* Action list and controls */
   --color-action-list-item-default-hover-bg: rgba(0, 0, 0, 0.05);
   --color-segmented-control-bg: rgba(0, 0, 0, 0.05);
   --color-segmented-control-button-bg: transparent;
-  --color-segmented-control-button-selected-border: #111111;
+  --color-segmented-control-button-selected-border: #222222;
 
   /* Foreground colors */
   --color-fg-default: var(--text);
-  --color-fg-muted: var(--text);
+  --color-fg-muted: var(--text-muted);
   --color-fg-subtle: var(--text-muted);
 
   /* Canvas colors */
@@ -105,24 +105,24 @@ main {
   --color-canvas-subtle: transparent;
 
   /* Border colors */
-  --color-border-default: rgba(17, 17, 17, 0.2);
-  --color-border-muted: rgba(17, 17, 17, 0.1);
-  --color-neutral-muted: rgba(17, 17, 17, 0.05);
+  --color-border-default: rgba(34, 34, 34, 0.2);
+  --color-border-muted: rgba(34, 34, 34, 0.1);
+  --color-neutral-muted: rgba(34, 34, 34, 0.05);
 
   /* Accent colors */
   --color-accent-fg: var(--link);
   --color-accent-emphasis: var(--link);
-  --color-accent-muted: rgba(17, 17, 17, 0.4);
-  --color-accent-subtle: rgba(17, 17, 17, 0.1);
+  --color-accent-muted: rgba(34, 34, 34, 0.4);
+  --color-accent-subtle: rgba(34, 34, 34, 0.1);
 
   /* Success, attention, danger */
-  --color-success-fg: #111111;
-  --color-attention-fg: #111111;
-  --color-attention-muted: rgba(17, 17, 17, 0.4);
-  --color-attention-subtle: rgba(17, 17, 17, 0.1);
-  --color-danger-fg: #111111;
-  --color-danger-muted: rgba(17, 17, 17, 0.4);
-  --color-danger-subtle: rgba(17, 17, 17, 0.1);
+  --color-success-fg: #222222;
+  --color-attention-fg: #222222;
+  --color-attention-muted: rgba(34, 34, 34, 0.4);
+  --color-attention-subtle: rgba(34, 34, 34, 0.1);
+  --color-danger-fg: #222222;
+  --color-danger-muted: rgba(34, 34, 34, 0.4);
+  --color-danger-subtle: rgba(34, 34, 34, 0.1);
 
   /* Shadows */
   --color-primer-shadow-inset: none;
@@ -157,45 +157,45 @@ main pre {
 
 /* Fix text color and font-weight */
 main .color-text-primary {
-  color: #111111 !important;
+  color: #222222 !important;
   font-weight: 700 !important;
 }
 
 main .color-text-primary.underline {
-  color: #111111 !important;
+  color: #222222 !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
 }
 
 /* Reactions count */
 main .gsc-reactions-count {
-  color: #111111 !important;
+  color: #222222 !important;
   font-weight: 700 !important;
 }
 
 /* Comments count */
 main .gsc-comments-count,
 main .gsc-comments-count-separator {
-  color: #111111 !important;
+  color: #222222 !important;
   font-weight: 700 !important;
 }
 
 /* Input Placeholder */
 main textarea::placeholder,
 main input::placeholder {
-  color: rgba(17, 17, 17, 0.6) !important;
+  color: rgba(34, 34, 34, 0.6) !important;
 }
 
 /* Input Borders & Backgrounds */
 main textarea,
 main input {
-  border: 1px solid rgba(17, 17, 17, 0.1) !important;
-  background-color: rgba(0, 0, 0, 0.05) !important; /* Minimal darker than yellow */
-  color: #111111 !important;
+  border: 1px solid rgba(34, 34, 34, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  color: #222222 !important;
 }
 
 main textarea:focus,
 main input:focus {
-  border: 1px solid #111111 !important;
+  border: 1px solid #222222 !important;
   box-shadow: none !important;
 }
