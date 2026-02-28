@@ -1,4 +1,25 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { JSX } from "preact/jsx-runtime"
+
+const BADGE_RE = /(\[[A-ZÄÖÜ]\])/g
+
+function renderTocText(text: string): JSX.Element {
+  const parts = text.split(BADGE_RE)
+  if (parts.length === 1) return <>{text}</>
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^\[[A-ZÄÖÜ]\]$/.test(part) ? (
+          <span key={i} class="heading-badge">
+            {part.slice(1, -1)}
+          </span>
+        ) : (
+          <span key={i}>{part}</span>
+        ),
+      )}
+    </>
+  )
+}
 import legacyStyle from "./styles/legacyToc.scss"
 import modernStyle from "./styles/toc.scss"
 import { classNames } from "../util/lang"
@@ -62,7 +83,7 @@ export default ((opts?: Partial<Options>) => {
           {fileData.toc.map((tocEntry) => (
             <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
               <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
-                {tocEntry.text}
+                {renderTocText(tocEntry.text)}
               </a>
             </li>
           ))}
@@ -87,7 +108,7 @@ export default ((opts?: Partial<Options>) => {
           {fileData.toc.map((tocEntry) => (
             <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
               <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
-                {tocEntry.text}
+                {renderTocText(tocEntry.text)}
               </a>
             </li>
           ))}
