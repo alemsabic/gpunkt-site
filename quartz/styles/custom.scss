@@ -822,3 +822,48 @@ h2:has(.heading-badge) + p::first-letter {
 [saved-theme="dark"] h2:has(.heading-badge) + p::first-letter {
   color: rgba(255, 255, 255, 0.18);
 }
+
+// ============================================
+// IM FOKUS — hervorgehobener Mechanismus
+// ============================================
+
+article ul li.li-im-fokus {
+  background-color: var(--lightgray);
+  border-left: 2px solid;
+  border-radius: 0 4px 4px 0;
+  padding: 0.5rem 0.75rem;
+  list-style: none;
+}
+
+[saved-theme="light"] article ul li.li-im-fokus {
+  border-left-color: #3347CB;
+}
+
+[saved-theme="dark"] article ul li.li-im-fokus {
+  border-left-color: #ee683d;
+}
+
+.fokus-marker {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+  font-family: var(--bodyFont);
+}
+
+[saved-theme="light"] .fokus-marker {
+  background-color: rgba(51, 71, 203, 0.1);
+  color: #3347CB;
+}
+
+[saved-theme="dark"] .fokus-marker {
+  background-color: rgba(238, 104, 61, 0.15);
+  color: #ee683d;
+}

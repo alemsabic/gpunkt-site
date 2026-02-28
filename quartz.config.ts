@@ -90,6 +90,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.HeadingBadges(),
+      Plugin.ImFokus(),
       Plugin.Citations({
         bibliographyFile: "./content/bibliography.bib",
         suppressBibliography: false,
