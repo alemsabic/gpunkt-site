@@ -41,22 +41,22 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#ffffff", // background - clinical white
-          lightgray: "rgba(0, 0, 0, 0.2)", // UI Background
+          light: "#d4d4d4", // background - cool gray
+          lightgray: "rgba(0, 0, 0, 0.07)", // UI Background
           gray: "#666666", // muted
-          darkgray: "#333333", // headings
-          dark: "#222222", // primary text
+          darkgray: "#333333", // primary text
+          dark: "#222222", // headings
           secondary: "#222222", // link-color
           tertiary: "#333333", // link-color (hover)
           highlight: "rgba(0, 0, 0, 0.08)", // subtle highlight
           textHighlight: "#00000014",
         },
         darkMode: {
-          light: "#000000", // background - pure black
-          lightgray: "rgba(255, 255, 255, 0.2)", // UI Background
+          light: "#070731", // background - pure black
+          lightgray: "rgba(255, 255, 255, 0.1)", // UI Background
           gray: "#888888", // muted
-          darkgray: "#bbbbbb", // headings
-          dark: "#dddddd", // primary text
+          darkgray: "#bbbbbb", // primary text
+          dark: "#dddddd", // headings
           secondary: "#dddddd", // link-color
           tertiary: "#bbbbbb", // link-color (hover)
           highlight: "rgba(255, 255, 255, 0.1)", // subtle highlight

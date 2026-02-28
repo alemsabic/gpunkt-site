@@ -1,7 +1,5 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-
 // Search bar styling - make search take full width
 .search {
   max-width: none !important;
@@ -52,13 +50,13 @@
 // Page title font size - responsive
 .page-title {
   font-size: 1.95rem !important; // Mobile
-  font-family: var(--titleFont) !important;
+  font-family: var(--headerFont) !important;
 }
 
 @media (min-width: 800px) {
   .page-title {
     font-size: 3.8rem !important; // Desktop
-    line-height: 0.8 !important; // Same level as other elements
+    line-height: 0.8 !important;
   }
 }
 
@@ -70,11 +68,6 @@
 // Right sidebar: add gap between Graph, TOC, Backlinks
 .page > #quartz-body .sidebar.right {
   gap: 1.2rem !important;
-}
-
-// Headers font-weight and color
-h1 {
-  font-weight: 900 !important;
 }
 
 // Desktop: H1 in articles larger font size
@@ -90,6 +83,33 @@ h1 {
 .page-title a,
 .breadcrumb-container a {
   color: var(--bodyText) !important;
+}
+
+// H1 font-weight
+h1 {
+  font-weight: 900 !important;
+}
+
+// Light theme: alle Überschriften + Page-Title in Blau
+[saved-theme="light"] h1,
+[saved-theme="light"] h2,
+[saved-theme="light"] h3,
+[saved-theme="light"] h4,
+[saved-theme="light"] h5,
+[saved-theme="light"] h6,
+[saved-theme="light"] .page-title a {
+  color: #3347CB !important;
+}
+
+// Dark theme: alle Überschriften + Page-Title in Orange
+[saved-theme="dark"] h1,
+[saved-theme="dark"] h2,
+[saved-theme="dark"] h3,
+[saved-theme="dark"] h4,
+[saved-theme="dark"] h5,
+[saved-theme="dark"] h6,
+[saved-theme="dark"] .page-title a {
+  color: #ee683d !important;
 }
 
 // Page title link font weight to match headings
@@ -702,10 +722,11 @@ a.internal.tag-link:hover {
 }
 
 .callout[data-callout="affirmativ"],
-.callout[data-callout="affirmativ-ep"],
+.callout[data-callout="affirmativ-ep"], 
 .callout[data-callout="kritisch"] {
-  background-color: var(--lightgray);
+  background-color: var(--lightgray) !important;
 }
+
 
 .callout[data-callout="info"],
 .callout[data-callout="todo"] {
