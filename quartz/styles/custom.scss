@@ -706,6 +706,14 @@ a.internal.tag-link:hover {
   }
 }
 
+[saved-theme="light"] .callout-title .callout-title-inner p {
+  color: #3347CB !important;
+}
+
+[saved-theme="dark"] .callout-title .callout-title-inner p {
+  color: #ee683d !important;
+}
+
 // Callout content: smaller font size and line-height
 .callout-content-inner p {
   font-size: 0.95rem;
