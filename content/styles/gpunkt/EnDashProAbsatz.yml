@@ -1,0 +1,6 @@
+extends: occurrence
+message: 'Mehr als ein En Dash (–) pro Absatz — gefunden: %s. Zweiten zum Satz machen.'
+level: warning
+scope: paragraph
+max: 1
+token: ' – '

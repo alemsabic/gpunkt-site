@@ -1,0 +1,13 @@
+extends: existence
+message: 'Nominalstil: „%s" — Verb statt Nomen.'
+level: warning
+ignorecase: true
+tokens:
+  - erfolgt
+  - findet statt
+  - findet sich
+  - kommt zum Einsatz
+  - kommt zum Ausdruck
+  - kommt zur Anwendung
+  - wird durchgeführt
+  - wird vorgenommen

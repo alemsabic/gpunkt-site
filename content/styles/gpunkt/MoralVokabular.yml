@@ -1,0 +1,13 @@
+extends: existence
+message: 'Moral-Vokabular: „%s" — Befund statt Urteil.'
+level: warning
+ignorecase: true
+tokens:
+  - gefährlich
+  - problematisch
+  - besorgniserregend
+  - perfide
+  - zynisch
+  - heimtückisch
+  - manipulativ
+  - dreist

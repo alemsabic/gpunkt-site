@@ -1,0 +1,6 @@
+extends: existence
+message: 'Altes Format: „%s" entfernen.'
+level: error
+tokens:
+  - '\(\*\)'
+  - '<strong>Abgrenzung:</strong>'
