@@ -24,12 +24,12 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: {
-          name: "Archivo",
+          name: "Inter Tight",
           weights: [400, 600, 700, 900],
           includeItalic: false,
         },
         body: {
-          name: "Inter",
+          name: "Spectral",
           weights: [400, 500, 600, 700, 900],
           includeItalic: true,
         },
@@ -44,7 +44,7 @@ const config: QuartzConfig = {
           light: "#d4d4d4", // background - cool gray
           lightgray: "rgba(0, 0, 0, 0.07)", // UI Background
           gray: "#666666", // muted
-          darkgray: "#333333", // primary text
+          darkgray: "#111111", // primary text
           dark: "#222222", // headings
           secondary: "#222222", // link-color
           tertiary: "#333333", // link-color (hover)
@@ -55,7 +55,7 @@ const config: QuartzConfig = {
           light: "#070731", // background - pure black
           lightgray: "rgba(255, 255, 255, 0.1)", // UI Background
           gray: "#888888", // muted
-          darkgray: "#bbbbbb", // primary text
+          darkgray: "#eeeeee", // primary text
           dark: "#dddddd", // headings
           secondary: "#dddddd", // link-color
           tertiary: "#bbbbbb", // link-color (hover)

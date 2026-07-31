@@ -100,7 +100,7 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
   .content-header dt {
     display: inline;
     margin-right: 0.5rem;
-    color: var(--secondary);
+    color: var(--dark);
     opacity: 0.5;
   }
 
@@ -120,7 +120,7 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
   }
 
   .content-header .tags-inline a.tag-link {
-    color: var(--secondary);
+    color: var(--dark);
     font-size: 0.7rem;
   }
 
@@ -128,7 +128,7 @@ export default ((opts?: Partial<ContentHeaderOptions>) => {
     display: block;
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: var(--secondary);
+    color: var(--dark);
     opacity: 0.5;
     text-decoration: none;
     transition: opacity 0.2s ease;

@@ -1,6 +1,6 @@
 # gpunkt.org - Display Repository
 
-Präsentationsschicht für [gpunkt.org](https://gpunkt.org) - Bosnisch-Deutsches Wörterbuch.
+Präsentationsschicht für [gpunkt.org](https://gpunkt.org).
 
 ## Architektur
 
