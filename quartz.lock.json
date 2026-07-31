@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "citations": {
+      "source": "./local-plugins/citations",
+      "resolved": "/Users/alemsabic/Desktop/gpunkt.org/local-plugins/citations",
+      "commit": "local",
+      "installedAt": "2026-07-31T17:23:04.678Z"
+    },
     "content-header": {
       "source": "./local-plugins/content-header",
       "resolved": "/Users/alemsabic/Desktop/gpunkt.org/local-plugins/content-header",

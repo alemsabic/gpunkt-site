@@ -98,13 +98,15 @@ plugins:
   - source: "./local-plugins/im-fokus"
     enabled: true
     order: 82
-  - source: "@quartz-community/citations"
+  - source: "./local-plugins/citations"
     enabled: true
     options:
       bibliographyFile: ./content/bibliography.bib
       suppressBibliography: false
       linkCitations: false
       csl: apa
+      showTooltips: true
+      tooltipAttribute: data-tooltip
     order: 85
   - source: "@quartz-community/hard-line-breaks"
     enabled: false
