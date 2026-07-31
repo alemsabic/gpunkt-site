@@ -7,14 +7,6 @@ import type {
   SortFn,
   ValidDateType,
 } from "@quartz-community/types";
-// Not using @quartz-community/utils/date's formatDate here — gpunkt.org's date format is
-// DD.MM.YYYY, ignoring locale, same patch as core Date.tsx and the tag-page/folder-page forks.
-function formatDate(d: Date): string {
-  const day = String(d.getDate()).padStart(2, "0");
-  const month = String(d.getMonth() + 1).padStart(2, "0");
-  const year = d.getFullYear();
-  return `${day}.${month}.${year}`;
-}
 import { byDateAndAlphabetical, getDate } from "@quartz-community/utils/sort";
 import { isFolderPath } from "@quartz-community/utils/path";
 import { classNames } from "../util/lang";
@@ -138,13 +130,6 @@ export default ((userOpts?: Partial<RecentNotesOptions>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && getDate(withResolvedDateType(page, cfg)) && (
-                    <p class="meta">
-                      <time datetime={getDate(withResolvedDateType(page, cfg))!.toISOString()}>
-                        {formatDate(getDate(withResolvedDateType(page, cfg))!)}
-                      </time>
-                    </p>
-                  )}
                   {opts.showTags && (
                     <ul class="tags">
                       {tags.map((tag) => (

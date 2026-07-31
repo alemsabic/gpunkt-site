@@ -1,10 +1,40 @@
 # Quartz v4 → v5 Migration Runbook (gpunkt.org)
 
-Status: **planning complete, execution not started.** This is Phase I of ale.ms's migration
-(`/Users/alemsabic/Desktop/ale.ms/upgrade.md`) — a replay on the sister project, informed by a
-read-only recon pass (2026-07-31) and by every gotcha ale.ms already hit and solved. Execution is
-gated on the user's presence/go-ahead per this repo's `CLAUDE.md`, phase by phase — this file exists
-so that go-ahead can start real work immediately instead of re-planning.
+Status: **Phases A through G complete and verified (2026-07-31), pushed to `v5`. Phase H (deploy
+cutover) remains, explicitly gated on the user's presence/go-ahead — not started.** This is Phase I
+of ale.ms's migration (`/Users/alemsabic/Desktop/ale.ms/upgrade.md`) — a replay on the sister
+project, informed by a read-only recon pass and by every gotcha ale.ms already hit and solved.
+
+## New findings from this repo's own Phase G (not in ale.ms's runbook)
+
+Found via real-browser comparison against the live `https://gpunkt.org`, not just build-success
+checks — same methodology ale.ms used to catch 9 real bugs on its own Phase G:
+
+1. **`RecentNotes` never showed dates on gpunkt.org's actual v4** — unlike ale.ms's own
+   `RecentNotes.tsx`. Confirmed by reading `git show v4:quartz/components/RecentNotes.tsx`
+   directly: no `Date`/`getDate` import, no `<p class="meta">` block. The recon pass's summary
+   ("PageList.tsx/RecentNotes.tsx do still show a date column") was wrong for RecentNotes
+   specifically — don't trust a recon summary over the actual source when the two disagree.
+   Fixed in `local-plugins/recent-notes` by removing the date-display block (date-based sorting
+   is unaffected).
+2. **`@quartz-community/note-properties` is not an optional bonus feature in this scaffold — it's
+   load-bearing.** It registers `remarkFrontmatter` itself; this v5 ecosystem has no separate
+   `FrontMatter` plugin, so disabling it breaks title/tags/aliases extraction entirely (silently
+   killed all tag-page generation when tried). Its *component* (a visible Properties panel v4
+   never had) is excluded on content pages via `layout.byPageType.content.exclude`, but the
+   plugin itself must stay `enabled: true`.
+3. **Tag casing is lowercased site-wide, unavoidably, and this is not a bug.** v4's own
+   `quartz/util/path.ts` `sluggify()` never lowercased; v5 community's equivalent
+   (`@quartz-community/utils`'s `slugifyPath()`) does (`.toLowerCase()` in its source, confirmed by
+   reading the compiled `dist`). This is used ecosystem-wide for every slug (file paths *and*
+   tags), consistent with the already-accepted "v5 lowercases all URLs" fact from ale.ms's
+   `upgrade.md`. Not worth fighting by forking every consumer plugin — accept it, same as the
+   overall URL-casing convention.
+4. **`tag-page`'s `prefixTags: true` option must also be added to its `package.json`'s
+   `optionSchema`**, not just passed in `quartz.config.yaml` — passing an option absent from the
+   schema silently disabled the *entire* plugin (zero tag pages generated, no error message).
+   Same category of gotcha as the npm-scope exclude-matching bug, different mechanism: config
+   options are apparently validated strictly against the declared schema.
 
 **Read `/Users/alemsabic/Desktop/ale.ms/upgrade.md` for the full narrative/rationale behind each fix
 referenced below by name.** This file does not repeat those narratives — it states the gpunkt.org-

@@ -164,6 +164,8 @@ plugins:
     enabled: true
   - source: "./local-plugins/tag-page"
     enabled: true
+    options:
+      prefixTags: true
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
@@ -293,6 +295,11 @@ plugins:
     order: 50
   - source: "@quartz-community/note-properties"
     enabled: true
+    # Load-bearing, not optional: this plugin registers remarkFrontmatter itself (this v5
+    # ecosystem has no separate FrontMatter plugin) — disabling it breaks frontmatter parsing
+    # entirely (title/tags/aliases extraction), which silently killed all tag-page generation
+    # when tried. Its *component* (the visible Properties panel) is still excluded on content
+    # pages below — v4 never showed that panel and ContentHeader already covers tags there.
     options:
       includeAll: false
       includedProperties:
@@ -324,6 +331,7 @@ layout:
       exclude:
         - "@quartz-community/article-title" # full source string required — see extractPluginName gotcha in upgrade.md
         - content-meta # local source now — basename form, not the old npm-scoped string
+        - "@quartz-community/note-properties" # its component only — plugin itself stays enabled (frontmatter parsing); v4 never showed this panel, ContentHeader already covers tags on content pages
     folder:
       exclude:
         - "@quartz-community/reader-mode"

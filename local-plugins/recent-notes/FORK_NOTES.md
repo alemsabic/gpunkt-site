@@ -14,12 +14,17 @@ v5's YAML:
    merge is shallow (whole-array replace, not append) — fragile against future `afterBody` changes.
 2. `.filter((p) => p.slug !== "index")` — v4's `filter: (f) => f.slug !== "index"` option is a JS
    callback, not expressible in YAML.
+3. Removed the per-item date display entirely. **Correction, found via real-browser Phase G
+   comparison against the live site**: gpunkt.org's actual v4 `RecentNotes.tsx` never rendered a
+   date at all (confirmed by reading `git show v4:quartz/components/RecentNotes.tsx` — no `Date`/
+   `getDate` import, no `<p class="meta">` block). This is a genuine divergence from
+   `tag-page`/`folder-page`'s `PageList.tsx`, which *do* show dates on v4 — don't assume the two
+   list components behave identically just because they're visually similar. The initial version
+   of this fork wrongly kept a date display (copying the `PageList.tsx` pattern) and it showed up
+   as a real visual diff against `https://gpunkt.org` in Phase G.
 
-Unlike ale.ms's own fork of this same plugin, this fork does **not** remove the per-item date
-display — gpunkt.org keeps dates in its recent-notes list (matching its overall keep-the-date-column
-stance, see the `tag-page`/`folder-page` `PageList.tsx` forks) — only the date-format string was
-patched there, not removed. `showTags: false` is set via config options (v4 behavior), unrelated to
-the date question.
+Date-sorting (`byDateAndAlphabeticalWithConfig`/`withResolvedDateType`/`getDate`) is still used
+internally for list ordering — only the visible date *display* was removed, matching v4 exactly.
 
 ## Re-syncing with upstream
 
