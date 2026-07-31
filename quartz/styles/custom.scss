@@ -1,3 +1,913 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+
+// Search bar styling - make search take full width
+.search {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+// Burger button - remove left padding
+.explorer .mobile-explorer {
+  padding-left: 0px !important;
+}
+
+// Graph component bottom margin (gap to Backlinks)
+.graph {
+  margin-bottom: 2rem !important;
+}
+
+// Backlinks component bottom margin
+.backlinks {
+  margin-bottom: 2rem !important;
+}
+
+// Giscus comments bottom margin
+.giscus {
+  margin-bottom: 2rem !important;
+}
+
+// Page max width
+.page {
+  max-width: 1280px !important;
+}
+
+// Breadcrumb container margin
+.breadcrumb-container {
+  margin-top: 1.5rem !important;
+}
+
+// Article title additional margin
+.article-title {
+  margin-top: 4rem !important;
+}
+
+// Content meta font size and color
+.content-meta {
+  font-size: 0.9rem !important;
+  color: var(--gray) !important;
+}
+
+// Page title font size - responsive
+.page-title {
+  font-size: 1.95rem !important; // Mobile
+  font-family: var(--headerFont) !important;
+}
+
+@media (min-width: 800px) {
+  .page-title {
+    font-size: 3.8rem !important; // Desktop
+    line-height: 0.8 !important;
+  }
+}
+
+// Remove gap from sidebars by default
+.page > #quartz-body .sidebar {
+  gap: 0 !important;
+}
+
+// Right sidebar: add gap between Graph, TOC, Backlinks
+.page > #quartz-body .sidebar.right {
+  gap: 1.2rem !important;
+}
+
+// Desktop: H1 in articles larger font size
+@media (min-width: 800px) {
+  .page article > h1 {
+    font-size: 3rem;
+    line-height: 0.9;
+    margin-left: -25px;
+  }
+}
+
+// Page title and breadcrumb links same color as body text
+.page-title a,
+.breadcrumb-container a {
+  color: var(--bodyText) !important;
+}
+
+// H1 font-weight
+h1 {
+  font-weight: 900 !important;
+}
+
+// Light theme: alle Überschriften + Page-Title in Blau
+[saved-theme="light"] h1,
+[saved-theme="light"] h2,
+[saved-theme="light"] h3,
+[saved-theme="light"] h4,
+[saved-theme="light"] h5,
+[saved-theme="light"] h6,
+[saved-theme="light"] .page-title a {
+  color: #3347CB !important;
+}
+
+// Dark theme: alle Überschriften + Page-Title in Orange
+[saved-theme="dark"] h1,
+[saved-theme="dark"] h2,
+[saved-theme="dark"] h3,
+[saved-theme="dark"] h4,
+[saved-theme="dark"] h5,
+[saved-theme="dark"] h6,
+[saved-theme="dark"] .page-title a {
+  color: #ee683d !important;
+}
+
+// Page title link font weight to match headings
+.page-title a {
+  font-weight: 900 !important;
+}
+
+// Additional margin for h2 and h3 within content
+article h2 {
+  margin-top: 3.9rem !important;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-bottom: 2px solid;
+  padding-bottom: 0.25rem;
+}
+
+article h2:has(+ ul) {
+  margin-bottom: 2rem !important;
+}
+
+// Exception: h2 following h1 should have no margin
+article.first-page h1 + h2 {
+  margin-top: 0 !important;
+  font-family: var(--bodyFont) !important;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+article h3 {
+  margin-top: 3.9rem !important;
+}
+
+article h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+// Footer links uppercase and font size
+footer a {
+  text-transform: uppercase !important;
+  font-size: 0.9rem !important;
+}
+
+// Normalize all links to font-weight 400
+a {
+  font-weight: 400 !important;
+}
+
+// Aside element font size
+aside {
+  font-size: 0.85rem !important;
+}
+
+// Font smoothing for dark theme
+[saved-theme="dark"] {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Noise texture overlay - light theme
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/static/noise.png");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+// Noise texture overlay - dark theme
+[saved-theme="dark"] body::before {
+  opacity: 0.5;
+}
+
+// ============================================
+// GLOBAL LIGHT THEME - BOOK AESTHETIC
+// ============================================
+
+// List markers color
+ul ::marker,
+ol ::marker {
+  color: var(--darkgray) !important;
+}
+
+// HR element dashed line styling
+hr {
+  border: none !important;
+  border-top: 1px dashed var(--darkgray) !important;
+  margin: 2.5rem 0 !important;
+  background: none !important;
+}
+
+// Mobile sticky header with transparent background
+@media (max-width: 800px) {
+  .page #quartz-body .sidebar.left:has(.explorer) {
+    opacity: 90%;
+  }
+
+  // Light mode: remove background completely
+  [saved-theme="light"] .page #quartz-body .sidebar.left:has(.explorer) {
+    background-color: transparent !important;
+  }
+}
+
+// Add margin to flex-component in popover previews for better spacing
+.popover .popover-inner .flex-component {
+  margin-top: 1rem !important;
+}
+
+// Tag link font size and padding
+a.internal.tag-link {
+  font-size: 0.85rem !important;
+  padding: 0.2rem 0.3rem !important;
+}
+
+// Light theme: schwarzer Hintergrund mit 10% opacity
+[saved-theme="light"] a.internal.tag-link {
+  background-color: var(--lightgray) !important;
+}
+
+// Dark theme: weißer Hintergrund mit 10% opacity
+[saved-theme="dark"] a.internal.tag-link {
+  background-color: var(--lightgray) !important;
+}
+
+// Explorer folder left border with darker styling
+.explorer-content .folder-outer > ul {
+  border-left: none !important;
+}
+
+// Folder container font size and styling
+.folder-container div > a {
+  font-size: 1rem !important;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+  color: var(--dark) !important;
+}
+
+.folder-container div > a:hover {
+  opacity: 1 !important;
+}
+
+// Folder icon styling
+.folder-icon {
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+  color: var(--dark) !important;
+}
+
+.folder-container div > a:hover .folder-icon {
+  opacity: 1 !important;
+}
+
+// Explorer content links font size and hover effect
+.explorer-content ul li > a {
+  font-size: 1rem !important;
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+  color: var(--dark) !important;
+}
+
+.explorer-content ul li > a:hover {
+  opacity: 1 !important;
+}
+
+// Explorer spacing between lists and items
+.explorer-content ul {
+  margin-top: 0.15rem !important;
+  margin-bottom: 0.15rem !important;
+}
+
+.explorer-content ul li {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  line-height: 1.1rem;
+}
+
+// Table of Contents links font size and line-height
+.toc ul li a {
+  font-size: 0.85rem !important;
+}
+
+.toc-content li {
+  line-height: 1.1rem !important;
+}
+
+// Tagline styling
+.tagline a {
+  text-decoration: none !important;
+}
+
+// Explorer and Table of Contents heading styling
+button.mobile-explorer,
+button.desktop-explorer,
+button.toc-header {
+  color: var(--darkgray) !important;
+}
+
+button.mobile-explorer h2,
+button.desktop-explorer h2 {
+  font-weight: 700 !important;
+  font-family: var(--bodyFont) !important;
+  text-shadow: none !important;
+}
+
+button.toc-header h3 {
+  font-weight: 700 !important;
+  font-family: var(--bodyFont) !important;
+}
+
+// Graph and Backlinks heading styling
+.graph > h3,
+.backlinks > h3 {
+  font-weight: 700 !important;
+  font-family: var(--bodyFont) !important;
+}
+
+// Rückseite heading alignment
+h2#des-zettels-rückseite {
+  text-align: right !important;
+}
+
+// Increase gap between center and sidebars
+
+@media (min-width: 1200px) {
+  .page > #quartz-body {
+    grid-template: "grid-sidebar-left grid-header grid-sidebar-right" "grid-sidebar-left grid-center grid-sidebar-right" "grid-sidebar-left grid-footer grid-sidebar-right"/320px auto 320px;
+    gap: 20px;
+    display: grid;
+  }
+}
+
+// ScrollBar - updated colors for new design
+::-webkit-scrollbar {
+  width: 9px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+[saved-theme="light"] ::-webkit-scrollbar-thumb:active {
+  background-color: #ee683d;
+}
+
+// Dark theme scrollbar
+[saved-theme="dark"] ::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb:active {
+  background-color: #39ff14;
+}
+
+// Override strong color - bold weight is sufficient emphasis (no color change needed)
+.page article p > strong {
+  color: inherit !important;
+  font-weight: 700;
+}
+
+// Override explorer font - folder names and buttons should use body font, not header font
+.folder-container div > a,
+.folder-container div > button {
+  font-family: var(--bodyFont) !important;
+}
+
+// Remove background color and fixed line-height from internal links
+a.internal {
+  background-color: transparent;
+  padding: 0;
+  line-height: inherit;
+  text-decoration: underline;
+}
+
+// ============================================
+// CONTENT TYPE STYLING - DICTIONARY ENTRIES
+// ============================================
+
+// Dictionary Entry: Old dictionary aesthetic with Cardo font
+// Everything inline, dense block layout like printed dictionaries - no paragraph breaks
+article.dictionary-entry,
+article.first-page {
+  line-height: 1.12;
+  font-size: 1.1rem; // Mobile
+  @media (min-width: 800px) {
+    font-size: 1.2rem;
+  }
+  // Override any default article styling
+  * {
+    line-height: inherit !important;
+  }
+
+  // Lists within dictionary entries
+  ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+
+    li {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+// ============================================
+// DICTIONARY ENTRY - FOOTNOTES STYLING
+// ============================================
+
+// Footnotes styling for dictionary entries - compact, book-like layout
+article.dictionary-entry .footnotes {
+  margin-top: 0.75rem !important;
+  padding-top: 0.75rem !important;
+  font-size: 0.9rem !important;
+  text-align: left !important;
+  border-top: none !important;
+  position: relative;
+
+  // Shorter border-top (1/5 width) using ::before
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 20%;
+  //   height: 1px;
+  //   background-color: var(--lightgray);
+  // }
+
+  ol {
+    padding-left: 1rem !important; // Reduced padding for compact layout
+    margin: 0 !important;
+
+    // Footnote markers color - third accent color
+    ::marker {
+      color: #ee683d !important;
+    }
+    [saved-theme="dark"] & ::marker {
+      color: #39ff14 !important;
+    }
+  }
+
+  li {
+    margin-bottom: 0.5rem !important;
+
+    p {
+      margin: 0 !important;
+      text-align: left !important; // Override justify for footnotes
+    }
+  }
+}
+
+// Superscript footnote links in dictionary entries - third accent color
+article.dictionary-entry sup a {
+  font-size: 0.75rem !important;
+  text-decoration: none !important;
+}
+
+[saved-theme="light"] article.dictionary-entry sup a {
+  color: #ee683d !important;
+}
+
+[saved-theme="dark"] article.dictionary-entry sup a {
+  color: #39ff14 !important;
+}
+
+// Highlight footnote when clicked (using :target pseudo-class AND .footnote-highlighted class for SPA)
+article.dictionary-entry .footnotes li:target,
+article.dictionary-entry .footnotes li.footnote-highlighted {
+  background-color: var(--highlight);
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+// Hide footnote backlinks in dictionary entries (book-like appearance, no back navigation needed)
+article.dictionary-entry .data-footnote-backref {
+  display: none !important;
+}
+
+// ============================================
+// REFERENCES / BIBLIOGRAPHY STYLING (GLOBAL)
+// ============================================
+
+
+
+// Individual bibliography entries
+.csl-entry {
+  font-size: .9rem;
+
+  // Hanging indent for citations (classic bibliography style)
+  padding-left: 2rem !important;
+  text-indent: -2rem !important;
+  margin-bottom: .25rem;
+}
+
+// Disable popovers for all footnote links (sup a)
+sup a {
+  pointer-events: auto !important;
+
+  &::after {
+    pointer-events: none !important;
+  }
+}
+
+// Hide popover when hovering over footnote links
+sup:hover + .popover,
+sup a:hover ~ .popover {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+// Hide footnote backlinks (book-like appearance)
+article .data-footnote-backref {
+  display: none !important;
+}
+
+// ============================================
+// GLOBAL GRAPH ICON BUTTON
+// ============================================
+
+.graph > .graph-outer > .global-graph-icon {
+  opacity: 1 !important;
+  width: 32px !important;
+  height: 32px !important;
+  transition: transform 0.2s ease !important;
+
+  &:hover {
+    transform: scale(1.15) !important;
+    background-color: inherit !important;
+  }
+}
+
+[saved-theme="light"] .graph > .graph-outer > .global-graph-icon {
+  color: #ee683d;
+  background-color: rgba(238, 104, 61, 0.12) !important;
+}
+
+[saved-theme="dark"] .graph > .graph-outer > .global-graph-icon {
+  color: #39ff14;
+  background-color: rgba(57, 255, 20, 0.10) !important;
+}
+
+// ============================================
+// RECENT NOTES COMPONENT (Index Page)
+// ============================================
+
+/* Recent Notes: use same styling as folder pages (listPage.scss) */
+.recent-notes {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed var(--darkgray);
+}
+
+.recent-notes li.recent-li {
+  margin-bottom: 0;
+}
+
+.recent-notes > h3 {
+  font-size: 1.5rem;
+  font-family: var(--bodyFont) !important;
+  font-weight: 500;
+}
+
+// ============================================
+// TAG PAGES - REMOVE LIST BULLETS
+// ============================================
+
+// Tags list on tag pages (e.g., /tags/ZK-Theorie) - remove circles
+ul.tags {
+  list-style: none !important;
+}
+
+// ============================================
+// LINK UNDERLINE - CONTENT HEADER & ARTICLES
+// ============================================
+
+// Links underlined by default, no underline on hover with transition
+
+article.dictionary-entry a {
+  text-decoration: underline !important;
+  transition: text-decoration 0.2s ease;
+}
+
+
+article.dictionary-entry a:hover {
+  text-decoration: none !important;
+}
+
+// Exception: Tag links should never be underlined
+a.internal.tag-link {
+  text-decoration: none !important;
+}
+
+a.internal.tag-link:hover {
+  text-decoration: none !important;
+}
+
+// ============================================
+// CITATION SPANS (Inline-Zitate)
+// ============================================
+
+[id^="citation--"] {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+  font-size: 0.9em;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  opacity: 0.55;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// ============================================
+// CITATION TOOLTIPS - CSS-ONLY
+// ============================================
+
+// Beautiful tooltips for citations using data-tooltip attribute
+// Based on rehype-citation demo: https://rehype-citation.netlify.app/tooltips
+[data-tooltip] {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+// Tooltip content (appears above the element)
+// Light mode: heller Tooltip (passt zum weißen Theme)
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 50;
+  margin-bottom: 0.5rem;
+  width: max-content;
+  max-width: 20rem;
+  transform: translateX(-50%);
+  overflow-wrap: break-word;
+  white-space: normal;
+  border-radius: 0.375rem;
+  background-color: #f2f2f2;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #1a1a1a;
+  opacity: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  transition: opacity 0.2s;
+  pointer-events: none;
+  text-shadow: none !important;
+}
+
+// Dark mode: dunkler Tooltip (passt zum schwarzen Theme)
+[saved-theme="dark"] [data-tooltip]::after {
+  background-color: #111111;
+  color: #e8e8e8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+// Tooltip arrow (small triangle pointing down)
+[data-tooltip]::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 50;
+  height: 0;
+  width: 0;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #f2f2f2;
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-bottom: -6px;
+  pointer-events: none;
+  z-index: 51; // Über dem Shadow von ::after rendern
+}
+
+[saved-theme="dark"] [data-tooltip]::before {
+  border-top-color: #111111;
+}
+
+// Show tooltip on hover (no delay!)
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+// ============================================
+// CALLOUT STYLING - DEZENTER (QUELLENVERZEICHNIS)
+// ============================================
+
+.callout {
+  border: none !important;
+  border-radius: 5px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: visible !important; // Tooltips nicht abschneiden
+}
+
+// Tooltips dürfen aus dem Callout-Content-Bereich herausragen
+.callout-content-inner {
+  overflow: visible !important;
+}
+// ============================================
+// HEADING BADGES ([K], [A], etc.)
+// ============================================
+
+.heading-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 0.2em 0.55em;
+  border-radius: 3px;
+  margin-left: 0.3em;
+  line-height: 1.6;
+  font-family: var(--bodyFont);
+  position: relative;
+  top: -0.1em;
+}
+
+[saved-theme="light"] .heading-badge {
+  background-color: rgba(51, 71, 203, 0.1);
+  color: #3347CB;
+}
+
+[saved-theme="dark"] .heading-badge {
+  background-color: rgba(238, 104, 61, 0.15);
+  color: #ee683d;
+}
+
+// ============================================
+// CALLOUT LABELS (als Pills, konsistent mit Heading Badges)
+// ============================================
+
+.callout-icon {
+  display: none;
+}
+.callout-title {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
+  .callout-title-inner p {
+    font-weight: 700 !important;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    margin: 0;
+  }
+}
+
+[saved-theme="light"] .callout-title .callout-title-inner p {
+  background-color: rgba(51, 71, 203, 0.1);
+  color: #3347CB !important;
+}
+
+[saved-theme="dark"] .callout-title .callout-title-inner p {
+  background-color: rgba(238, 104, 61, 0.15);
+  color: #ee683d !important;
+}
+
+// Callout content: smaller font size and line-height
+.callout-content-inner p {
+  font-size: 0.95rem;
+}
+
+// Callout citation/attribution: right-aligned (last paragraph in callout)
+.callout-content-inner > p:last-of-type:has(strong) {
+  text-align: right;
+}
+
+// Override callout colors - add more gray for subtler appearance
+.callout[data-callout] {
+  --color: var(--darkgray) !important; // Muted blue-gray (instead of bright #448aff)
+}
+
+.callout[data-callout="affirmativ"],
+.callout[data-callout="affirmativ-ep"], 
+.callout[data-callout="kritisch"] {
+  background-color: var(--lightgray) !important;
+}
+
+
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+  --color: var(--darkgray) !important; // Muted teal-gray (instead of bright #00b8d4)
+}
+
+// ============================================
+// DROP CAP — erster Absatz nach Badge-Headings ([K], [A])
+// Nutzt :has() — greift nur wo ein heading-badge vorhanden ist
+// ============================================
+
+h2:has(.heading-badge) + p::first-letter {
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.82;
+  margin-right: 0.07em;
+  margin-bottom: -0.05em;
+  font-family: var(--headerFont);
+  font-weight: 900;
+}
+
+[saved-theme="light"] h2:has(.heading-badge) + p::first-letter {
+  color:var(--lightgray);
+}
+
+[saved-theme="dark"] h2:has(.heading-badge) + p::first-letter {
+  color: var(--lightgray);
+}
+
+// ============================================
+// IM FOKUS — hervorgehobener Mechanismus
+// ============================================
+
+article ul li.li-im-fokus {
+  background-color: var(--lightgray);
+  border-left: 2px solid;
+  border-radius: 0 4px 4px 0;
+  padding: 0.5rem 0.75rem;
+  list-style: none;
+}
+
+[saved-theme="light"] article ul li.li-im-fokus {
+  border-left-color: #3347CB;
+}
+
+[saved-theme="dark"] article ul li.li-im-fokus {
+  border-left-color: #ee683d;
+}
+
+.fokus-marker {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+  font-family: var(--bodyFont);
+}
+
+[saved-theme="light"] .fokus-marker {
+  background-color: rgba(51, 71, 203, 0.1);
+  color: #3347CB;
+}
+
+[saved-theme="dark"] .fokus-marker {
+  background-color: rgba(238, 104, 61, 0.15);
+  color: #ee683d;
+}

@@ -17,12 +17,11 @@ export function getDate(data: QuartzPluginData): Date | undefined {
   return data.dates?.[data.defaultDateType]
 }
 
-export function formatDate(d: Date, locale: ValidLocale = "en-US"): string {
-  return d.toLocaleDateString(locale, {
-    year: "numeric",
-    month: "short",
-    day: "2-digit",
-  })
+export function formatDate(d: Date, _locale: ValidLocale = "en-US"): string {
+  const day = String(d.getDate()).padStart(2, "0")
+  const month = String(d.getMonth() + 1).padStart(2, "0")
+  const year = d.getFullYear()
+  return `${day}.${month}.${year}`
 }
 
 export function Date({ date, locale }: Props) {

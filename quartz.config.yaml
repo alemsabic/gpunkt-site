@@ -64,10 +64,10 @@ plugins:
       enableInHtmlEmbed: false
       enableCheckbox: true
     order: 30
-  - source: "@quartz-community/github-flavored-markdown"
+  - source: "./local-plugins/github-flavored-markdown"
     enabled: true
     order: 40
-  - source: "@quartz-community/table-of-contents"
+  - source: "./local-plugins/table-of-contents"
     enabled: true
     options:
       minEntries: 4
@@ -92,6 +92,12 @@ plugins:
     options:
       renderEngine: katex
     order: 80
+  - source: "./local-plugins/heading-badges"
+    enabled: true
+    order: 81
+  - source: "./local-plugins/im-fokus"
+    enabled: true
+    order: 82
   - source: "@quartz-community/citations"
     enabled: true
     options:
@@ -139,7 +145,7 @@ plugins:
       display: all
   - source: "@quartz-community/alias-redirects"
     enabled: true
-  - source: "@quartz-community/content-index"
+  - source: "./local-plugins/content-index"
     enabled: true
     options:
       enableSiteMap: true
@@ -154,9 +160,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/content-page"
     enabled: true
-  - source: "@quartz-community/folder-page"
+  - source: "./local-plugins/folder-page"
     enabled: true
-  - source: "@quartz-community/tag-page"
+  - source: "./local-plugins/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
@@ -186,11 +192,19 @@ plugins:
     layout:
       position: beforeBody
       priority: 10
-  - source: "@quartz-community/content-meta"
+  - source: "./local-plugins/content-meta"
     enabled: true
     layout:
       position: beforeBody
       priority: 20
+  - source: "./local-plugins/content-header"
+    enabled: true
+    options:
+      baseUrl: "https://github.com/alemsabic/gpunkt-woerter/blob/main"
+      showTags: true
+    layout:
+      position: beforeBody
+      priority: 25
   - source: "@quartz-community/tag-list"
     enabled: false
     layout:
@@ -201,6 +215,11 @@ plugins:
     layout:
       position: left
       priority: 10
+  - source: "./local-plugins/tagline"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
@@ -219,6 +238,15 @@ plugins:
       position: beforeBody
       priority: 5
       condition: not-index
+  - source: "./local-plugins/recent-notes"
+    enabled: true
+    options:
+      limit: 5
+      showTags: false
+      linkToMore: false
+    layout:
+      position: afterBody
+      priority: 5
   - source: "@quartz-community/comments"
     enabled: true
     options:
@@ -239,15 +267,18 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: "@quartz-community/footer"
+  - source: "./local-plugins/site-scripts"
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 90
+  - source: "./local-plugins/footer"
     enabled: true
     options:
       links: {}
     layout:
       position: footer
       priority: 50
-  - source: "@quartz-community/recent-notes"
-    enabled: false
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -280,7 +311,7 @@ plugins:
 layout:
   groups:
     toolbar:
-      priority: 15
+      priority: 1
       direction: row
       gap: 0.5rem
   byPageType:
@@ -291,22 +322,25 @@ layout:
         right: []
     content:
       exclude:
-        - content-meta
+        - "@quartz-community/article-title" # full source string required — see extractPluginName gotcha in upgrade.md
+        - content-meta # local source now — basename form, not the old npm-scoped string
     folder:
       exclude:
-        - reader-mode
-        - comments
+        - "@quartz-community/reader-mode"
+        - "@quartz-community/comments"
+        - content-header
       positions:
         right: []
     tag:
       exclude:
-        - reader-mode
-        - comments
+        - "@quartz-community/reader-mode"
+        - "@quartz-community/comments"
+        - content-header
       positions:
         right: []
     canvas:
       exclude:
-        - comments
+        - "@quartz-community/comments"
     bases:
       exclude:
-        - comments
+        - "@quartz-community/comments"
