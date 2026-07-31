@@ -1,7 +1,8 @@
 # Quartz v4 → v5 Migration Runbook (gpunkt.org)
 
-Status: **Phases A through G complete and verified (2026-07-31), pushed to `v5`. Phase H (deploy
-cutover) remains, explicitly gated on the user's presence/go-ahead — not started.** This is Phase I
+Status: **Phases A through G complete and verified (2026-07-31), pushed to `v5`. Phase H in
+progress: preview deploy done and verified; production branch flip not yet done, still gated on
+explicit user go-ahead at the time.** This is Phase I
 of ale.ms's migration (`/Users/alemsabic/Desktop/ale.ms/upgrade.md`) — a replay on the sister
 project, informed by a read-only recon pass and by every gotcha ale.ms already hit and solved.
 
@@ -242,17 +243,30 @@ gpunkt.org site as the reference — not just build-success checks. Apply gotcha
 proactively rather than waiting to spot a wrong font. Keep the same verification rigor ale.ms used —
 it found 9 real bugs this way that static checks missed.
 
-### Phase H — CI/CD + deploy cutover (not started, gated on user go-ahead)
+### Phase H — CI/CD + deploy cutover (preview done ✅ 2026-07-31; production flip not started)
 
-- Apply gotcha 9 from the start: Cloudflare Pages build command becomes
-  `npx quartz plugin install --from-config && npx quartz build`, set *before* the first preview
-  deploy, not discovered after one fails.
-- Lower-risk first step: Cloudflare Pages preview deploy (push `v5`, don't flip production branch
-  yet) — confirm it renders correctly before touching the production branch setting.
-- Before flipping the production branch: check `gpunkt-woerter`'s content-sync workflow for a
-  hardcoded target branch (recon couldn't verify this from this repo) and update it in the same
-  session if it hardcodes `v4`.
-- Explicitly gated on the user being present and giving the go-ahead — do not start unattended.
+- **Gotcha 9 applied from the start, confirmed necessary by real evidence**: fetched the first v5
+  preview build's log directly via the Cloudflare API (`wrangler`'s existing OAuth session on this
+  machine, same technique ale.ms used) — confirmed the bare `npx quartz build` build command (the
+  project's setting at the time) failed to instantiate all 13 local plugins
+  (`Unknown file extension ".ts"` / components failing to load), exactly the predicted failure.
+  Updated the Cloudflare Pages project's build command via the API to
+  `npx quartz plugin install --from-config && npx quartz build`.
+- **Preview deploy verified working**: pushed an empty commit to force a fresh build against the
+  corrected setting. Build log confirmed all 13 local plugins installed + built successfully, 143
+  files emitted. Fetched the deployed preview URL in a real browser (index page + a content page)
+  — renders identically to the local dev build. Production branch (`v4`) untouched throughout;
+  Cloudflare Pages builds preview deployments automatically for every push to a connected branch,
+  so this required no separate "enable preview" step.
+- **Content-sync workflow checked**: `gpunkt-woerter`'s `.github/workflows/sync-to-quartz.yml`
+  does hardcode `ref: v4` (checks out this repo's `v4` branch to sync content into) — confirmed via
+  `gh api`. **Still needs updating to `ref: v5` in the same session as the production branch flip**
+  — not done yet, since production hasn't flipped yet.
+- **Remaining before this phase is done**: flip Cloudflare Pages' production branch from `v4` to
+  `v5` (and update `gpunkt-woerter`'s workflow `ref` in the same session), then update this repo's
+  own `CLAUDE.md` to reflect v5 as current/live (mirroring ale.ms's own end-of-migration CLAUDE.md
+  rewrite). Explicitly gated on the user being present and giving the go-ahead — do not do this
+  unattended.
 
 ### Phase I — n/a for this repo
 
