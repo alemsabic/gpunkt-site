@@ -1,10 +1,15 @@
 # Quartz v4 → v5 Migration Runbook (gpunkt.org)
 
-Status: **Phases A through G complete and verified (2026-07-31), pushed to `v5`. Phase H in
-progress: preview deploy done and verified; production branch flip not yet done, still gated on
-explicit user go-ahead at the time.** This is Phase I
-of ale.ms's migration (`/Users/alemsabic/Desktop/ale.ms/upgrade.md`) — a replay on the sister
-project, informed by a read-only recon pass and by every gotcha ale.ms already hit and solved.
+Status: **Migration complete (2026-07-31). All phases A–H done: `v5` is live in production on both
+Cloudflare Pages (`production_branch: v5`) and GitHub (default branch `v5`), confirmed by fetching
+`https://gpunkt.org` directly. `v4` still exists as a branch (not deleted) but is no longer deployed
+or the GitHub default.** This was Phase I of ale.ms's migration
+(`/Users/alemsabic/Desktop/ale.ms/upgrade.md`) — a replay on the sister project, informed by a
+read-only recon pass and by every gotcha ale.ms already hit and solved.
+
+**Remaining housekeeping, not blocking**: `CUSTOM-MODIFICATIONS.md` still describes v4-era file
+paths in places (flagged in `CLAUDE.md`'s Project status) — needs a pass to update every entry to
+its real `local-plugins/*` v5 location, mirroring what ale.ms did right after its own cutover.
 
 ## New findings from this repo's own Phase G (not in ale.ms's runbook)
 
@@ -243,7 +248,7 @@ gpunkt.org site as the reference — not just build-success checks. Apply gotcha
 proactively rather than waiting to spot a wrong font. Keep the same verification rigor ale.ms used —
 it found 9 real bugs this way that static checks missed.
 
-### Phase H — CI/CD + deploy cutover (preview done ✅ 2026-07-31; production flip not started)
+### Phase H — CI/CD + deploy cutover ✅ (2026-07-31)
 
 - **Gotcha 9 applied from the start, confirmed necessary by real evidence**: fetched the first v5
   preview build's log directly via the Cloudflare API (`wrangler`'s existing OAuth session on this
@@ -258,15 +263,19 @@ it found 9 real bugs this way that static checks missed.
   — renders identically to the local dev build. Production branch (`v4`) untouched throughout;
   Cloudflare Pages builds preview deployments automatically for every push to a connected branch,
   so this required no separate "enable preview" step.
-- **Content-sync workflow checked**: `gpunkt-woerter`'s `.github/workflows/sync-to-quartz.yml`
-  does hardcode `ref: v4` (checks out this repo's `v4` branch to sync content into) — confirmed via
-  `gh api`. **Still needs updating to `ref: v5` in the same session as the production branch flip**
-  — not done yet, since production hasn't flipped yet.
-- **Remaining before this phase is done**: flip Cloudflare Pages' production branch from `v4` to
-  `v5` (and update `gpunkt-woerter`'s workflow `ref` in the same session), then update this repo's
-  own `CLAUDE.md` to reflect v5 as current/live (mirroring ale.ms's own end-of-migration CLAUDE.md
-  rewrite). Explicitly gated on the user being present and giving the go-ahead — do not do this
-  unattended.
+- **Content-sync workflow updated**: `gpunkt-woerter`'s `.github/workflows/sync-to-quartz.yml`
+  hardcoded `ref: v4` (checks out this repo's branch to sync content into) — confirmed via `gh api`,
+  then changed to `ref: v5` and pushed to `gpunkt-woerter`'s `main`, in the same session as the
+  production branch flip below.
+- **Production cutover done**: Cloudflare Pages `production_branch` flipped from `v4` to `v5` via
+  the API. Pushed an empty commit to force a fresh build in the (now) Production environment —
+  confirmed via `wrangler pages deployment list` (`Environment: Production`, `Branch: v5`,
+  `Status: Active`). Confirmed live: `curl https://gpunkt.org/` returns 200 with the expected
+  content, and a real-browser screenshot of `https://gpunkt.org` matches the verified local/preview
+  build exactly. `v4` branch left in place (not deleted), just no longer deployed.
+- `CLAUDE.md` updated to reflect v5 as the current/live version (mirrors ale.ms's own
+  end-of-migration `CLAUDE.md` rewrite) — see this file's own top status line and the "Remaining
+  housekeeping" note above for what's left (`CUSTOM-MODIFICATIONS.md`'s stale v4 paths).
 
 ### Phase I — n/a for this repo
 

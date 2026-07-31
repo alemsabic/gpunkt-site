@@ -3,13 +3,11 @@
 ## Sister Project
 
 This project and **ale.ms** (`/Users/alemsabic/Desktop/ale.ms`) are both Quartz-based sites
-maintained by the same person, kept in close alignment on purpose. ale.ms has already migrated to
-Quartz v5 and carries a more mature MCP/doc setup (`jdocmunch` + `jcodemunch`, this same
-`CLAUDE.md` / `CUSTOM-MODIFICATIONS.md` / `upgrade.md` structure) — gpunkt.org's is being brought
-to parity. When you land an improvement in one project's tooling, config conventions, or reusable
-component (not content), consider whether it should be ported to the other. gpunkt.org's own
-v4→v5 migration is planned separately (see "Project status" below) and will draw directly on
-ale.ms's `upgrade.md`.
+maintained by the same person, kept in close alignment on purpose — both now on Quartz v5, both
+using this same `CLAUDE.md` / `CUSTOM-MODIFICATIONS.md` / `upgrade.md` structure. gpunkt.org's own
+v4→v5 migration (replayed from ale.ms's `upgrade.md`) is complete — see "Project status" below.
+When you land an improvement in one project's tooling, config conventions, or reusable component
+(not content), consider whether it should be ported to the other.
 
 ---
 
@@ -23,9 +21,10 @@ This repository handles **PRESENTATION ONLY** (Quartz static site generator).
 - Auto-syncs to this repo's `content/` folder via a GitHub Action in the content repo, on every
   push to its `main` branch.
 - **DO NOT edit files in `content/` directly** — changes will be overwritten by the next sync.
-- If that content-repo workflow hardcodes a target branch (as ale.ms's sister workflow does — see
-  ale.ms's `CLAUDE.md`), and this repo's production branch ever changes, the workflow must be
-  updated in the same session — it fails silently otherwise.
+- **That workflow hardcodes the target branch** (currently checks out this repo's `v5` branch to
+  sync into, updated from `v4` during this repo's own v4→v5 cutover). If this repo's production
+  branch ever changes again, that workflow file must be updated in the _same_ session — it fails
+  silently (green checkmark, no error) if left pointing at a branch nothing serves anymore.
 
 ### Repository Focus
 
@@ -36,12 +35,19 @@ This repository handles **PRESENTATION ONLY** (Quartz static site generator).
 
 ## Project status
 
-Running **Quartz v4.5.1**. Still on the pre-migration architecture (`quartz.config.ts` +
-`quartz.layout.ts`, no `local-plugins/` fork directory, no `quartz.lock.json`). A v4→v5 migration
-mirroring ale.ms's is planned as a separate effort, informed directly by ale.ms's `upgrade.md`
-(which has a "Phase I" checklist of gotchas to carry over so they don't need rediscovering) and by
-this repo's own `CUSTOM-MODIFICATIONS.md` (documents what must be re-verified or re-ported).
-Explicitly gated on the user being present and giving the go-ahead — don't start it unattended.
+Running **Quartz v5.0.0** — the v4→v5 migration (replayed from ale.ms's `upgrade.md`, every custom
+v4 behavior re-ported as a `local-plugins/` fork) is complete and live: `v5` is this repo's
+deployed branch (Cloudflare Pages production branch and GitHub default branch). `v4` still exists
+as a branch but is no longer built or served. Full migration history, every gotcha found (including
+some new to this repo, not in ale.ms's own runbook — e.g. `note-properties` being this ecosystem's
+only frontmatter parser, not an optional feature) lives in **`upgrade.md`** — read it for
+archaeology on _why_ something is built the way it is, not for what's true today.
+
+**`CUSTOM-MODIFICATIONS.md` still describes v4-era file paths in places** (e.g. `quartz/plugins/
+transformers/citations.ts`, `quartz/components/scripts/footnotes.inline.ts`) and needs a pass to
+update every entry to its real v5 `local-plugins/*` location — same cleanup ale.ms did right after
+its own cutover. Cross-reference against `upgrade.md`'s Phase E notes for the current path of each
+behavior in the meantime.
 
 ---
 
@@ -96,16 +102,21 @@ ripple-effect risk exists.
 ## Project Overview
 
 - **Name**: gpunkt.org
-- **Type**: Static site generator using Quartz v4.5.1
+- **Type**: Static site generator using Quartz v5.0.0
 - **Live Site**: https://gpunkt.org
 
 ### Key Commands
 
 - **Dev server**: `npx quartz build --serve` (http://localhost:8080)
-- **Build**: `npx quartz build`
+- **Build**: `npx quartz plugin install --from-config && npx quartz build` (the `--from-config`
+  flag matters — see this file's Deployment section and `upgrade.md`'s Phase H for why)
 - **Check types**: `npm run check`
 - **Format code**: `npm run format`
-- **Tests**: `npm run test` (Node.js test runner, files live next to source as `*.test.ts`)
+- **`local-plugins/*` source edits need a rebuild + full server restart, not just a save.** Each
+  fork ships from its own `dist/` (built via `tsup`), and a running `--serve` process loads that
+  `dist/` once at startup — it never rebuilds or hot-reloads it. `quartz/styles/custom.scss` is the
+  exception: it hot-reloads live. After editing any `local-plugins/*/src/**`, run `npm install &&
+  npm run build` inside that plugin's own directory, then kill and restart the dev server.
 
 ---
 
@@ -114,10 +125,21 @@ ripple-effect risk exists.
 **Platform**: Cloudflare Pages
 
 - **Repository**: https://github.com/alemsabic/gpunkt-site
-- **Branch**: `v4` — current production branch.
-- **Build Command**: `npx quartz build`
+- **Branch**: `v5` — Cloudflare Pages production branch and this repo's GitHub default branch.
+  `v4` is the pre-migration branch, kept but no longer deployed.
+- **Build Command**: `npx quartz plugin install --from-config && npx quartz build` — the
+  `--from-config` flag is required, not optional. Bare `npx quartz plugin install` restores local
+  plugins from `quartz.lock.json`'s frozen `resolved` field, an **absolute, install-machine-specific
+  path** that doesn't exist on Cloudflare's build machine — every `local-plugins/*`-sourced
+  component silently fails to build without this flag (confirmed via the actual Cloudflare build
+  log during this repo's own cutover — see `upgrade.md`'s Phase H).
 - **Output Directory**: `public`
 - **Deploy Time**: 1-2 minutes after push
+- The content-sync workflow in `gpunkt-woerter` (`.github/workflows/sync-to-quartz.yml`) checks out
+  this repo's `v5` branch to sync content into — updated in the same session as this cutover. If
+  this repo's production branch ever changes again, that workflow must be updated too, in the same
+  session — it fails silently (green checkmark, no error) if left pointing at a branch nothing
+  serves anymore.
 
 ---
 
@@ -125,8 +147,9 @@ ripple-effect risk exists.
 
 **See `CUSTOM-MODIFICATIONS.md` at the repo root** for every behavior that deviates from stock
 Quartz — footnote highlighting, citation-popover suppression, `shortTitle` support, German-locale
-citations, and Zotero/dictionary-entry styling. Read it before editing any of the files it lists,
-or before starting the v4→v5 migration.
+citations, and Zotero/dictionary-entry styling (still describes v4-era paths in places — see
+"Project status" above). Read it before editing any `local-plugins/*` fork or `quartz/util/
+fileTrie.ts` / `quartz/util/ctx.ts`.
 
 ---
 
