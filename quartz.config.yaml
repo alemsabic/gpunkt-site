@@ -173,11 +173,26 @@ plugins:
     layout:
       position: left
       priority: 50
-  - source: "@quartz-community/graph"
+      condition: not-index
+  # Local fork (German heading renamed "Graphansicht" → "Graph") — see local-plugins/graph/FORK_NOTES.md
+  - source: "./local-plugins/graph"
     enabled: true
     layout:
       position: right
       priority: 20
+      condition: not-index
+  # Index-only: same forked Graph component, always-expanded (depth: -1 = every note reachable
+  # by link from the homepage, not just 1-hop neighbors). Renders before Recent Notes
+  # (priority 5) in afterBody.
+  - source: "./local-plugins/graph"
+    enabled: true
+    options:
+      localGraph:
+        depth: -1
+    layout:
+      position: afterBody
+      priority: 2
+      condition: is-index
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -191,6 +206,7 @@ plugins:
     layout:
       position: right
       priority: 30
+      condition: not-index
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -209,6 +225,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 25
+      condition: not-index
   - source: "@quartz-community/tag-list"
     enabled: false
     layout:
@@ -219,11 +236,29 @@ plugins:
     layout:
       position: left
       priority: 10
+      condition: not-index
   - source: "./local-plugins/tagline"
     enabled: true
     layout:
       position: left
       priority: 20
+      condition: not-index
+  # Index-only hero: same PageTitle component as the sidebar, repositioned to the top of the
+  # center column since the sidebar is hidden on index (see custom.scss's
+  # body[data-slug="index"] block). Priority is negative so it renders before the
+  # Search+Darkmode toolbar (priority 10) in the same beforeBody position.
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: -2
+      condition: is-index
+  - source: "./local-plugins/tagline"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: -1
+      condition: is-index
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
@@ -251,6 +286,13 @@ plugins:
     layout:
       position: afterBody
       priority: 5
+  # New local plugin (not a fork): alphabetical "phone book" index of every published note,
+  # index-page only (ported from ale.ms's local-plugins/site-index).
+  - source: "./local-plugins/site-index"
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 6
   - source: "@quartz-community/comments"
     enabled: true
     options:
@@ -354,3 +396,5 @@ layout:
     bases:
       exclude:
         - "@quartz-community/comments"
+      positions:
+        right: []

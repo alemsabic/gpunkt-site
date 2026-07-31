@@ -911,3 +911,339 @@ article ul li.li-im-fokus {
   background-color: rgba(238, 104, 61, 0.15);
   color: #ee683d;
 }
+
+// ============================================================================
+// Ported from ale.ms (full homepage-parity port, 2026-07-31)
+// ============================================================================
+
+// Bases/Canvas file badges — mark these special page types wherever their links appear in the
+// Explorer tree, the homepage Site Index, and the homepage Recent Notes list. Their slugs keep
+// the source extension (e.g. "quellen/quellen-index.base",
+// "referenzen/zettelkasten-aufbau.canvas"), so a plain href-suffix selector is enough to target
+// them — no component fork needed.
+.explorer-content a.nav-file-title[href*=".base"]::after,
+.site-index a.internal[href*=".base"]::after,
+.recent-notes a.internal[href*=".base"]::after,
+.explorer-content a.nav-file-title[href*=".canvas"]::after,
+.site-index a.internal[href*=".canvas"]::after,
+.recent-notes a.internal[href*=".canvas"]::after {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14px;
+  margin-left: 6px;
+  padding: 3px 3px;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1; // a.internal sets line-height: inherit, which is much taller in prose
+  // contexts (Site Index) than in the Explorer list — pin it so the badge stays circular in both.
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background: rgba(139, 72, 64, 0.14); // --secondary at low opacity (same hex in both themes)
+  color: var(--secondary);
+}
+
+.explorer-content a.nav-file-title[href*=".base"]::after,
+.site-index a.internal[href*=".base"]::after,
+.recent-notes a.internal[href*=".base"]::after {
+  content: "B";
+}
+
+.explorer-content a.nav-file-title[href*=".canvas"]::after,
+.site-index a.internal[href*=".canvas"]::after,
+.recent-notes a.internal[href*=".canvas"]::after {
+  content: "C";
+}
+
+// Reclaim the right sidebar's grid column on desktop for bases pages (the right
+// sidebar itself is already excluded via quartz.config.yaml's layout.byPageType.bases
+// positions), so the table gets the full width instead of a wasted empty column.
+@media all and ($desktop) {
+  .page:has(.bases-page) > #quartz-body {
+    grid-template-columns: #{$sidePanelWidth} auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+  }
+}
+
+// Index page: single-column layout (body[data-slug="index"] only)
+// ============================================================================
+//
+// See docs/superpowers/specs/2026-07-28-index-page-redesign-design.md §1 and the plan's
+// "Design refinement" note: the grid collapses fully (like the built-in full-width frame)
+// so the hero sits flush at the true left edge with no dead gutters. Everything except
+// .site-index gets its own explicit max-width below, so it reads at the same comfortable
+// measure as a normal content page despite the grid itself now being full-width.
+
+body[data-slug="index"] {
+  .page > #quartz-body {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-footer";
+
+    @media all and ($tablet) {
+      grid-template-columns: auto;
+    }
+  }
+
+  .sidebar.left,
+  .sidebar.right {
+    display: none !important;
+  }
+
+  // Hero stays a compact, left-aligned text block — the one section that does NOT take on
+  // the shared wide width below (see the .page-footer grid further down). Left-pinned, not
+  // centered: with the sidebars gone the page is up to 1500px wide, and a 46rem block
+  // glued to the left edge reads as an intentional top-left title, matching where a page
+  // title conventionally sits — a centered 46rem block on a 1500px page read as adrift.
+  .page-header {
+    max-width: 46rem;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  // Hero: Title + Tagline, now living in .page-header instead of the sidebar.
+  .page-header .page-title {
+    font-size: 4rem !important;
+  }
+
+  .page-header .tagline {
+    font-size: 1.5rem !important;
+  }
+
+  // Tagline.tsx hardcodes "desktop-only" on its root div, and base custom.scss hides
+  // .tagline.desktop-only under 800px — correct for the sidebar instance, but the hero above
+  // needs its Tagline instance to show on mobile too ("Title + Tagline + Search"). Scoped to
+  // .page-header so the (not-index-gated, and thus absent here anyway) sidebar instance
+  // elsewhere on the site is untouched.
+  .page-header .tagline.desktop-only {
+    display: block;
+  }
+
+  // Prominent search: larger type, more breathing room. No max-width — the bar stretches
+  // all the way to the darkmode toggle instead of stopping short and leaving the toggle
+  // stranded in open space.
+  .search-button {
+    padding: 0.9rem 1.3rem !important;
+  }
+
+  .search-button > p {
+    font-size: 1.2rem !important;
+  }
+
+  // Toolbar buttons (search + darkmode) get a bit more presence on desktop, homepage only;
+  // left at the plugins' own compact defaults everywhere else and on mobile where space is
+  // tight.
+  @media (min-width: 800px) {
+    .search-button {
+      height: 3rem;
+    }
+
+    // .darkmode's own bundled CSS (@quartz-community/darkmode) ships a 20x32px button with a
+    // 20px icon centered via top: calc(50% - 10px). Enlarging the icon to 32px needs the
+    // button widened to match (else the icon overflows the 20px-wide hit area) and the
+    // centering offset recalculated for the new icon height (50% - half of 32px, not half of
+    // 20px).
+    .darkmode {
+      width: 32px;
+    }
+
+    .darkmode svg {
+      width: 32px;
+      height: 32px;
+      top: calc(50% - 16px);
+    }
+  }
+
+  // Shared width below the hero: Recent Notes + Graph side by side, Site Index spanning
+  // all columns beneath them, at the same shared 2.5rem gap as .site-index-columns (column
+  // *count* no longer has to match between the two — this grid keeps its own 3/2/1 desktop/
+  // tablet/mobile split regardless of how many text-columns .site-index-columns renders).
+  // `order` puts Recent Notes visually first (left) and Graph
+  // second (right) without reordering the DOM (Graph renders first per its lower afterBody
+  // priority in quartz.config.yaml — reordering there would touch a non-CSS file, out of
+  // this plan's scope). Site Index needs its own explicit `order` too: otherwise its
+  // default (0) would sort before both of the above and its grid-column: 1/-1 would claim
+  // row 1 instead of falling below them.
+  .page-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .page-footer > .recent-notes {
+    order: 1;
+  }
+
+  .page-footer > .graph {
+    order: 2;
+    grid-column: span 2;
+  }
+
+  // Below desktop, Graph drops from span 2 to span 1 — combined with the tablet/mobile
+  // column-count changes further down, that's a 50/50 split at tablet (2-column grid) and a
+  // full stack at mobile (1-column grid, where span 1 is the only option anyway). Placed
+  // after the base rules above (not nested inside them) so it wins on source order: an
+  // equal-specificity rule declared later in the cascade always wins, media query or not,
+  // and an override nested before the base rule it's overriding would silently lose to it.
+  @media all and not ($desktop) {
+    .page-footer > .graph {
+      grid-column: span 1;
+    }
+  }
+
+  // Own 3 → 2 → 1 breakpoint schedule, independent of .site-index-columns further down.
+  @media all and ($tablet) {
+    .page-footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media all and ($mobile) {
+    .page-footer {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Index-only Graph: bigger box (it's the page's visual centerpiece here, not a 250px
+  // sidebar card), and its heading matches .recent-notes > h3's H1-equivalent size
+  // (custom.scss's "Section title... sized identically to the H1 rule" block). margin: 0
+  // on both the box and heading so it starts flush at the same height as Recent Notes'
+  // heading in the grid cell beside it.
+  .page-footer > .graph > .graph-outer {
+    height: 420px;
+    margin-top: 0;
+  }
+
+  .page-footer > .graph > h3 {
+    font-size: 1.75rem !important;
+    line-height: 1;
+  }
+
+  @media (min-width: 800px) {
+    .page-footer > .graph > h3 {
+      font-size: 3rem !important;
+      line-height: 0.9;
+    }
+  }
+
+  // SiteIndex: spans every grid column below Recent Notes/Graph, at the same shared width
+  // they use — via the grid now, not its own max-width. Explicit order so it always sorts
+  // after both (see the .page-footer comment above for why that's needed at all).
+  // Separator above the Site Index, matching the global `hr` rule further up in this file
+  // (1px dashed var(--darkgray)) exactly. The grid's own 2.5rem gap above already matches
+  // that rule's top margin; padding-top here reproduces its bottom margin the same way.
+  .page-footer > .site-index {
+    order: 3;
+    grid-column: 1 / -1;
+    border-top: 1px dashed var(--darkgray);
+    padding-top: 2.5rem;
+  }
+
+  .site-index > h3 {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  @media (min-width: 800px) {
+    .site-index > h3 {
+      font-size: 3rem;
+      line-height: 0.9;
+    }
+  }
+
+  .site-index-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--light);
+    padding: 0.6rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--lightgray);
+  }
+
+  .site-index-nav a,
+  .site-index-nav span.empty {
+    display: inline-block;
+    min-width: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+  }
+
+  .site-index-nav a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+
+  .site-index-nav a:hover {
+    background-color: var(--lightgray);
+  }
+
+  .site-index-nav span.empty {
+    // Not var(--lightgray) directly: it's a chromatically-neutral translucent
+    // black/white (rgb(0 0 0/20%) light, rgb(255 255 255/20%) dark), so as text
+    // color it desaturates toward flat gray instead of picking up either theme's
+    // warmth — on the light theme's beige background that reads as "dark-theme
+    // gray" even though the right variable is resolving correctly. Deriving the
+    // tone from each theme's own (already warm/cool-tinted) --darkgray keeps it
+    // muted but visibly of-the-theme.
+    color: color-mix(in srgb, var(--darkgray) 35%, var(--light));
+  }
+
+  @media (min-width: 800px) {
+    .site-index-nav {
+      margin-bottom: 4rem;
+    }
+
+    .site-index-nav a,
+    .site-index-nav span.empty {
+      font-size: 2.3rem;
+    }
+  }
+
+  .site-index-columns {
+    columns: 2;
+    column-gap: 2.5rem;
+
+    @media all and ($mobile) {
+      columns: 1;
+    }
+  }
+
+  .site-index-group {
+    break-inside: avoid;
+    margin-bottom: 1.25rem;
+  }
+
+  .site-index-letter {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--lightgray);
+    margin: 0 0 0.3rem 0;
+    padding-bottom: 0.15rem;
+  }
+
+  .site-index-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-index-group li {
+    font-size: 0.9rem;
+    padding: 0.1rem 0;
+  }
+}
