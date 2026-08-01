@@ -1,13 +1,34 @@
 # Claude Code Instructions - Quartz Repository (gpunkt.org)
 
+## ⚙️ How this file is maintained
+
+This file holds **only durably-true facts about the current state of the project** — config,
+architecture, conventions, policies. It is read at the start of every session, so keep it lean and
+current, not a historical record.
+
+**Does NOT belong here** (put it elsewhere, or delete it once it's done its job):
+
+- Session-by-session update logs → belongs in git commit messages.
+- In-progress migration/project status → belongs in `upgrade.md` while active; once finished,
+  replace with a one-line pointer here, don't keep the play-by-play.
+- Resolved TODOs, closed bugs, decisions already made → delete once resolved, don't leave a
+  checked-off trail. Git history has the trail if anyone needs it.
+- One-time debugging narratives → belongs in a commit message or `upgrade.md`. If the _outcome_ is
+  a rule that must survive future refactors, that rule belongs in **`CUSTOM-MODIFICATIONS.md`**,
+  stated plainly, not narrated.
+
+**Does belong here**: what's true right now (config, file structure, deployment setup), policies
+that apply to every session, and pointers to where the detailed, change-prone stuff actually lives.
+
+---
+
 ## Sister Project
 
-This project and **ale.ms** (`/Users/alemsabic/Desktop/ale.ms`) are both Quartz-based sites
-maintained by the same person, kept in close alignment on purpose — both now on Quartz v5, both
-using this same `CLAUDE.md` / `CUSTOM-MODIFICATIONS.md` / `upgrade.md` structure. gpunkt.org's own
-v4→v5 migration (replayed from ale.ms's `upgrade.md`) is complete — see "Project status" below.
-When you land an improvement in one project's tooling, config conventions, or reusable component
-(not content), consider whether it should be ported to the other.
+This project and **ale.ms** (`/Users/alemsabic/Desktop/ale.ms`) are both Quartz v5 sites maintained
+by the same person, kept in close alignment on purpose — both follow this same `CLAUDE.md` /
+`CUSTOM-MODIFICATIONS.md` / `upgrade.md` structure. When you land an improvement in one project's
+tooling, config conventions, or reusable component (not content), consider whether it should be
+ported to the other.
 
 ---
 
@@ -21,10 +42,9 @@ This repository handles **PRESENTATION ONLY** (Quartz static site generator).
 - Auto-syncs to this repo's `content/` folder via a GitHub Action in the content repo, on every
   push to its `main` branch.
 - **DO NOT edit files in `content/` directly** — changes will be overwritten by the next sync.
-- **That workflow hardcodes the target branch** (currently checks out this repo's `v5` branch to
-  sync into, updated from `v4` during this repo's own v4→v5 cutover). If this repo's production
-  branch ever changes again, that workflow file must be updated in the _same_ session — it fails
-  silently (green checkmark, no error) if left pointing at a branch nothing serves anymore.
+- **That workflow hardcodes the target branch** (currently `v5`). If this repo's production branch
+  ever changes again, that workflow file must be updated in the _same_ session — it fails silently
+  (green checkmark, no error) if left pointing at a branch nothing serves anymore.
 
 ### Repository Focus
 
@@ -35,19 +55,11 @@ This repository handles **PRESENTATION ONLY** (Quartz static site generator).
 
 ## Project status
 
-Running **Quartz v5.0.0** — the v4→v5 migration (replayed from ale.ms's `upgrade.md`, every custom
-v4 behavior re-ported as a `local-plugins/` fork) is complete and live: `v5` is this repo's
-deployed branch (Cloudflare Pages production branch and GitHub default branch). `v4` still exists
-as a branch but is no longer built or served. Full migration history, every gotcha found (including
-some new to this repo, not in ale.ms's own runbook — e.g. `note-properties` being this ecosystem's
-only frontmatter parser, not an optional feature) lives in **`upgrade.md`** — read it for
-archaeology on _why_ something is built the way it is, not for what's true today.
-
-**`CUSTOM-MODIFICATIONS.md` still describes v4-era file paths in places** (e.g. `quartz/plugins/
-transformers/citations.ts`, `quartz/components/scripts/footnotes.inline.ts`) and needs a pass to
-update every entry to its real v5 `local-plugins/*` location — same cleanup ale.ms did right after
-its own cutover. Cross-reference against `upgrade.md`'s Phase E notes for the current path of each
-behavior in the meantime.
+Running **Quartz v5.0.0** — the v4→v5 migration is complete and live: `v5` is this repo's deployed
+branch (Cloudflare Pages production branch and GitHub default branch). `v4` still exists as a branch
+but is no longer built or served. Full migration history and every gotcha found lives in
+**`upgrade.md`** — read it for archaeology on _why_ something is built the way it is, not for what's
+true today (that's this file, plus `CUSTOM-MODIFICATIONS.md`).
 
 ---
 
@@ -83,12 +95,14 @@ code_ (TypeScript/JS, by symbol — functions, classes, components, byte-accurat
 **Reach for jCodeMunch (not raw `Read`/grep) in these situations**:
 
 - **Before editing any file `CUSTOM-MODIFICATIONS.md` calls out** — `quartz/util/fileTrie.ts`,
-  `quartz/util/ctx.ts`, `quartz/plugins/transformers/citations.ts`,
-  `quartz/components/scripts/footnotes.inline.ts`, `quartz/plugins/emitters/contentIndex.tsx`.
-  Run `find_references` / `get_blast_radius` on the symbol you're about to touch before editing it.
-- **When locating where a symbol, component, or type is defined or used anywhere under `quartz/`**,
-  instead of grepping across dozens of files by hand. Use `search_symbols` / `find_references`.
-- **Before deleting or renaming any exported symbol in `quartz/`** — run `check_delete_safe` first.
+  `quartz/util/ctx.ts`, and any file inside `local-plugins/citations/`, `local-plugins/site-scripts/`,
+  `local-plugins/content-index/`, or `local-plugins/site-index/`. Run `find_references` /
+  `get_blast_radius` on the symbol you're about to touch before editing it.
+- **When locating where a symbol, component, or type is defined or used anywhere under `quartz/` or
+  `local-plugins/`**, instead of grepping across dozens of files by hand. Use `search_symbols` /
+  `find_references`.
+- **Before deleting or renaming any exported symbol** in `quartz/` or a `local-plugins/*` fork — run
+  `check_delete_safe` first.
 - **When exploring an unfamiliar part of the Quartz internals for the first time** — `index_local`
   the relevant directory, then query it rather than opening whole files cold.
 
@@ -116,7 +130,10 @@ ripple-effect risk exists.
   fork ships from its own `dist/` (built via `tsup`), and a running `--serve` process loads that
   `dist/` once at startup — it never rebuilds or hot-reloads it. `quartz/styles/custom.scss` is the
   exception: it hot-reloads live. After editing any `local-plugins/*/src/**`, run `npm install &&
-  npm run build` inside that plugin's own directory, then kill and restart the dev server.
+npm run build` inside that plugin's own directory, then kill and restart the dev server. Every
+  `local-plugins/*` package must have its own `.gitignore` listing `dist/` (see
+  `CUSTOM-MODIFICATIONS.md`'s Graph entry) — without one, the plugin installer treats a stale
+  `dist/` as permanently pre-built and silently stops rebuilding it, even after `src/` changes.
 
 ---
 
@@ -136,10 +153,8 @@ ripple-effect risk exists.
 - **Output Directory**: `public`
 - **Deploy Time**: 1-2 minutes after push
 - The content-sync workflow in `gpunkt-woerter` (`.github/workflows/sync-to-quartz.yml`) checks out
-  this repo's `v5` branch to sync content into — updated in the same session as this cutover. If
-  this repo's production branch ever changes again, that workflow must be updated too, in the same
-  session — it fails silently (green checkmark, no error) if left pointing at a branch nothing
-  serves anymore.
+  this repo's `v5` branch to sync content into. If this repo's production branch ever changes again,
+  that workflow must be updated too, in the same session (see Two-Repository Architecture above).
 
 ---
 
@@ -147,9 +162,11 @@ ripple-effect risk exists.
 
 **See `CUSTOM-MODIFICATIONS.md` at the repo root** for every behavior that deviates from stock
 Quartz — footnote highlighting, citation-popover suppression, `shortTitle` support, German-locale
-citations, and Zotero/dictionary-entry styling (still describes v4-era paths in places — see
-"Project status" above). Read it before editing any `local-plugins/*` fork or `quartz/util/
-fileTrie.ts` / `quartz/util/ctx.ts`.
+citations, and Zotero/dictionary-entry styling.
+
+**Read it before**: editing any `local-plugins/*` fork, editing `quartz/util/fileTrie.ts` or
+`quartz/util/ctx.ts`, touching `quartz/styles/custom.scss`, or doing any future Quartz version
+upgrade. Every entry exists because it was lost or broken at least once already.
 
 ---
 
