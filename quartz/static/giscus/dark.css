@@ -19,12 +19,12 @@ main {
     "Segoe UI Symbol";
 
   /* Clinical Cold Theme - Dark Mode */
-  --bg: #070731; /* Dark navy */
+  --bg: #161618; /* Neutral near-black, softer than the old navy */
   --bg-secondary: rgba(255, 255, 255, 0.05);
   --text: #dddddd; /* Light gray */
   --text-muted: #888888; /* Muted gray */
-  --link: #dddddd; /* Light gray */
-  --link-hover: #ffffff; /* White */
+  --link: #ee683d; /* Accent orange, matches site headings/links */
+  --link-hover: #f58a68; /* Lighter accent orange */
   --border: #333333; /* Dark gray border */
 
   /* Syntax highlighting */

@@ -23,8 +23,8 @@ main {
   --bg-secondary: rgba(0, 0, 0, 0.05);
   --text: #222222; /* Dark gray */
   --text-muted: #666666; /* Muted gray */
-  --link: #222222; /* Dark gray */
-  --link-hover: #333333; /* Darker gray */
+  --link: #3347cb; /* Accent blue, matches site headings/links */
+  --link-hover: #5468e0; /* Lighter accent blue */
   --border: #cccccc; /* Light gray border */
 
   /* Syntax highlighting */

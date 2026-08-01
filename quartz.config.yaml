@@ -26,18 +26,18 @@ configuration:
         gray: "#666666"
         darkgray: "#111111"
         dark: "#222222"
-        secondary: "#222222"
-        tertiary: "#333333"
+        secondary: "#3347cb"
+        tertiary: "#5468e0"
         highlight: rgba(0, 0, 0, 0.08)
         textHighlight: "#00000014"
       darkMode:
-        light: "#070731"
+        light: "#161618"
         lightgray: rgba(255, 255, 255, 0.1)
         gray: "#888888"
         darkgray: "#eeeeee"
         dark: "#dddddd"
-        secondary: "#dddddd"
-        tertiary: "#bbbbbb"
+        secondary: "#ee683d"
+        tertiary: "#f58a68"
         highlight: rgba(255, 255, 255, 0.1)
         textHighlight: "#ffffff14"
 plugins:
