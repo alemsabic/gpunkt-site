@@ -147,7 +147,7 @@
 // any h1 nested deeper in the document (e.g. inside a transcluded embed). Same fix as ale.ms.
 @media (min-width: 800px) {
   .page article > div.markdown-preview-view > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 0.9;
     margin-left: -25px;
   }
@@ -551,7 +551,6 @@ a.internal {
   background-color: transparent;
   padding: 0;
   line-height: inherit;
-  text-decoration: underline;
 }
 
 // ============================================
