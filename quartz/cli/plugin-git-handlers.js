@@ -71,6 +71,25 @@ async function buildPluginAsync(pluginDir, name) {
 }
 
 /**
+ * Multiple layout entries (or lockfile-name aliases) can resolve to the same physical
+ * directory — e.g. gpunkt.org's Graph is registered twice in quartz.config.yaml (sidebar
+ * instance + always-expanded homepage instance), both sourcing "./local-plugins/graph".
+ * Running buildPluginAsync for each entry concurrently races two npm install/build
+ * processes against the same node_modules/dist and can corrupt the output on a fresh
+ * checkout (no pre-built dist/). Dedupe by real path so each physical directory only
+ * builds once.
+ * @param {Array<{name: string, pluginDir: string}>} items
+ */
+function dedupeByRealDir(items) {
+  const seen = new Map()
+  for (const item of items) {
+    const realDir = fs.realpathSync(item.pluginDir)
+    if (!seen.has(realDir)) seen.set(realDir, item)
+  }
+  return [...seen.values()]
+}
+
+/**
  * Run async tasks with bounded concurrency.
  * @param {Array} items - Items to process
  * @param {number} concurrency - Max parallel tasks
@@ -696,11 +715,15 @@ export async function handlePluginInstallUnified({
       console.log()
       console.log(styleText("cyan", "→ Building plugins..."))
       const concurrency = resolvedConcurrency
-      const results = await runParallel(installed, concurrency, async ({ name, pluginDir }) => {
-        const ok = await buildPluginAsync(pluginDir, name)
-        if (ok) console.log(styleText("green", `  ✓ ${name} built`))
-        return ok
-      })
+      const results = await runParallel(
+        dedupeByRealDir(installed),
+        concurrency,
+        async ({ name, pluginDir }) => {
+          const ok = await buildPluginAsync(pluginDir, name)
+          if (ok) console.log(styleText("green", `  ✓ ${name} built`))
+          return ok
+        },
+      )
       for (const ok of results) {
         if (!ok) failed++
       }
@@ -1132,11 +1155,15 @@ export async function handlePluginInstallUnified({
     console.log()
     console.log(styleText("cyan", "→ Building plugins..."))
     const concurrency = resolvedConcurrency
-    const results = await runParallel(pluginsToBuild, concurrency, async ({ name, pluginDir }) => {
-      const ok = await buildPluginAsync(pluginDir, name)
-      if (ok) console.log(styleText("green", `  ✓ ${name} built`))
-      return ok
-    })
+    const results = await runParallel(
+      dedupeByRealDir(pluginsToBuild),
+      concurrency,
+      async ({ name, pluginDir }) => {
+        const ok = await buildPluginAsync(pluginDir, name)
+        if (ok) console.log(styleText("green", `  ✓ ${name} built`))
+        return ok
+      },
+    )
     for (const ok of results) {
       if (!ok) {
         failed++
