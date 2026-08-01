@@ -11,12 +11,12 @@
 filters:
   and:
     - file.ext == "md"
-    - cssclasses == "dictionary-entry"
+    - cssclasses.contains("dictionary-entry")
 
 formulas:
-  mechanismen: 'tags.filter(!value.startsWith("Unwort")).join(" · ")'
-  mechanismen_anzahl: 'tags.filter(!value.startsWith("Unwort")).length'
-  unwort_jahr: 'if(tags.filter(value.startsWith("Unwort")).length > 0, tags.filter(value.startsWith("Unwort")).join("").replace("Unwort", ""), "–")'
+  mechanismen: 'tags.filter(!value.startsWith("unwort")).join(" · ")'
+  mechanismen_anzahl: 'tags.filter(!value.startsWith("unwort")).length'
+  unwort_jahr: 'if(tags.filter(value.startsWith("unwort")).length > 0, tags.filter(value.startsWith("unwort")).join("").replace("unwort", ""), "–")'
   zeitspanne: 'if(erstbeleg && letzter_beleg, erstbeleg.toFixed(0) + "–" + letzter_beleg.toFixed(0), if(erstbeleg, erstbeleg.toFixed(0) + "–heute", "–"))'
   spektrum_icon: 'if(spektrum == "affirmativ-dominant", "🔺 affirmativ", if(spektrum == "kritisch-dominant", "🔻 kritisch", if(spektrum == "umkämpft", "⚔️ umkämpft", "– unkodiert")))'
   beleglage: 'if(fußnoten_geprüft, "✅ verifiziert", "⏳ ungeprüft")'
@@ -70,7 +70,7 @@ views:
     name: "Unwort des Jahres"
     filters:
       and:
-        - 'tags.filter(value.startsWith("Unwort")).length > 0'
+        - 'tags.filter(value.startsWith("unwort")).length > 0'
     order:
       - file.name
       - formula.unwort_jahr
