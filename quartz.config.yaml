@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Inter Tight
-      body: Spectral
+      header: Archivo
+      body: Inter
       code: JetBrains Mono
     colors:
       lightMode:
@@ -280,7 +280,7 @@ plugins:
   - source: "./local-plugins/recent-notes"
     enabled: true
     options:
-      limit: 5
+      limit: 10
       showTags: false
       linkToMore: false
     layout:

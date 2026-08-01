@@ -11,7 +11,11 @@ to read well at large hero-scale font sizes). No `options`-based override exists
 (confirmed against the upstream package's `optionSchema`, which only exposes
 `localGraph`/`globalGraph`), so forking was the only way to change it.
 
+`src/components/scripts/graph.inline.ts`: opens the graph pre-zoomed one "double-click" step
+in (2x) instead of at d3's full-zoom-out identity transform, matching ale.ms's own
+`df5cf09` fix — no `options`-based override for the initial zoom transform exists either.
+
 ## Re-syncing with upstream
 
-Re-clone at a newer commit and re-apply the one-line locale string change to
-`src/i18n/locales/de-DE.ts`.
+Re-clone at a newer commit and re-apply the locale string change to `src/i18n/locales/de-DE.ts`
+and the pre-zoom transform in `src/components/scripts/graph.inline.ts`.
