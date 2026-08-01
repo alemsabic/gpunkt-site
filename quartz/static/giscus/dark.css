@@ -19,7 +19,7 @@ main {
     "Segoe UI Symbol";
 
   /* Clinical Cold Theme - Dark Mode */
-  --bg: #161618; /* Neutral near-black, softer than the old navy */
+  --bg: #0a1967; /* Deep terminal navy */
   --bg-secondary: rgba(255, 255, 255, 0.05);
   --text: #dddddd; /* Light gray */
   --text-muted: #888888; /* Muted gray */
