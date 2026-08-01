@@ -45,6 +45,14 @@ This repository handles **PRESENTATION ONLY** (Quartz static site generator).
 - **That workflow hardcodes the target branch** (currently `v5`). If this repo's production branch
   ever changes again, that workflow file must be updated in the _same_ session — it fails silently
   (green checkmark, no error) if left pointing at a branch nothing serves anymore.
+- **`QUARTZ_REPO_TOKEN` secret (lives in `gpunkt-woerter`, not here):** authenticates that workflow's
+  checkout of this repo. It expired silently between 2026-02-23 and 2026-07-31 (two pushes failed,
+  content never reached `content/`, no error surfaced anywhere but the Actions tab). Reset
+  2026-08-01 using the on-call `gh` session's own token as a stopgap — that token carries far more
+  scope (`delete_repo`, `admin:public_key`, ...) than a content-sync job needs. **TODO, no deadline:**
+  replace with a fine-grained PAT scoped to `gpunkt-woerter` → `gpunkt-site`, `Contents: Read and
+  write` only. Same issue applies to ale.ms's content repo (`alems-notizen`) — see that repo's
+  `CLAUDE.md`.
 
 ### Repository Focus
 
