@@ -1,0 +1,44 @@
+{
+	"nodes":[
+		{"id":"1a2b3c4d5e6f7081","type":"text","x":460,"y":-220,"width":1100,"height":140,"text":"# Mechanismen-Atlas\n\nDas Reizwörterbuch von innen: nicht alphabetisch, sondern nach Verführungstechnik geordnet. Jede Gruppe ist ein Verfahren – wähle eines, und sieh, welche Wörter es benutzen, um zu wirken statt zu behaupten."},
+
+		{"id":"2b3c4d5e6f708192","type":"group","x":-20,"y":0,"width":980,"height":520,"label":"① Inversion — Täter-Opfer-Umkehr","color":"6"},
+		{"id":"3c4d5e6f708192a3","type":"text","x":10,"y":50,"width":940,"height":110,"text":"**Inversion**\n\nDreht die Rollen: wer kritisiert, wird zum Angreifer erklärt; wer urteilt, sitzt plötzlich auf der Anklagebank. Häufigstes Verfahren im bisherigen Korpus – primäres Verfahren in 6 von 11 Einträgen."},
+		{"id":"4d5e6f708192a3b4","type":"file","x":10,"y":180,"width":300,"height":140,"file":"WÖRTER/Gleichschaltung.md"},
+		{"id":"5e6f708192a3b4c5","type":"file","x":330,"y":180,"width":300,"height":140,"file":"WÖRTER/Gutmensch.md"},
+		{"id":"6f708192a3b4c5d6","type":"file","x":650,"y":180,"width":300,"height":140,"file":"WÖRTER/Lügenpresse.md"},
+		{"id":"708192a3b4c5d6e7","type":"file","x":10,"y":340,"width":300,"height":140,"file":"WÖRTER/Putinversteher.md"},
+		{"id":"8192a3b4c5d6e7f8","type":"file","x":330,"y":340,"width":300,"height":140,"file":"WÖRTER/Sozialtourismus.md"},
+		{"id":"92a3b4c5d6e7f809","type":"file","x":650,"y":340,"width":300,"height":140,"file":"WÖRTER/Wirtschaftsflüchtling.md"},
+
+		{"id":"a3b4c5d6e7f80912","type":"group","x":1020,"y":0,"width":460,"height":300,"label":"② Ontologisierung — Politik wird Wesen","color":"4"},
+		{"id":"b4c5d6e7f8091a23","type":"text","x":1050,"y":50,"width":400,"height":110,"text":"**Ontologisierung**\n\nAus „X vertritt eine Position\" wird „X ist so\". Die Haltung verschwindet, übrig bleibt eine Eigenschaft der Person – nicht mehr diskutierbar, nur noch feststellbar."},
+		{"id":"c5d6e7f8091a23b4","type":"file","x":1050,"y":180,"width":400,"height":100,"file":"WÖRTER/Volksverräter.md"},
+
+		{"id":"d6e7f8091a23b4c5","type":"group","x":1540,"y":0,"width":460,"height":300,"label":"③ Euphemismus — das Wort mildert","color":"2"},
+		{"id":"e7f8091a23b4c5d6","type":"text","x":1570,"y":50,"width":400,"height":110,"text":"**Euphemismus**\n\nErsetzt die unangenehme Bezeichnung durch eine technische oder sanfte. Der Vorgang bleibt exakt derselbe; nur das Unbehagen daran verschwindet."},
+		{"id":"f8091a23b4c5d6e7","type":"file","x":1570,"y":180,"width":400,"height":100,"file":"WÖRTER/Remigration.md"},
+
+		{"id":"091a23b4c5d6e7f8","type":"group","x":1020,"y":340,"width":460,"height":340,"label":"④ Naturalisierung — Politik wird Wetter","color":"3"},
+		{"id":"1a23b4c5d6e7f809","type":"text","x":1050,"y":390,"width":400,"height":110,"text":"**Naturalisierung**\n\nStellt eine gemachte, verhandelbare Entscheidung als Naturgesetz dar. Was „ist\", kann man nicht abstimmen – nur hinnehmen."},
+		{"id":"23b4c5d6e7f8091a","type":"file","x":1050,"y":520,"width":190,"height":110,"file":"WÖRTER/Überfremdung.md"},
+		{"id":"3b4c5d6e7f8091a2","type":"file","x":1260,"y":520,"width":190,"height":110,"file":"WÖRTER/alternativlos.md"},
+
+		{"id":"4c5d6e7f8091a23b","type":"group","x":1540,"y":340,"width":460,"height":340,"label":"⑤ Entpolitisierung — Streit wird Verwaltung","color":"5"},
+		{"id":"5d6e7f8091a23b4c","type":"text","x":1570,"y":390,"width":400,"height":110,"text":"**Entpolitisierung**\n\nVerschiebt eine Entscheidung aus dem Streitraum der Politik in den scheinbar neutralen Raum von Sachzwang oder Verfahren. Wo nichts mehr entschieden wird, kann auch niemand mehr verantwortlich sein."},
+		{"id":"6e7f8091a23b4c5d","type":"file","x":1570,"y":520,"width":400,"height":110,"file":"WÖRTER/Klimakleber.md"},
+
+		{"id":"7f8091a23b4c5d6e","type":"group","x":-20,"y":560,"width":2020,"height":260,"label":"⑥ Seltene & kombinierte Verfahren","color":"1"},
+		{"id":"8091a23b4c5d6e7f","type":"text","x":10,"y":610,"width":1980,"height":180,"text":"**Kriminalisierung** — rückt Verhalten in die Nähe eines Tatbestands, ohne dass einer vorliegt: *Lügenpresse, Sozialtourismus, Wirtschaftsflüchtling* (jeweils sekundäres Verfahren).\n\n**Ethnisierung** & **Quantifizierung** — Menschen werden zur Masse, zur Zahl: *Überfremdung*.\n\n**Militarisierung** — der politische Gegner wird zum Feind im Krieg: *Volksverräter*.\n\n**Infantilisierung** — die Position wird zur kindlichen Naivität erklärt: *Gutmensch*.\n\nBislang je ein bis drei Belege. Verfahren, die eine eigene Gruppe verdienen, sobald der Korpus wächst."},
+
+		{"id":"91a23b4c5d6e7f80","type":"group","x":480,"y":860,"width":1060,"height":220,"label":"⑦ Weiterlesen","color":"6"},
+		{"id":"a23b4c5d6e7f8091","type":"file","x":510,"y":910,"width":460,"height":130,"file":"WÖRTER/Wörterbuch-Index.base"},
+		{"id":"b3c4d5e6f708192a","type":"text","x":1000,"y":910,"width":500,"height":130,"text":"**Queue:** Umvolkung, Ethnopluralismus, Wokismus – jeder neue Eintrag verschiebt dieses Bild: bestehende Gruppen wachsen, oder eine neue entsteht (z. B. eigenständig für Kriminalisierung).\n\nDieser Atlas ist selbst ein Lesepfad – nicht alphabetisch, sondern nach Verführungstechnik geordnet."}
+	],
+	"edges":[
+		{"id":"c4d5e6f708192a3b","fromNode":"2b3c4d5e6f708192","fromSide":"right","toNode":"a3b4c5d6e7f80912","toSide":"left","label":"koexistiert oft"},
+		{"id":"d5e6f708192a3b4c","fromNode":"2b3c4d5e6f708192","fromSide":"right","toNode":"d6e7f8091a23b4c5","toSide":"left","label":"koexistiert oft"},
+		{"id":"e6f708192a3b4c5d","fromNode":"2b3c4d5e6f708192","fromSide":"bottom","toNode":"7f8091a23b4c5d6e","toSide":"top","label":"sekundär: Kriminalisierung u. a."},
+		{"id":"f708192a3b4c5d6e","fromNode":"a23b4c5d6e7f8091","fromSide":"top","toNode":"2b3c4d5e6f708192","toSide":"bottom","label":"indexiert alle Verfahren"}
+	]
+}

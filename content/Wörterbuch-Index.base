@@ -1,0 +1,94 @@
+# Wörterbuch-Index — durchsuchbarer Index aller publizierten Reizwörter.
+# Analog zu Quellen/Quellen-Index.base, aber für den Reader statt für die Bibliografie:
+# Einstieg nach Mechanismus, nach Unwort-des-Jahres-Status, nach Diskurs-Bilanz.
+#
+# Die beiden 🔮-Views sind Vision: sie greifen auf Frontmatter-Felder zu, die es
+# noch nicht gibt (erstbeleg, letzter_beleg, bt_erwähnungen, spektrum,
+# fußnoten_geprüft, status). Sobald SCAN.py-Daten und Wortgefecht-Bilanzen als
+# Frontmatter zurückfließen (siehe CLAUDE.md → ZUKUNFTSIDEEN), füllen sich die
+# Spalten von selbst.
+
+filters:
+  and:
+    - file.ext == "md"
+    - cssclasses == "dictionary-entry"
+
+formulas:
+  mechanismen: 'tags.filter(!value.startsWith("Unwort")).join(" · ")'
+  mechanismen_anzahl: 'tags.filter(!value.startsWith("Unwort")).length'
+  unwort_jahr: 'if(tags.filter(value.startsWith("Unwort")).length > 0, tags.filter(value.startsWith("Unwort")).join("").replace("Unwort", ""), "–")'
+  zeitspanne: 'if(erstbeleg && letzter_beleg, erstbeleg.toFixed(0) + "–" + letzter_beleg.toFixed(0), if(erstbeleg, erstbeleg.toFixed(0) + "–heute", "–"))'
+  spektrum_icon: 'if(spektrum == "affirmativ-dominant", "🔺 affirmativ", if(spektrum == "kritisch-dominant", "🔻 kritisch", if(spektrum == "umkämpft", "⚔️ umkämpft", "– unkodiert")))'
+  beleglage: 'if(fußnoten_geprüft, "✅ verifiziert", "⏳ ungeprüft")'
+  status_label: 'if(status, status, "publiziert")'
+
+properties:
+  file.name:
+    displayName: Begriff
+  title:
+    displayName: Titel
+  formula.mechanismen:
+    displayName: Mechanismen
+  formula.mechanismen_anzahl:
+    displayName: "# Verfahren"
+  formula.unwort_jahr:
+    displayName: "Unwort d. Jahres"
+  formula.zeitspanne:
+    displayName: "Beleg-Zeitspanne"
+  formula.spektrum_icon:
+    displayName: "Diskurs-Spektrum"
+  formula.beleglage:
+    displayName: Beleglage
+  formula.status_label:
+    displayName: Status
+  bt_erwähnungen:
+    displayName: "BT-Erwähnungen"
+
+views:
+  - type: table
+    name: Alle Einträge
+    order:
+      - file.name
+      - title
+      - formula.mechanismen
+      - formula.mechanismen_anzahl
+      - formula.unwort_jahr
+    summaries:
+      formula.mechanismen_anzahl: Average
+
+  - type: table
+    name: Nach Mechanismus
+    groupBy:
+      property: tags
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - formula.unwort_jahr
+
+  - type: table
+    name: "Unwort des Jahres"
+    filters:
+      and:
+        - 'tags.filter(value.startsWith("Unwort")).length > 0'
+    order:
+      - file.name
+      - formula.unwort_jahr
+      - formula.mechanismen
+
+  - type: table
+    name: "🔮 Wortgefecht-Bilanz (Vision)"
+    order:
+      - file.name
+      - formula.spektrum_icon
+      - formula.zeitspanne
+      - bt_erwähnungen
+    summaries:
+      bt_erwähnungen: Sum
+
+  - type: table
+    name: "🔮 Beleglage (Vision)"
+    order:
+      - file.name
+      - formula.beleglage
+      - formula.status_label
