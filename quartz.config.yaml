@@ -170,6 +170,8 @@ plugins:
       prefixTags: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      title: "Wörter"
     layout:
       position: left
       priority: 50
