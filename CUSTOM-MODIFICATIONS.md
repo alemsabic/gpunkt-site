@@ -125,3 +125,49 @@ graph's node labels on any slug containing non-ASCII characters). gpunkt.org's o
 stays that way, and as a template for any future fork. If you ever fork a new plugin into
 `local-plugins/`, copy an existing plugin's `.gitignore` into it and `git add -f` it (the root
 `.gitignore` excludes all nested `.gitignore` files by design — plain `git add` silently drops it).
+
+## Bases + Canvas: full-width layout
+
+**File**: `quartz/styles/custom.scss` (top-of-file "Page max width" block, plus one rule near the
+`::-webkit-scrollbar` section).
+
+Stock config had a blanket `.page { max-width: 1280px !important; }`, which clipped both `.canvas`
+and `.base` pages to the normal article measure — `@quartz-community/canvas-page` ships its own
+`frame: "canvas"` full-bleed layout, but this override was fighting it, and `bases-page` has no
+frame of its own to fight back with at all. Ported ale.ms's full fix wholesale (2026-08-01, prompted
+by `Mechanismen-Atlas.canvas` and `Wörterbuch-Index.base` landing in `content/` for the first time):
+`.page:not([data-frame="canvas"])` scopes the 1280px cap away from canvas pages; `.page:has(.bases-page)`
+gets `max-width: none` instead; plus the box-sizing/overflow-y/scrollbar fixes ale.ms had already
+found by hand in devtools (double-scrollbar from `.canvas-frame`'s content-box sizing fighting the
+sidebar's padding, and from the Explorer's own `ul.overflow` fighting the vendor's
+`.explorer-content` overflow rule). See ale.ms's own `custom.scss` for the byte-identical rules and
+inline rationale.
+
+**Why**: match ale.ms's edge-to-edge presentation for these two page types instead of the default
+narrow article column, which reads badly for a wide table or a spatial canvas.
+
+## Bases filter gotcha: `cssclasses` and `tags` are not what you typed
+
+**Not a code change here** — this is knowledge for anyone editing a `.base` file in the content repo
+(`gpunkt-woerter`, mounted locally at `/Users/alemsabic/Desktop/MEMEX/WÖRTER`), recorded here because
+CUSTOM-MODIFICATIONS.md is the durable spot and that repo's own `CLAUDE.md` is purely editorial.
+
+`@quartz-community/note-properties` (gpunkt.org's frontmatter parser — see its "load-bearing"
+config comment in `quartz.config.yaml`) silently rewrites two frontmatter fields as it parses, no
+matter how you wrote them in the source file:
+
+- `cssclasses: dictionary-entry` (a scalar) becomes the array `["dictionary-entry"]` at runtime.
+- Every entry in `tags:` is slugified — lowercased (`Unwort2023` → `unwort2023`), among other
+  transforms.
+
+`@quartz-community/bases-page`'s `==` operator is strict (`===`) — an array is never `==` a string,
+so `cssclasses == "dictionary-entry"` silently matches nothing (all views render "No data found.",
+not an error). Use `cssclasses.contains("dictionary-entry")` instead. Same trap for any
+`tags.filter(value.startsWith("Unwort"))`-style formula or filter: match against the lowercased
+form (`"unwort"`), not what's actually typed in the frontmatter. Found and fixed 2026-08-01 in
+`Wörterbuch-Index.base` (all 5 views were empty, plus the `Mechanismen`/`Unwort d. Jahres` formula
+columns were silently wrong even where a view did render) — confirmed via a real `npx quartz build`
+against real content, not just by reading the plugin docs. ale.ms's own `Quellen-Index.base` doesn't
+hit this — it filters on `file.hasProperty("citekey")` and plain scalar fields (`status`,
+`itemType`), never on `cssclasses` or a case-sensitive `tags` match — so no equivalent fix was
+needed there.

@@ -39,9 +39,59 @@
   margin-bottom: 2rem !important;
 }
 
-// Page max width
-.page {
+// Page max width. Canvas pages (JSON Canvas / Obsidian .canvas) get their own
+// full-bleed layout from @quartz-community/canvas-page's frame CSS — excluding
+// data-frame="canvas" here keeps that intact instead of clipping it to 1280px.
+.page:not([data-frame="canvas"]) {
   max-width: 1280px !important;
+}
+
+// @quartz-community/canvas-page's .canvas-frame ships as box-sizing: content-box
+// with width: 100%. When its own CSS adds padding-left on .canvas-sidebar-open
+// (to make room for the slide-out sidebar), that padding is added on top of the
+// 100% width instead of being carved out of it, overflowing the viewport by
+// exactly the sidebar's width and producing a second, invisible-until-you-scroll
+// horizontal scrollbar. Ported from ale.ms, confirmed there via devtools before
+// this fix (offsetWidth 1900 vs a 1600px viewport, i.e. +300px = --canvas-sidebar-width).
+.page[data-frame="canvas"] .canvas-frame {
+  box-sizing: border-box;
+}
+
+// The actual double-scrollbar culprit (found by hand in devtools on ale.ms): the
+// vendor's own canvas-sidebar override re-declares .explorer-content as
+// overflow-y: auto, and stock Quartz's OverflowList truncation (base.scss's
+// `ul.overflow`, used by the Explorer's file-tree <ul> once it's long enough to
+// truncate) *also* sets overflow-y: auto on that inner <ul> — two independently-
+// scrollable nested containers of almost the same height, each rendering its own
+// scrollbar. The inner ul.overflow is the one that should scroll; drop it here on
+// the outer .explorer-content. Matches the vendor's own selector specificity so
+// it wins regardless of injection order.
+.page[data-frame="canvas"] .canvas-sidebar .explorer .explorer-content {
+  overflow-y: hidden !important;
+}
+
+// Bases pages (.base tables from @quartz-community/bases-page) live from width —
+// no cap at all, infinite/edge-to-edge like the canvas pages.
+.page:has(.bases-page) {
+  max-width: none !important;
+}
+
+// Bases view meta ("Showing X of Y") — darker than the vendor's default --gray.
+.bases-view-meta {
+  color: var(--darkgray);
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+// Bases page — add top spacing to match other page types.
+.bases-page {
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-top: 2rem;
 }
 
 // Breadcrumb container margin
@@ -426,6 +476,21 @@ h2#des-zettels-rückseite {
     gap: 20px;
     display: grid;
   }
+}
+
+// Canvas pages are a fixed 100vh viewport that pan/zoom internally and have their
+// own sidebar scroll region (.explorer-content inside .canvas-sidebar) — the outer
+// document itself should never need to scroll. The global ::-webkit-scrollbar
+// styling below forces classic, space-reserving scrollbars everywhere (stock
+// Quartz relies on the OS's default overlay scrollbars instead, which don't
+// visually stack). With classic scrollbars forced, any stray overflow on
+// html/body renders as a second, permanent scrollbar sitting right next to the
+// sidebar's own file-list one. Pinning the document to the viewport rules that
+// out entirely, regardless of what's causing the stray overflow underneath.
+// Ported from ale.ms.
+html:has(.page[data-frame="canvas"]),
+body:has(.page[data-frame="canvas"]) {
+  overflow: hidden !important;
 }
 
 // ScrollBar - updated colors for new design
