@@ -73,6 +73,12 @@
   }
 }
 
+.sidebar.left .page-title {
+  @media (max-width: 800px) {
+    align-self: center;
+  }
+}
+
 // Remove gap from sidebars by default
 .page > #quartz-body .sidebar {
   gap: 0 !important;
@@ -84,8 +90,13 @@
 }
 
 // Desktop: H1 in articles larger font size
+// NOTE: v5's content-page/folder-page/tag-page plugins hardcode an extra
+// `div.markdown-preview-view.markdown-rendered` wrapper between <article> and its content (not
+// present on v4), so plain `article > h1` no longer matches — updated to skip exactly that one
+// level rather than dropping to a bare descendant selector, which would also incidentally match
+// any h1 nested deeper in the document (e.g. inside a transcluded embed). Same fix as ale.ms.
 @media (min-width: 800px) {
-  .page article > h1 {
+  .page article > div.markdown-preview-view > h1 {
     font-size: 3rem;
     line-height: 0.9;
     margin-left: -25px;
@@ -323,6 +334,52 @@ a.internal.tag-link {
 
 .toc-content li {
   line-height: 1.1rem !important;
+}
+
+// Tagline (below page title, left sidebar). Ported 1:1 from ale.ms's custom.scss.
+.tagline {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.1rem;
+  font-family: var(--titleFont);
+}
+
+// v5's quartz/styles/base.scss changed `.desktop-only` from v4's `display: initial` to
+// `display: contents`. `contents` makes the element generate no box of its own, so its own
+// margin/padding/etc. stop applying — which silently ate .tagline's margin-top/margin-bottom
+// above, since Tagline.tsx puts both classes on the same <div>. Restoring a real box here
+// (higher specificity than base.scss's `.desktop-only` alone) rather than patching the core
+// scaffold file. Repeats the same max-width:800px hide-on-mobile behavior from base.scss so
+// mobile visibility is unaffected.
+.tagline.desktop-only {
+  display: block;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+// Mobile: show sidebar Tagline inline next to PageTitle instead of hiding it (mirrors quartz
+// docs' toolbar flex pattern — flex-grow fills the row, pushed to the right of the title).
+// Higher specificity than the rule above wins regardless of source order.
+.sidebar.left .tagline.desktop-only {
+  @media (max-width: 800px) {
+    // block, not flex: Tagline.tsx renders <a>{linkText}</a>{text} as sibling nodes, and a flex
+    // container splits them into separate flex items with their own line boxes (link and text
+    // stop flowing as one run of text, breaking the space between them and how they wrap
+    // together). A block element still becomes a flex *item* of the parent .sidebar.left row —
+    // it just keeps normal inline flow for its own children.
+    display: block;
+    flex-grow: 1;
+    place-self: center center;
+    text-align: right;
+    // .tagline's base rule sets an asymmetric 0.5rem/2.5rem top/bottom margin for the desktop
+    // stacked layout; align-self:center centers the full margin box, so that asymmetry alone
+    // pushes the text visibly off the row's vertical center relative to the title. Reset it here.
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 // Tagline styling
@@ -1285,7 +1342,7 @@ body[data-slug="index"] {
   }
 
   .site-index-group li {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     padding: 0.1rem 0;
   }
 }
